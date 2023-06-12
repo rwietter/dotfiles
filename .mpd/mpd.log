@@ -1,0 +1,72 @@
+Feb 07 20:48 : exception: Failed to open '/home/rwietter/.mpd/mpdstate': No such file or directory
+Feb 07 20:48 : exception: inotify_add_watch() has failed: No such file or directory
+Feb 07 20:48 : config: option 'server' on line 12 was not recognized
+Feb 07 20:48 : config: option 'sink' on line 13 was not recognized
+Feb 07 20:48 : exception: Failed to access /home/rwietter/Música: No such file or directory
+Feb 07 20:49 : exception: Failed to open '/home/rwietter/.mpd/mpdstate': No such file or directory
+Feb 07 20:49 : config: option 'server' on line 12 was not recognized
+Feb 07 20:49 : config: option 'sink' on line 13 was not recognized
+Feb 07 20:51 : exception: Failed to access /home/rwietter/Música: No such file or directory
+Feb 07 20:51 : update: added /ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Feb 07 20:51 : update: added /ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Feb 07 20:51 : update: added /ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Feb 07 20:51 : update: added /Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Feb 07 20:51 : update: added /Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Feb 07 20:51 : update: added /Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Feb 07 20:51 : update: added /[SPOTIFY-DOWNLOADER.COM] Float.mp3
+Feb 07 20:51 : update: added /Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Feb 07 20:51 : update: added /ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Feb 07 20:51 : exception: Failed to access /home/rwietter/Música: No such file or directory
+Feb 07 20:51 : exception: Failed to access /home/rwietter/Música: No such file or directory
+Feb 07 20:51 : exception: Failed to access /home/rwietter/Música: No such file or directory
+Feb 07 20:52 : exception: Failed to access /home/rwietter/Música: No such file or directory
+Feb 07 20:52 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Feb 07 20:52 : config: option 'server' on line 12 was not recognized
+Feb 07 20:52 : config: option 'sink' on line 13 was not recognized
+Feb 07 20:52 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Feb 07 20:55 : player: played "Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3"
+Feb 07 20:55 : config: option 'server' on line 12 was not recognized
+Feb 07 20:55 : config: option 'sink' on line 13 was not recognized
+Feb 07 20:55 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Feb 07 20:59 : config: option 'server' on line 12 was not recognized
+Feb 07 20:59 : config: option 'sink' on line 13 was not recognized
+Feb 07 21:01 : player: played "Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3"
+Apr 16 11:20 : exception: Failed to decode /home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3; Failed to open '/home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3': No such file or directory
+Apr 16 11:20 : config: option 'server' on line 12 was not recognized
+Apr 16 11:20 : config: option 'sink' on line 13 was not recognized
+Apr 16 11:20 : player: played "Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3"
+Apr 16 11:20 : exception: Failed to decode /home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3; Failed to open '/home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3': No such file or directory
+Apr 16 11:20 : player: played "Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3"
+Apr 16 11:20 : exception: Failed to decode /home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3; Failed to open '/home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3': No such file or directory
+Apr 16 11:20 : player: played "Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3"
+Apr 16 11:20 : exception: Failed to decode /home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3; Failed to open '/home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3': No such file or directory
+Apr 16 11:21 : exception: Failed to decode /home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3; Failed to open '/home/rwietter/Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3': No such file or directory
+Apr 16 11:21 : player: played "Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3"
+Apr 16 11:21 : exception: Failed to decode /home/rwietter/Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3; Failed to open '/home/rwietter/Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3': No such file or directory
+Apr 16 11:21 : player: played "Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3"
+Apr 16 11:21 : exception: Failed to decode /home/rwietter/Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3; Failed to open '/home/rwietter/Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3': No such file or directory
+Apr 16 11:21 : update: removing Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Apr 16 11:21 : update: removing Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Apr 16 11:21 : update: removing Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Apr 16 11:21 : update: removing ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Apr 16 11:21 : update: removing ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Apr 16 11:21 : update: removing ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Apr 16 11:21 : update: removing ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Apr 16 11:21 : update: removing [SPOTIFY-DOWNLOADER.COM] Float.mp3
+Apr 16 11:21 : update: removing Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Apr 16 11:21 : update: added new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3
+Apr 16 11:21 : update: added new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3
+Apr 16 11:21 : update: added new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Martin Garrix - Animals (Official Video) (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3
+Apr 16 11:21 : update: added /X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3
+Apr 16 11:23 : player: played "X2Download.app - Martin Garrix - Animals (Official Video) (320 kbps).mp3"
+Apr 16 11:28 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Apr 16 18:11 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Apr 16 18:58 : config: option 'server' on line 12 was not recognized
+Apr 16 18:58 : config: option 'sink' on line 13 was not recognized
+Apr 16 18:59 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"

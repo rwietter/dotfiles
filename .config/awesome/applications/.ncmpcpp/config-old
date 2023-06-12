@@ -1,0 +1,118 @@
+mpd_host = "localhost"
+mpd_port = "6700"
+
+# ----------------------------------------------------------------------------##
+# Core
+# ----------------------------------------------------------------------------##
+
+ncmpcpp_directory = "~/.ncmpcpp/"
+enable_window_title = "yes"
+external_editor = "vim"
+song_window_title_format = "MPD: {%t}"
+system_encoding = "utf-8"
+use_console_editor = "yes"
+
+# ----------------------------------------------------------------------------##
+# Display
+# ----------------------------------------------------------------------------##
+browser_display_mode = "columns"
+browser_playlist_prefix = "$2plist »$9 "
+playlist_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+search_engine_display_mode = "columns"
+user_interface = "classic"
+
+# ----------------------------------------------------------------------------##
+# Playlist
+# ----------------------------------------------------------------------------##
+jump_to_now_playing_song_at_start = "yes"
+cyclic_scrolling = "no"
+playlist_disable_highlight_delay = "3"
+playlist_separate_albums = "no"
+
+# ----------------------------------------------------------------------------##
+# Tab and music list
+# ----------------------------------------------------------------------------##
+
+song_columns_list_format = "(8f)[red]{l} (42)[blue]{t|f}"
+song_list_format = "$5%n$9$1▕ $1$2%a$9$1 - $1$3%t$1	 $R$4[%b]$9"
+song_library_format = "{%n > }{%t}|{%f}"
+
+# ----------------------------------------------------------------------------##
+# Vizualizer
+# ----------------------------------------------------------------------------##
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_in_stereo = "yes"
+mpd_music_dir = "$HOME/Music"
+visualizer_output_name = "MPD"
+visualizer_type = "wave (spectrum/wave)"
+visualizer_look = "●▮"
+visualizer_color = "red"
+
+# ----------------------------------------------------------------------------##
+# General Colors
+# ----------------------------------------------------------------------------##
+colors_enabled = "yes"
+color1 = "black"
+color2 = "white"
+empty_tag_color = "red"
+discard_colors_if_item_is_selected = "no"
+
+
+# ----------------------------------------------------------------------------##
+# Main Windows
+# ----------------------------------------------------------------------------##
+titles_visibility = "yes"
+main_window_color = "white"
+now_playing_prefix = "$b$1"
+now_playing_suffix = " $8♫$9 "
+selected_item_prefix = " √ "
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+# ----------------------------------------------------------------------------##
+# Header
+# ----------------------------------------------------------------------------##
+header_window_color = "red"
+header_visibility = "yes"
+volume_color = "white"
+state_line_color = "white"
+state_flags_color = "red"
+display_volume_level = "yes"
+header_text_scrolling = "yes"
+
+# ----------------------------------------------------------------------------##
+# Progress Bar
+# ----------------------------------------------------------------------------##
+progressbar_color = "red"
+progressbar_elapsed_color = "white"
+progressbar_look = "─⊙┄"
+
+# ----------------------------------------------------------------------------##
+# Status Bar
+# ----------------------------------------------------------------------------##
+statusbar_visibility = "yes"
+statusbar_color = "white"
+statusbar_time_color = "red"
+display_bitrate = "no"
+display_remaining_time = "yes"
+song_status_format = "$b$2 $2%a $8♥ $8%t $2♥ $2%b (%y)$1"
+player_state_color =  "white"
+window_border_color = "red"
+active_window_border = "white"
+
+
+# ----------------------------------------------------------------------------##
+# General Settings
+# ----------------------------------------------------------------------------##
+clock_display_seconds = "no"
+ignore_leading_the = "no"
+allow_for_physical_item_deletion = "no"
+screen_switcher_mode = "playlist, browser"
+locked_screen_width_part = "50"
+ask_before_clearing_playlists = "yes"
+regular_expressions = "extended"
+mouse_support = "yes"
+tags_separator = " | "
+media_library_sort_by_mtime = "no"
+#default_tag_editor_pattern = %n - %t

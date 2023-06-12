@@ -1,0 +1,6 @@
+require("layout.bar")
+require("layout.controlCenter")
+require("layout.panel")
+require("layout.decorations")
+require("layout.ding")
+require("mods.dock")

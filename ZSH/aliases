@@ -1,0 +1,131 @@
+# ----------------------------------------------------------------------------##
+# ALIASES
+# ----------------------------------------------------------------------------##
+# Kill
+alias kl='ps -efw | grep php | grep -v grep | awk '{print $2}' | xargs kill'
+alias k9='pkill -9'
+alias ft='ferris-fetch'
+
+### Alias Hardware
+alias tlp='sudo tlp-stat'
+alias trimls='lsblk --discard'
+
+alias wifi="nmtui-connect"
+alias ls="exa --color=auto --icons"
+alias lt="ls --tree"
+alias cat="bat --color always --plain"
+alias sr='source ~/.zshrc'
+alias mu='sudo reflector --verbose -c Brazil --sort rate --save /etc/pacman.d/mirrorlist'
+alias pls='sudo'
+
+### Alias Nmap
+
+alias geo="sudo nmap --traceroute --script traceroute-geolocation.nse -p 80"
+alias nmapemail="sudo nmap -Pn -p80 --script http-google-email"
+alias nmapopen="nmap --open"
+alias nmaplf="nmap --iflist"
+alias nmap_slow="nmap -sS -v -T1"
+alias nmap_fin="nmap -sF -v"
+alias nmap_full="nmap -sS -T4 -PE -PP -PS80,443 -PY -g 53 -A -p1-65535 -v"
+alias nmap_check_for_firewall="sudo nmap -sA -p1-65535 -v -T4"
+alias nmap_ping_through_firewall="nmap -PS -PA"
+alias nmap_fast="nmap -F -T5 --version-light --top-ports 300"
+alias nmap_detect_versions="sudo nmap -sV -p1-65535 -O --osscan-guess -T4 -Pn"
+alias nmap_check_for_vulns="sudo nmap -d --script=vulscan"
+alias nmap_full_udp="nmap -sS -sU -T4 -A -v -PE -PS22,25,80 -PA21,23,80,443,3389 "
+alias nmap_traceroute="nmap -sP -PE -PS22,25,80 -PA21,23,80,3389 -PU -PO --traceroute "
+alias nmap_full_with_scripts="sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25,80,113,31339 -PA80,113,443,10042 -PO --script all "
+alias nmap_web_safe_osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
+
+alias scanregular="sudo nmap -R -Pn -sC -sV --version-all -T5 -p- --open -v  -oN %y%m%d-target-name"
+alias fastfullhost="sudo nmap --min-rate=400 --min-parallelism=512 -p22,445,3389,80,443 -Pn -R -PS -oA 
+%y%m%d-Full"
+alias sshbrute="sudo nmap -p 22 --script ssh-brute --script-args user=root,passdb=pass.lst 
+--script-args ssh-brute.timeout=4s"
+alias snmpscan="sudo nmap -P0 -v -sU -p 161 -oA snmp_scan"
+
+
+### Alias Pacman and Yay
+
+alias pass="pacman -Sl | cut -d' ' -f2 | grep " # It allows you to search all available packages simply using 'pacsearch packagename':
+alias pkglist="comm -13 <(pacman -Qmq | sort) <(pacman -Qqe | sort) > pkglist" # Create list of all installed packages
+alias bck=" pacman -Q | awk '{print $1}' > package_list.txt"
+alias pacr="sudo pacman -R"
+alias pas='sudo pacman -S' # Install a specific package
+alias pacrdd="sudo pacman -Rdd"
+alias pacrns='sudo pacman -Rns' # Remove a specific package and all its dependencies and configurations
+alias pacorf='sudo pacman -Rns $(pacman -Qtdq)' # Create list of orphaned packages for removal
+alias pacr="sudo pacman -R"
+alias pacup='sudo pacman -Syu' # Synchronises repositories and updates if you have any update
+alias optim="sudo pacman -Sc && sudo pacman-optimize"
+alias pch="pacman -Sl | cut -d' ' -f2 | grep"
+alias clean="sudo rm -rf /var/cache/pacman/pkg/*.*"
+alias pacinsd='sudo pacman -S --asdeps'
+alias pacloc='pacman -Qi'
+alias pacmirror='sudo reflector --country Brazil --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist'
+alias u='sudo haveged -w 1024; sudo pacman-key --init; sudo pacman-key --populate; sudo pacman-key --refresh-keys; sudo pkill haveged; sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak; sudo reflector --verbose --age 8 --fastest 128 --latest 64 --number 32 --sort rate --save /etc/pacman.d/mirrorlist; sudo pacman -Syy'
+
+alias ys="yay -S"
+alias ysua="yay -Syua"
+alias yrns="yay -Rns"
+alias yr="yay -R"
+alias yrdd="yay -Rdd"
+
+
+### Extras
+
+alias allred='alsi -l --bold=yellow'
+alias c='clear'
+alias q='exit'
+alias fcf='fc-list | grep -i'
+alias pweb='lsof -i -n -P'
+alias ppss='ps ac'
+alias stx='startx'
+alias tebi="dmesg | nc termbin.com 9999 "
+alias fcc="fc-cache -fv"
+#alias fi='sudo find / -name'
+alias w='sudo wifi-menu'
+alias driver='sudo lspci -vnn'
+alias cpustats='sudo i7z'
+alias cpupowfreqinf='sudo cpupower frequency-info'
+alias cpusave='sudo cpupower frequency-set -g powersave'
+alias cpuperf='sudo cpupower frequency-set -g performance'
+alias cpuclock='watch grep \"cpu MHz\" /proc/cpuinfo' 
+
+### yt-dlp
+alias ymp3='yt-dlp --extract-audio --audio-format mp3 --audio-quality 0'
+alias yvid='yt-dlp -c'
+alias flac='yt-dlp -x --audio-format flac'
+alias ncm='ncmpcpp'
+alias m='mpd'
+alias mergevidaaaaud='ffmpeg -loglevel error -i "$invideo" -i "$inaudio" -strict -2 -codec copy "$outputfile"'
+alias hardqualitysearch='yt-dlp -F'
+alias hardqualitydow='yt-dlp -f'
+
+## TLP
+alias tlpstat='sudo tlp-stat -s'
+alias tlpstart='sudo tlp start'
+alias tlpb='sudo tlp-stat -b'
+alias tlpt='sudo tlp-stat -t'
+
+
+## DOCKER
+alias dkps='docker ps'
+alias dkpsa='docker ps -a'
+alias dkpss='bash $HOME/dkps'
+alias dkl='docker logs'
+alias dklf='docker logs -f'
+alias dki='docker images'
+alias dks='docker services'
+alias dkrm='docker rm'
+alias dkm='docker-machine'
+alias dkmx='docker-machine ssh'
+alias dkils='docker images ls'
+alias dkirm='docker image rm --force'
+alias dkcls='docker container ls'
+alias dkcls='docker container ls -a'
+alias dklsrm='docker container rm --force'
+
+## Systemd
+alias suspend="systemctl suspend"
+alias power="systemctl power"

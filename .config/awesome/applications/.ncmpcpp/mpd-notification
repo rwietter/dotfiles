@@ -1,0 +1,3 @@
+#!/bin/bash
+SONG="$(ncmpcpp --current-song "%a - %t")"
+notify-send "Now playing:" "$SONG"

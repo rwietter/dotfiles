@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+[ -f ~/.config/user-dirs.dirs ] && source ~/.config/user-dirs.dirs
+
+dir="${XDG_PICTURES_DIR:-${HOME}/img}"
+dir="${HOME}/Imagens/Wallpapers/"
+unsplash_dir="${XDG_PICTURES_DIR:-${HOME}/img}/unsplash"
+default="$dir/Imagens/Wallpapers/1.wallhaven-dpo7wm_1366x768.png"
+ultima="/home/rwietter/Imagens/Wallpapers/wallhaven-6d27jx_1320x768.png"
+modo="--bg-fill"
+indice=0
+i=0
+x=$(xdpyinfo | grep dimensions | awk '{print $2}' | awk -F'x' '{print $1}')
+y=$(xdpyinfo | grep dimensions | awk '{print $2}' | awk -F'x' '{print $2}')
+
+setWallpaper() {
+	if [ -f "$1" ]; then
+		sed -i "s|^ultima=.*|ultima=\"${1}\"|g" $0
+		feh --bg-fill "$1"
+		echo "$1" > ~/Imagens/Wallpapers/
+	fi
+}
+
+if [ "$2" ]; then
+	[ -d $2 ] && dir=$2
+else
+	[ ! -d $dir ] && mkdir -p $dir
+fi
+
+
+while read linha; do
+    imagens[$i]="$linha"
+    ((i++))
+done < <(find "$dir" -type f \( -iname \*.jpg -o -iname \*.png -o -iname \*.jpeg \) )
+
+cont=${#imagens[@]}
+total=$(($cont-1))
+
+echo "Total de imagens: $cont"
+
+if [ $total -gt 0 ]; then
+	for i in "${!imagens[@]}"; do
+   		if [[ "${imagens[$i]}" = "${ultima}" ]]; then
+       		indice=${i}
+   		fi
+	done
+else
+	echo "Adicione imagens na pasta $dir"
+	exit 1
+fi
+
+img=${imagens[$RANDOM % ${#imagens[@]}]}
+
+setWallpaper "$img"
