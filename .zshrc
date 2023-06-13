@@ -65,6 +65,9 @@ export PATH=$PATH:~/.config/composer/vendor/laravel/installer/bin
 # Vim
 export PATH=~/.local/bin/lvim:$PATH
 
+export PATH="$(yarn global bin):$PATH"
+export PATH=~/.npm-global/bin:$PATH
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ PLUGINS ~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
