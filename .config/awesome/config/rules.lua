@@ -23,7 +23,7 @@ ruled.client.connect_signal("request::rules", function()
         properties = {
             focus             = awful.client.focus.filter,
             raise             = true,
-            size_hints_honor  = false,
+            size_hints_honor  = true,
             screen            = awful.screen.preferred,
             titlebars_enabled = true,
             placement         = awful.placement.centered + awful.placement.no_overlap + awful.placement.no_offscreen
@@ -69,7 +69,7 @@ ruled.client.connect_signal("request::rules", function()
         id = "center_placement",
         rule_any = {
             type = { "dialog" },
-            class = { "Steam", "discord", "markdown_input", "nemo", "thunar" },
+            class = { "Steam", "discord", "markdown_input", "nemo", "thunar", "code" },
             instance = { "markdown_input", },
             role = { "GtkFileChooserDialog" }
         },

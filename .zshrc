@@ -1,8 +1,5 @@
 export EDITOR='code'
-export PROG='/home/rwietter/Documentos/golang/2-cli-app/ipsource'
 export git_current_branch="git -C "$1" branch | sed  '/^\*/!d;s/\* //"
-ZSH_THEME="m3-round"
-ZSH_THEME="m3-round"
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source /usr/share/powerline/bindings/zsh/powerline.zsh
 setxkbmap -model abnt2 -layout br -variant abnt2
@@ -24,8 +21,6 @@ alias grep='grep --color=auto'
 # export ftp_proxy=$http_proxy
 # export rsync_proxy=$http_proxy
 # export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-export OPENAI_API_KEY='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'
-export OPENAI_KEY='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'
 
 export PATH=$PATH:$(yarn global bin)
 export PATH=~/.npm-global/bin:$PATH
@@ -75,7 +70,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/ZSH/zsh-wakatime/zsh-wakatime.plugin.zsh
-source ~/ZSH/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# source ~/ZSH/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source ~/ZSH/completion.zsh
 # source ~/ZSH/prompt.zsh
@@ -429,3 +424,39 @@ ZSH_HIGHLIGHT_STYLES[line]='bold'
 TERM=xterm-256color
 
 export PATH="$PATH:/home/rwietter/.bin"
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/home/rwietter/.micromamba/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/home/rwietter/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/rwietter/micromamba/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/rwietter/micromamba/etc/profile.d/conda.sh" ]; then
+        . "/home/rwietter/micromamba/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/rwietter/micromamba/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# bun completions
+[ -s "/home/rwietter/.bun/_bun" ] && source "/home/rwietter/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

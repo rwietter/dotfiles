@@ -18,14 +18,14 @@ local deck  = bling.layout.deck
 
 -- layout machi
 lmachi.editor.nested_layouts = {
-    ["0"] = deck,
-    ["1"] = awful.layout.suit.spiral,
-    ["2"] = awful.layout.suit.fair,
-    ["3"] = awful.layout.suit.fair.horizontal
+    ["I"] = deck,
+    ["II"] = awful.layout.suit.spiral,
+    ["III"] = awful.layout.suit.fair,
+    ["IV"] = awful.layout.suit.fair.horizontal
 }
 
 -- names/numbers of layouts
-local names = { "1", "2", "3", "4" }
+local names = { "I", "II", "III", "IV" }
 local l     = awful.layout.suit
 
 

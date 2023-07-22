@@ -298,7 +298,7 @@ client.connect_signal("request::default_keybindings", function()
 
 			{ description = "close", group = "client" }),
 
-		awful.key({ alt }, "x", awful.client.floating.toggle,
+		awful.key({ modkey }, "x", awful.client.floating.toggle,
 			{ description = "toggle floating", group = "client" }),
 
 		awful.key({ alt, ctrl }, "Return",

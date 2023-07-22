@@ -1,6 +1,12 @@
 # ----------------------------------------------------------------------------##
 # ALIASES
 # ----------------------------------------------------------------------------##
+
+# Copy
+alias x='xsel -i -b'
+alias cv='xclip -sel clip'
+alias v='xclip -o'
+
 # Kill
 alias kl='ps -efw | grep php | grep -v grep | awk '{print $2}' | xargs kill'
 alias k9='pkill -9'
@@ -11,8 +17,9 @@ alias tlp='sudo tlp-stat'
 alias trimls='lsblk --discard'
 
 alias wifi="nmtui-connect"
-alias ls="exa --color=auto --icons"
+alias ls="exa --color=auto --icons -F"
 alias lt="ls --tree"
+alias cp='cp -v'
 alias cat="bat --color always --plain"
 alias sr='source ~/.zshrc'
 alias mu='sudo reflector --verbose -c Brazil --sort rate --save /etc/pacman.d/mirrorlist'

@@ -7,14 +7,14 @@ local colors = {}
 colors.foreground = "#ccd0d9"
 
 -- backgrounds
--- colors.bg_color = "#101012"
--- colors.bg_2     = "#161719"
--- colors.bg_3     = "#1e1e21"
--- colors.bg_4     = "#1a1a1e"
 colors.bg_color = "#151726"
 colors.bg_2     = "#1A1C30"
 colors.bg_3     = "#202339"
 colors.bg_4     = "#1A1C2C"
+-- colors.bg_color = "#151726"
+-- colors.bg_2     = "#1A1C30"
+-- colors.bg_3     = "#202339"
+-- colors.bg_4     = "#1A1C2C"
 
 -- base green
 colors.green   = "#6acc85"

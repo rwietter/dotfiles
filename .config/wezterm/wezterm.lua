@@ -156,7 +156,7 @@ return {
 
 	colors = {
 		-- foreground = "#edeff0",
-		-- background = "#151726",
+		background = "#111111",
 		-- cursor_bg = "#edeff0",
 		-- cursor_fg = "#edeff0",
 		-- cursor_border = "#232526",

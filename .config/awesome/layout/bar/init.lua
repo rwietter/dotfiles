@@ -29,7 +29,7 @@ awful.screen.connect_for_each_screen(function(s)
 	-- Icons: 
 	local launcher = wibox.widget {
 		widget = wibox.widget.textbox,
-		markup = helpers.colorize_text("", beautiful.fg_color),
+		markup = helpers.colorize_text("", beautiful.fg_color),
 		font = beautiful.icon_var .. "20",
 		align = "center",
 		valign = "center"
@@ -45,8 +45,8 @@ awful.screen.connect_for_each_screen(function(s)
 	-- icons:  "⌘"
 	local panel_system = wibox.widget {
 		widget = wibox.widget.textbox,
-		markup = helpers.colorize_text("⌘", beautiful.fg_color),
-		font = beautiful.icon_var .. "25",
+		markup = helpers.colorize_text("", beautiful.fg_color),
+		font = beautiful.icon_var .. "18",
 		align = "center",
 		valign = "center"
 	}
