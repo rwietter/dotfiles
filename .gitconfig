@@ -9,6 +9,14 @@
 [core]
 	excludesfile = /home/rwietter/.gitignore_global
 	editor = code --wait
+[diff]
+	noprefix = true
+[apply]
+  whitespace = fix # Detect whitespace errors when applying a patch
+[color]
+  ui = auto
+[merge]
+  log = true # Include summaries of merged commits in newly created merge commit messages
 [alias]
 	# ----------------------------------------------------------------------------------------------------------------- #
 	# -------------------------------------------- Git config aliases ------------------------------------------------- #
@@ -87,5 +95,27 @@
 	# List ignored files
 	# Usage: git ignored
 	ignored = !git ls-files --others --ignored --exclude-standard --directory && git ls-files --others -i --exclude-standard
-[diff]
-	noprefix = true
+
+	# Show incoming commits
+	# Usage: git incoming
+	incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
+
+	# Set upstream branch
+	# Usage: git ups <branch>
+	ups = !git branch --set-upstream-to=origin/$1
+
+	# Show outgoing commits
+	# Usage: git outgoing
+	outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
+
+	# Unstage all files
+	# Usage: git unstageall
+	unstage = !git reset HEAD -- . && git checkout -- .
+
+	# Undo last commit
+	# Usage: git undo
+	undo = checkout --
+
+	# Rollback to a commit
+	# Usage: git rollback <commit>
+	rollback = reset --soft HEAD~1
