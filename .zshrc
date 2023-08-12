@@ -39,6 +39,8 @@ export PATH=$PATH:'~/Android/Sdk/platform-tools'
 export PATH=$PATH:'~/android-studio/bin'
 export CHROME_EXECUTABLE="/bin/chromium"
 export PATH="$PATH:/usr/lib/dart/bin"
+export FLYCTL_INSTALL="/home/rwietter/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
 
 # Haskell
@@ -59,7 +61,8 @@ export PATH=$PATH:~/.config/composer/vendor/laravel/installer/bin
 
 # Vim
 export PATH=~/.local/bin/lvim:$PATH
-
+export EDITOR=code
+export VISUAL=code
 export PATH="$(yarn global bin):$PATH"
 export PATH=~/.npm-global/bin:$PATH
 
@@ -166,6 +169,11 @@ autoload -Uz compinit promptinit vcs_info
 compinit
 promptinit
 autoload -U colors && colors
+
+# Expansion of variables like in bash CTRL+ALT+E
+zstyle ':completion:*' completer _expand _complete
+autoload -Uz compinit
+compinit
 
 # Misc
 #setopt ZLE

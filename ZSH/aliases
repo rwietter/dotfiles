@@ -136,3 +136,4 @@ alias dklsrm='docker container rm --force'
 ## Systemd
 alias suspend="systemctl suspend"
 alias power="systemctl power"
+alias init="git init"

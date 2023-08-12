@@ -1,10 +1,3 @@
--- -------------------------------------------------------------------
--- rxyhn's aesthetic wezterm configuration
--- A GPU-accelerated cross-platform terminal emulator and multiplexer
---
--- https://github.com/rxyhn
--- -------------------------------------------------------------------
-
 local wezterm = require("wezterm")
 
 local function font_with_fallback(name, params)
@@ -36,7 +29,7 @@ return {
 			font = font_with_fallback(font_name, { bold = true }),
 		},
 	},
-	warn_about_missing_glyphs = false,
+	warn_about_missing_glyphs = true,
 	font_size = 12,
 	line_height = 1.3,
 
@@ -156,12 +149,12 @@ return {
 
 	colors = {
 		-- foreground = "#edeff0",
-		background = "#111111",
+		background = "#11161D",
 		-- cursor_bg = "#edeff0",
 		-- cursor_fg = "#edeff0",
 		-- cursor_border = "#232526",
 		selection_fg = "#ffffff",
-		selection_bg = "#F26190",
+		selection_bg = "#F4F5F2",
 		-- scrollbar_thumb = "#edeff0",
 		-- split = "#090909",
 		-- ansi = { "#22273B", "#777ABC", "#6562A8", "#4F9062", "#4D6BB6", "#716CAE", "#7FE4D2", "#A4A6A9" },
@@ -173,10 +166,10 @@ return {
 				fg_color = "#ffffff",
 				italic = false,
 			},
-			background = "#191724",
-			inactive_tab = { bg_color = "#151726", fg_color = "#A4A6A9" },
+			background = "#22273B",
+			inactive_tab = { bg_color = "#ffffff", fg_color = "#000000" },
 			inactive_tab_hover = { bg_color = "#22273B", fg_color = "#ffffff" },
-			new_tab = { bg_color = "#151726", fg_color = "#090909" },
+			new_tab = { bg_color = "#22273B", fg_color = "#fff" },
 			new_tab_hover = { bg_color = "#6791c9", fg_color = "#090909" },
 		},
 	},
