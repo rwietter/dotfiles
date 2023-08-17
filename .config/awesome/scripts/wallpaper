@@ -6,7 +6,7 @@
 dir="${HOME}/Imagens/Wallpapers/"
 unsplash_dir="${XDG_PICTURES_DIR:-${HOME}/img}/unsplash"
 default="$dir/8579cdf9-c136-45e6-8a7e-dc61bced0d35.jpg"
-ultima="/home/rwietter/Imagens/Wallpapers/vibes.jpg"
+ultima="/home/rwietter/Imagens/Wallpapers/arch-black-4k.png"
 modo="--bg-fill"
 indice=0
 i=0

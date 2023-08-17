@@ -1,12 +1,10 @@
 -- tags  / layouts
 -- ~~~~~~~~~~~~~~~
-
 -- requirements
 -- ~~~~~~~~~~~~
-local awful  = require("awful")
+local awful = require("awful")
 local lmachi = require("mods.layout-machi")
-local bling  = require("mods.bling")
-
+local bling = require("mods.bling")
 
 -- misc/vars
 -- ~~~~~~~~~
@@ -14,36 +12,42 @@ local bling  = require("mods.bling")
 -- bling layouts
 local mstab = bling.layout.mstab
 local equal = bling.layout.equalarea
-local deck  = bling.layout.deck
+local deck = bling.layout.deck
 
 -- layout machi
 lmachi.editor.nested_layouts = {
-    ["I"] = deck,
-    ["II"] = awful.layout.suit.spiral,
-    ["III"] = awful.layout.suit.fair,
-    ["IV"] = awful.layout.suit.fair.horizontal
+	["I"] = deck,
+	["II"] = awful.layout.suit.spiral,
+	["III"] = awful.layout.suit.fair,
+	["IV"] = awful.layout.suit.fair.horizontal,
+	["V"] = awful.layout.suit.tile,
 }
 
 -- names/numbers of layouts
-local names = { "I", "II", "III", "IV" }
-local l     = awful.layout.suit
-
+local names = {"I", "II", "III", "IV", "V"}
+local l = awful.layout.suit
 
 -- Configurations
 -- **************
 
 -- default tags
-tag.connect_signal("request::default_layouts", function()
-
-    awful.layout.append_default_layouts({
-        l.tile, l.floating, lmachi.default_layout, equal, mstab, deck
-    })
-
-end)
-
+tag.connect_signal(
+	"request::default_layouts",
+	function()
+		awful.layout.append_default_layouts({l.tile, l.floating, lmachi.default_layout, equal, mstab, deck})
+	end
+)
 
 -- set tags
-screen.connect_signal("request::desktop_decoration", function(s)
-    screen[s].padding = { left = 0, right = 0, top = 0, bottom = 0 }
-    awful.tag(names, s, awful.layout.layouts[1])
-end)
+screen.connect_signal(
+	"request::desktop_decoration",
+	function(s)
+		screen[s].padding = {
+			left = 0,
+			right = 0,
+			top = 0,
+			bottom = 0
+		}
+		awful.tag(names, s, awful.layout.layouts[1])
+	end
+)

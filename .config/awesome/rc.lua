@@ -1,6 +1,7 @@
 --[[
     A random rice. i guess.
     source: https://github.com/saimoomedits/dotfiles
+		customized by: https://github.com/rwietter
 ]]
 
 
@@ -16,13 +17,12 @@ user_likes      = {
     term        = "wezterm",
     editor      = "wezterm -e " .. "nvim",
     code        = "code",
-    web         = "chromium",
-    music       = "wezterm --class 'music' --config-file " .. home_var .. "/.config/alacritty/ncmpcpp.yml -e ncmpcpp ",
+    web         = "brave-browser-dev",
     files       = "nautilus",
     ss          = "maim -s -m 10 -f png -b 0 -u -o ~/Imagens/Prints/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -i ~/.local/share/icons/customer-service.png -u normal -t 9000 'Screenshot taken and saved to ~/Imagens/Prints'",
 
     -- your profile
-    username = "Maurício", -- os.getenv("USER")
+    username = os.getenv("USER"),
     userdesc = "@rwietter"
 }
 
