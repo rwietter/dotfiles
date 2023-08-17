@@ -53,8 +53,16 @@ awful.keyboard.append_global_keybindings({
 	end, { description = "exec color picker", group = "launcher" }),
 
 	awful.key({ modkey }, "w", function()
-		awful.spawn(home_var .. "/.config/awesome/scripts/wallpaper", false)
+		awful.spawn(home_var .. "/.config/awesome/scripts/wallpaper p", { args = { "x" } }, false)
 	end, { description = "exec random wallpaper", group = "launcher" }),
+
+	awful.key({ modkey }, "e", function()
+		awful.spawn(home_var .. "/.config/awesome/scripts/wallpaper d", false)
+	end, { description = "set wallpaper from unsplash", group = "launcher" }),
+
+	awful.key({ modkey }, "Delete", function()
+		awful.spawn(home_var .. "/.config/awesome/scripts/wallpaper dd", false)
+	end, { description = "set wallpaper from unsplash", group = "launcher" }),
 
 	awful.key({ modkey }, "a", function() cc_toggle(screen.primary) end,
 		{ description = "toggle control center", group = "launcher" }),
@@ -69,7 +77,7 @@ awful.keyboard.append_global_keybindings({
 awful.keyboard.append_global_keybindings({
 
 	awful.key({ alt }, "u",
-		function() awful.spawn("brightnessctl set 5%+ -q", false) end,
+		function() awful.spawn("brightnessctl set 5%"+ "-q", false) end,
 		{ description = "increase brightness", group = "control" }),
 
 	awful.key({ alt }, "d",
