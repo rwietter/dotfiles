@@ -71,9 +71,8 @@ export PATH=~/.npm-global/bin:$PATH
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/ZSH/zsh-wakatime/zsh-wakatime.plugin.zsh
-# source ~/ZSH/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/ZSH/completion.zsh
 # source ~/ZSH/prompt.zsh
