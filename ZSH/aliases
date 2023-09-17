@@ -2,6 +2,14 @@
 # ALIASES
 # ----------------------------------------------------------------------------##
 
+# Isso pode evitar ataques de phishing, por exemplo, se
+# você criar um script que se chama sudo e colocar ele em um
+# diretório que está no PATH do usuário, quando ele digitar sudo, ele
+# vai executar o seu script e não o comando sudo. Para evitar isso,
+# você pode criar um alias para o comando sudo, assim, mesmo que o
+# usuário digite sudo, ele vai executar o comando /bin/sudo.
+alias sudo='/bin/sudo'
+
 # Copy
 alias x='xsel -i -b'
 alias cv='xclip -sel clip'
@@ -11,6 +19,7 @@ alias v='xclip -o'
 alias kl='ps -efw | grep php | grep -v grep | awk '{print $2}' | xargs kill'
 alias k9='pkill -9'
 alias ft='ferris-fetch'
+
 
 ### Alias Hardware
 alias tlp='sudo tlp-stat'
@@ -23,7 +32,6 @@ alias cp='cp -v'
 alias cat="bat --color always --plain"
 alias sr='source ~/.zshrc'
 alias mu='sudo reflector --verbose -c Brazil --sort rate --save /etc/pacman.d/mirrorlist'
-alias pls='sudo'
 
 ### Alias Nmap
 
@@ -132,8 +140,12 @@ alias dkirm='docker image rm --force'
 alias dkcls='docker container ls'
 alias dkcls='docker container ls -a'
 alias dklsrm='docker container rm --force'
+alias cls='docker system prune --volumes'
 
 ## Systemd
 alias suspend="systemctl suspend"
 alias power="systemctl power"
 alias init="git init"
+
+# IPFS
+alias irmblocks='ipfs repo gc'

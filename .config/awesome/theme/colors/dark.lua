@@ -6,11 +6,13 @@ local colors = {}
 -- foreground color
 colors.foreground = "#ccd0d9"
 
+colors.emphasis = "#ffffff"
+
 -- backgrounds
-colors.bg_color = "#151726"
-colors.bg_2     = "#1A1C30"
-colors.bg_3     = "#202339"
-colors.bg_4     = "#1A1C2C"
+colors.bg_color = "#11111B"
+colors.bg_2     = "#151726"
+colors.bg_3     = "#1A1C30"
+colors.bg_4     = "#202339"
 -- colors.bg_color = "#151726"
 -- colors.bg_2     = "#1A1C30"
 -- colors.bg_3     = "#202339"

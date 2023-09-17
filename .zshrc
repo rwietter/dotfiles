@@ -1,15 +1,25 @@
 export EDITOR='code'
-export git_current_branch="git -C "$1" branch | sed  '/^\*/!d;s/\* //"
+
+export gcb="git -C "$1" branch | sed  '/^\*/!d;s/\* //"
+export PATH="$PATH:/home/rwietter/.bin"
+
+export C_INCLUDE_PATH=/usr/include/tirpc
+export CPLUS_INCLUDE_PATH=/usr/include/tirpc
+export LD_LIBRARY_PATH=/usr/lib
+export LD_LIBRARY_PATH=/usr/lib/jvm/java-17-openjdk/lib/libnio.so
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-source /usr/share/powerline/bindings/zsh/powerline.zsh
+# ~~~~~~~~~~~~ Powerline Prompt ~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# source /usr/share/powerline/bindings/zsh/powerline.zsh
 setxkbmap -model abnt2 -layout br -variant abnt2
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~ LS_COLORS ~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 eval $(dircolors ~/.dir_colors)
-alias ls='ls --color=auto'
-alias ll='ls -alh --color=auto'
+alias ls='eza'
+alias ll='eza --octal-permissions -lha'
 alias grep='grep --color=auto'
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -25,7 +35,7 @@ alias grep='grep --color=auto'
 export PATH=$PATH:$(yarn global bin)
 export PATH=~/.npm-global/bin:$PATH
 export JAVA_HOME='/usr/lib/jvm/java-11-openjdk'
-# export ANDROID_SDK_ROOT='/opt/android-sdk'
+export ANDROID_SDK_ROOT='/opt/android-sdk'
 export ANDROID_HOME='~/Android/Sdk'
 JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions'
 export PATH="$PATH:`pwd`/flutter/bin"
@@ -66,17 +76,25 @@ export VISUAL=code
 export PATH="$(yarn global bin):$PATH"
 export PATH=~/.npm-global/bin:$PATH
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/home/rwietter/.bun/_bun" ] && source "/home/rwietter/.bun/_bun"
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ PLUGINS ~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/ZSH/zsh-wakatime/zsh-wakatime.plugin.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/ZSH/completion.zsh
-# source ~/ZSH/prompt.zsh
+source ~/ZSH/prompt.zsh
 # source ~/ZSH/zsh_functions
+wd() {
+    . ~/ZSH/wd/wd.sh
+}
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ ALIASES ~~~~~~~~~~~~~~~~~~~
@@ -87,8 +105,12 @@ test -r ~/ZSH/aliases-git && source ~/ZSH/aliases-git
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ Options ~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 setopt AUTO_CD
 setopt NO_CASE_GLOB
+setopt NO_CASE_MATCH # case insensitive
+setopt NO_HUP # don't kill jobs on exit
+setopt NO_LIST_BEEP # no beep on error
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ History ~~~~~~~~~~~~~~~~~~~
@@ -97,7 +119,7 @@ HISTSIZE=2000
 HISTFILE=~/.zsh_history
 setopt SHARE_HISTORY
 SAVEHIST=2000
-HISTDUP=erase
+HISTDUP=erase # erase duplicates in the history file
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
 setopt EXTENDED_HISTORY
@@ -130,21 +152,21 @@ setopt COMPLETE_ALIASES
 setopt PUSHD_MINUS
 
 # Loading some useful modules:
-#zmodload -i zsh/complete
+zmodload -i zsh/complete
 zmodload -i zsh/mapfile
 zmodload -i zsh/mathfunc
-#zmodload -i zsh/complist
+zmodload -i zsh/complist
 zmodload -i zsh/curses
 zmodload -i zsh/datetime
 zmodload -i zsh/terminfo
-#zmodload -i zsh/zle
+zmodload -i zsh/zle
 
 # Loading module zmv
-#autoload -U zmv
+autoload -U zmv
 
 # Enabling self-correction:
-# setopt correct
-# setopt correct_all
+setopt correct
+setopt correct_all
 
 # Allows the use of wildcards: *?_-.[]~=/&;!#$%^(){}<>
 setopt extended_glob
@@ -160,9 +182,9 @@ setopt auto_list
 setopt auto_menu
 setopt case_glob
 setopt list_types
-#setopt glob_complete
+setopt glob_complete
 setopt menu_complete
-#setopt complete_in_word
+setopt complete_in_word
 setopt complete_aliases
 autoload -Uz compinit promptinit vcs_info
 compinit
@@ -393,7 +415,7 @@ ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=red,bold'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=yellow,bold'
 ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=magenta,bold'
 
-#ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=blue,bold'
 
 # Declare the variable
 typeset -A ZSH_HIGHLIGHT_STYLES
@@ -429,41 +451,4 @@ ZSH_HIGHLIGHT_STYLES[cursor]='bg=cyan'
 #The style for the whole line
 ZSH_HIGHLIGHT_STYLES[line]='bold'
 TERM=xterm-256color
-
-export PATH="$PATH:/home/rwietter/.bin"
-
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/home/rwietter/.micromamba/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/rwietter/micromamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/rwietter/micromamba/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/rwietter/micromamba/etc/profile.d/conda.sh" ]; then
-        . "/home/rwietter/micromamba/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/rwietter/micromamba/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-# bun completions
-[ -s "/home/rwietter/.bun/_bun" ] && source "/home/rwietter/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=$PATH:/home/rwietter/.spicetify

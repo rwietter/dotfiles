@@ -7,9 +7,9 @@
 return {
 	font = "Roboto",
 	titlebar_position = "bottom",
-	gaps = 5,
-	border_width = 2,
-	round_corners = 4,
+	gaps = 4,
+	border_width = 4,
+	round_corners = 8,
 	bar_size = 54,
 	scheme = "dark",
 	color_scheme = "dark"

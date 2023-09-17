@@ -6,6 +6,8 @@ local colors = {}
 -- foreground color
 colors.foreground = "#000000"
 
+colors.emphasis     = "#000000"
+
 -- backgrounds
 colors.bg_color = "#ffffff"
 colors.bg_2     = "#F3F4F9"

@@ -5,8 +5,20 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
--- local font_name = "AestheticIosevka Nerd Font Mono"
-local font_name = "PragmataPro for Powerline"
+local fonts = {
+	pragmata = "PragmataPro for Powerline",
+	iosevka = "Iosevka Nerd Font Mono",
+	aesthetic = "AestheticIosevka Nerd Font Mono",
+}
+
+local font_name = fonts.aesthetic
+
+local themes = {
+	rose_pine_dark = 'rose-pine',
+	rose_pine_light = 'rose-pine-dawn',
+	night_owlish_light = 'Night Owlish Light',
+	catppuccin_mocha = 'Catppuccin Mocha',
+}
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
@@ -139,17 +151,15 @@ return {
 		},
 	},
 
-	-- Aesthetic Night Colorscheme
 	bold_brightens_ansi_colors = true,
-	color_scheme = 'rose-pine',
-	-- color_scheme = 'rose-pine-dawn',
-	-- color_scheme = 'Night Owlish Light',
+
+	color_scheme = themes.catppuccin_mocha,
 
 	use_fancy_tab_bar = false,
 
 	colors = {
 		-- foreground = "#edeff0",
-		-- background = "#11161D",
+		background = "#11111B",
 		-- cursor_bg = "#edeff0",
 		-- cursor_fg = "#edeff0",
 		-- cursor_border = "#232526",

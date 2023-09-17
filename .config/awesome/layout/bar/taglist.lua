@@ -68,7 +68,7 @@ local get_taglist = function(s)
 			border_width = dpi(0),
 			border_color = beautiful.bg_3,
 			widget = wibox.container.background,
-			bg = beautiful.bg_3,
+			bg = beautiful.bg_color .. "90",
 			fg = beautiful.fg_color,
 			font = beautiful.font_var .. "10",
 			align = "center",
@@ -87,7 +87,7 @@ local get_taglist = function(s)
 						font = beautiful.font_var .. "10",
 						align = "center",
 						markup = "DD",
-						valign = "center",
+						valign = "center"
 					},
 					margins = dpi(8),
 					widget = wibox.container.margin

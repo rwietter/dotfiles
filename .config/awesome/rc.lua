@@ -2,8 +2,15 @@
     A random rice. i guess.
     source: https://github.com/saimoomedits/dotfiles
 		customized by: https://github.com/rwietter
+		- Features
+			- System monitor panel
+			- Script for wallpaper
+			- Script for increase/decrease picom terminal opacity
+			- Monphase script
 ]]
 
+-- Disable notification module instead of dunst
+package.loaded["naughty.dbus"] = {}
 
 pcall(require, "luarocks.loader")
 

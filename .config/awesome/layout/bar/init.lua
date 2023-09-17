@@ -261,8 +261,8 @@ awful.screen.connect_for_each_screen(
 				visible = true,
 				ontop = false,
 				type = "dock",
-				width = dpi(54),
-				shape = helpers.rrect(beautiful.rounded - 5),
+				width = dpi(50),
+				shape = helpers.rrect(beautiful.rounded - 4),
 				bg = beautiful.bg_color,
 				height = screen_height - beautiful.useless_gap * 4
 			}

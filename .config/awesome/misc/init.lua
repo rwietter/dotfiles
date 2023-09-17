@@ -25,7 +25,8 @@ end
 
 
 local applications = {
-    "picom --config $HOME/.config/awesome/misc/picom/panthom.conf &",
+      "picom --config $HOME/.config/picom.conf &"
+   -- "picom --config $HOME/.config/awesome/misc/picom/panthom.conf &",
 }
 
 for _, prc in ipairs(applications) do

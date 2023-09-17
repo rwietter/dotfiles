@@ -20,11 +20,10 @@ lmachi.editor.nested_layouts = {
 	["II"] = awful.layout.suit.spiral,
 	["III"] = awful.layout.suit.fair,
 	["IV"] = awful.layout.suit.fair.horizontal,
-	["V"] = awful.layout.suit.tile,
 }
 
 -- names/numbers of layouts
-local names = {"I", "II", "III", "IV", "V"}
+local names = {"I", "II", "III", "IV"}
 local l = awful.layout.suit
 
 -- Configurations

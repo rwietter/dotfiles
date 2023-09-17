@@ -115,8 +115,8 @@ theme.fg_minimize = theme.bg_2
 -- ~~~~~~~~~~~~~~~~~
 theme.useless_gap = dpi(ui_vars.gaps) or 7
 theme.border_width = dpi(ui_vars.border_width)
-theme.border_color_normal = theme.bg_color
-theme.border_color_active = theme.bg_color
+theme.border_color_normal = colors.emphasis
+theme.border_color_active = colors.emphasis
 
 -- notifs
 -- ~~~~~~
