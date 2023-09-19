@@ -26,6 +26,10 @@ alias grep='grep --color=auto'
 # ~~~~~~~~~~~~~~~~~ Export PATH ~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completio
+
 # export http_proxy=proxy.ufsm.br:8080
 # export https_proxy=$http_proxy
 # export ftp_proxy=$http_proxy
@@ -452,3 +456,7 @@ ZSH_HIGHLIGHT_STYLES[cursor]='bg=cyan'
 ZSH_HIGHLIGHT_STYLES[line]='bold'
 TERM=xterm-256color
 export PATH=$PATH:/home/rwietter/.spicetify
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

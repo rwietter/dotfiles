@@ -8,8 +8,8 @@ return {
 	font = "Roboto",
 	titlebar_position = "bottom",
 	gaps = 4,
-	border_width = 4,
-	round_corners = 8,
+	border_width = 0, -- adds border around the window
+	round_corners = 8, -- adds round corners to the window
 	bar_size = 54,
 	scheme = "dark",
 	color_scheme = "dark"
