@@ -1,5 +1,3 @@
-export EDITOR='code'
-
 export gcb="git -C "$1" branch | sed  '/^\*/!d;s/\* //"
 export PATH="$PATH:/home/rwietter/.bin"
 
@@ -11,7 +9,7 @@ export LD_LIBRARY_PATH=/usr/lib/jvm/java-17-openjdk/lib/libnio.so
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~ Powerline Prompt ~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# source /usr/share/powerline/bindings/zsh/powerline.zsh
+source /usr/share/powerline/bindings/zsh/powerline.zsh
 setxkbmap -model abnt2 -layout br -variant abnt2
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,8 +25,8 @@ alias grep='grep --color=auto'
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completio
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completio
 
 # export http_proxy=proxy.ufsm.br:8080
 # export https_proxy=$http_proxy
@@ -42,7 +40,7 @@ export JAVA_HOME='/usr/lib/jvm/java-11-openjdk'
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export ANDROID_HOME='~/Android/Sdk'
 JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions'
-export PATH="$PATH:`pwd`/flutter/bin"
+export PATH="$PATH:$(pwd)/flutter/bin"
 
 # react-native
 export ANDROID_HOME='~/Android/Sdk'
@@ -55,7 +53,7 @@ export CHROME_EXECUTABLE="/bin/chromium"
 export PATH="$PATH:/usr/lib/dart/bin"
 export FLYCTL_INSTALL="/home/rwietter/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
-echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
+echo 'export PATH="$PATH:/usr/lib/dart/bin"' >>~/.profile
 
 # Haskell
 export PATH="$HOME/.cabal/bin:$PATH"
@@ -75,8 +73,8 @@ export PATH=$PATH:~/.config/composer/vendor/laravel/installer/bin
 
 # Vim
 export PATH=~/.local/bin/lvim:$PATH
-export EDITOR=code
-export VISUAL=code
+export EDITOR=vim
+export VISUAL=vim
 export PATH="$(yarn global bin):$PATH"
 export PATH=~/.npm-global/bin:$PATH
 
@@ -94,7 +92,7 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 # source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/ZSH/zsh-wakatime/zsh-wakatime.plugin.zsh
 source ~/ZSH/completion.zsh
-source ~/ZSH/prompt.zsh
+# source ~/ZSH/prompt.zsh # powerline alternative
 # source ~/ZSH/zsh_functions
 wd() {
     . ~/ZSH/wd/wd.sh
@@ -113,8 +111,8 @@ test -r ~/ZSH/aliases-git && source ~/ZSH/aliases-git
 setopt AUTO_CD
 setopt NO_CASE_GLOB
 setopt NO_CASE_MATCH # case insensitive
-setopt NO_HUP # don't kill jobs on exit
-setopt NO_LIST_BEEP # no beep on error
+setopt NO_HUP        # don't kill jobs on exit
+setopt NO_LIST_BEEP  # no beep on error
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ History ~~~~~~~~~~~~~~~~~~~
@@ -130,9 +128,9 @@ setopt EXTENDED_HISTORY
 setopt HIST_VERIFY
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST # expire duplicates first
-setopt HIST_IGNORE_DUPS # do not store duplications
-setopt HIST_FIND_NO_DUPS #ignore duplicates when searching
-setopt HIST_REDUCE_BLANKS # removes blank lines from history
+setopt HIST_IGNORE_DUPS       # do not store duplications
+setopt HIST_FIND_NO_DUPS      #ignore duplicates when searching
+setopt HIST_REDUCE_BLANKS     # removes blank lines from history
 setopt autopushd pushdsilent pushdtohome
 setopt prompt_subst
 setopt appendhistory
@@ -211,7 +209,7 @@ zstyle ':completion:*' show-completer
 zstyle ':completion:*' rehash true
 
 # Colored stripe complementation:
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors 'reply=( "=(#b)(*$VAR)(?)*=00=$color[green]=$color[bg-green]" )'
 zstyle ':completion:*:*:*:*:hosts' list-colors '=*=30;41'
 zstyle ':completion:*:*:*:*:users' list-colors '=*=$color[green]=$color[red]'
@@ -338,13 +336,13 @@ key[Right]=${terminfo[kcuf1]}
 key[PageUp]=${terminfo[kpp]}
 key[PageDown]=${terminfo[knp]}
 
-[[ -n "${key[Home]}"    ]]  && bindkey  "${key[Home]}"    beginning-of-line
-[[ -n "${key[End]}"     ]]  && bindkey  "${key[End]}"     end-of-line
-[[ -n "${key[Insert]}"  ]]  && bindkey  "${key[Insert]}"  overwrite-mode
-[[ -n "${key[Delete]}"  ]]  && bindkey  "${key[Delete]}"  delete-char
-[[ -n "${key[Up]}"      ]]  && bindkey  "${key[Up]}"      up-line-or-beginning-search
-[[ -n "${key[Down]}" ]] && bindkey "${key[Down]}"         down-line-or-beginning-search
-[[ -n "${key[Left]}"    ]]  && bindkey  "${key[Left]}"    backward-char
+[[ -n "${key[Home]}" ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n "${key[End]}" ]] && bindkey "${key[End]}" end-of-line
+[[ -n "${key[Insert]}" ]] && bindkey "${key[Insert]}" overwrite-mode
+[[ -n "${key[Delete]}" ]] && bindkey "${key[Delete]}" delete-char
+[[ -n "${key[Up]}" ]] && bindkey "${key[Up]}" up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey "${key[Down]}" down-line-or-beginning-search
+[[ -n "${key[Left]}" ]] && bindkey "${key[Left]}" backward-char
 [[ -n "${key[Right]}" ]] && bindkey "${key[Right]}" forward-char
 
 #--------------------------------------------------------------------#
@@ -413,14 +411,6 @@ HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=default,fg=white,bold'
 # Is a global variable that defines how the command history will be searched for your query. Its default value causes this script to perform a case-insensitive search
 HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS='i'
 
-# To define styles for nested brackets up to level 4
-ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=blue,bold'
-ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=red,bold'
-ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=yellow,bold'
-ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=magenta,bold'
-
-ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=blue,bold'
-
 # Declare the variable
 typeset -A ZSH_HIGHLIGHT_STYLES
 
@@ -432,18 +422,6 @@ ZSH_HIGHLIGHT_STYLES[command]='fg=red'
 ZSH_HIGHLIGHT_STYLES[precommand]='fg=blue'
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=127'
 ZSH_HIGHLIGHT_STYLES[redirection]='fg=167'
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=253'
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=208'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=135'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=123'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=105'
-ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=14'
-ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=7'
-ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=30'
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=15'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=220'
-# To have paths colored instead of underlined
 ZSH_HIGHLIGHT_STYLES[path]='fg=cyan'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=208'
 ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=161'
@@ -458,8 +436,8 @@ TERM=xterm-256color
 export PATH=$PATH:/home/rwietter/.spicetify
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # pnpm
 export PNPM_HOME="/home/rwietter/.local/share/pnpm"

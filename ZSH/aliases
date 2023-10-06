@@ -149,3 +149,5 @@ alias init="git init"
 
 # IPFS
 alias irmblocks='ipfs repo gc'
+alias lsa='ls -lha | sort'
+alias lsd='ls -lha | sort -r'
