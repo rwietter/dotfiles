@@ -18,6 +18,7 @@ local themes = {
 	rose_pine_light = 'rose-pine-dawn',
 	night_owlish_light = 'Night Owlish Light',
 	catppuccin_mocha = 'Catppuccin Mocha',
+	rouge = 'Rouge 2',
 }
 
 return {
@@ -153,7 +154,7 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
-	color_scheme = themes.catppuccin_mocha,
+	color_scheme = themes.rose_pine_dark,
 
 	use_fancy_tab_bar = false,
 
