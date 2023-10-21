@@ -11,13 +11,14 @@ local fonts = {
 	aesthetic = "AestheticIosevka Nerd Font Mono",
 }
 
-local font_name = fonts.aesthetic
+local font_name = fonts.pragmata
 
 local themes = {
 	rose_pine_dark = 'rose-pine',
 	rose_pine_light = 'rose-pine-dawn',
 	night_owlish_light = 'Night Owlish Light',
 	catppuccin_mocha = 'Catppuccin Mocha',
+	nebula_16 = 'Nebula (base16)',
 	rouge = 'Rouge 2',
 }
 
@@ -154,7 +155,7 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
-	color_scheme = themes.rose_pine_dark,
+	color_scheme = themes.rouge,
 
 	use_fancy_tab_bar = false,
 

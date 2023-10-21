@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+# [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 export gcb="git -C "$1" branch | sed  '/^\*/!d;s/\* //"
 export PATH="$PATH:/home/rwietter/.bin"
 
@@ -346,7 +348,6 @@ key[PageDown]=${terminfo[knp]}
 [[ -n "${key[Right]}" ]] && bindkey "${key[Right]}" forward-char
 
 #--------------------------------------------------------------------#
-# Global Configuration Variables                                     #
 #--------------------------------------------------------------------#
 
 # Color to use when highlighting suggestion
@@ -443,3 +444,6 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="/home/rwietter/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

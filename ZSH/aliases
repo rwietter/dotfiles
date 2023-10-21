@@ -151,3 +151,5 @@ alias init="git init"
 alias irmblocks='ipfs repo gc'
 alias lsa='ls -lha | sort'
 alias lsd='ls -lha | sort -r'
+
+alias teel='bash ~/Documentos/teel.sh "$(pwd)"'

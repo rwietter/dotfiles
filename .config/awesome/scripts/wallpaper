@@ -6,7 +6,7 @@
 dir="${HOME}/Imagens/Wallpapers/"
 unsplash_dir="${XDG_PICTURES_DIR:-${HOME}/img}/unsplash"
 default="$dir/8579cdf9-c136-45e6-8a7e-dc61bced0d35.jpg"
-ultima="/home/rwietter/Imagens/Wallpapers/9217e7f6-5052-4394-80a0-af7dabe47a2f.jpg"
+ultima="/home/rwietter/Imagens/Wallpapers/greensock.jpg"
 modo="--bg-fill"
 indice=0
 i=0

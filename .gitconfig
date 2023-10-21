@@ -1,6 +1,8 @@
 [user]
 	email = rwietter@zohomail.com
 	name = rwietter
+	# email = mauricio.witter@acad.ufsm.br
+	# name = rwietters
 	defaultBranch = main
 [init]
 	defaultBranch = main
@@ -112,20 +114,23 @@
 	# Usage: git unstageall
 	unstage = !git reset HEAD -- . && git checkout -- .
 
-	# Undo last commit
-	# Usage: git undo
-	undo = checkout --
-
-	# Rollback to a commit
-	# Usage: git rollback <commit>
-	rollback = reset --soft HEAD~1
-
 	# Count commits not pushed
 	# Usage: git count
-	crep = !git log --branches --not --remotes --oneline | wc -l
+	pr = !git log --branches --not --remotes --oneline | wc -l
 
 	# Show commits not pushed
 	# Usage: git lrep
-	lrep = !git log --branches --not --remotes --oneline
+	pl = !git log --branches --not --remotes --oneline
+
+	undo = !git checkout -- . # Isso vai desfazer todas as alterações feitas antes de serem adicionadas ao stage (git add).
+	rollback = !git reset --soft HEAD~1 # Isso vai desfazer o último commit, mas as alterações feitas antes de serem adicionadas ao stage (git add) vão continuar no stage.
+
+	fup = !git fetch upstream && git rebase upstream/main # Isso vai atualizar o seu repositório local com o repositório upstream.
+
 [push]
 	autoSetupRemote = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
