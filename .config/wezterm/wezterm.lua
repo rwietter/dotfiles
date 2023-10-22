@@ -8,10 +8,11 @@ end
 local fonts = {
 	pragmata = "PragmataPro for Powerline",
 	iosevka = "Iosevka Nerd Font Mono",
+	fantasque = "Fantasque Sans Mono",
 	aesthetic = "AestheticIosevka Nerd Font Mono",
 }
 
-local font_name = fonts.pragmata
+local font_name = fonts.fantasque
 
 local themes = {
 	rose_pine_dark = 'rose-pine',
@@ -20,6 +21,7 @@ local themes = {
 	catppuccin_mocha = 'Catppuccin Mocha',
 	nebula_16 = 'Nebula (base16)',
 	rouge = 'Rouge 2',
+	palenight = 'Palenight (Gogh)',
 }
 
 return {
@@ -155,7 +157,7 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
-	color_scheme = themes.rouge,
+	color_scheme = themes.catppuccin_mocha,
 
 	use_fancy_tab_bar = false,
 
