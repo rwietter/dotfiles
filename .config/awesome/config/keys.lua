@@ -705,7 +705,7 @@ client.connect_signal(
                     }
                 ),
                 awful.key(
-                    {alt, ctrl},
+                    {alt},
                     "Return",
                     function(c)
                         c:swap(awful.client.getmaster())

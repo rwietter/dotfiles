@@ -10,9 +10,10 @@ local fonts = {
 	iosevka = "Iosevka Nerd Font Mono",
 	fantasque = "Fantasque Sans Mono",
 	aesthetic = "AestheticIosevka Nerd Font Mono",
+	geist = "Geist Mono",
 }
 
-local font_name = fonts.fantasque
+local font_name = fonts.pragmata
 
 local themes = {
 	rose_pine_dark = 'rose-pine',
@@ -22,6 +23,7 @@ local themes = {
 	nebula_16 = 'Nebula (base16)',
 	rouge = 'Rouge 2',
 	palenight = 'Palenight (Gogh)',
+	catppuccin_macchiato = 'Catppuccin Macchiato',
 }
 
 return {
@@ -46,8 +48,8 @@ return {
 		},
 	},
 	warn_about_missing_glyphs = true,
-	font_size = 12,
-	line_height = 1.3,
+	font_size = 14,
+	line_height = 1.4,
 
 	-- Cursor style
 	default_cursor_style = "BlinkingUnderline",
@@ -157,9 +159,7 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
-	color_scheme = themes.catppuccin_mocha,
-
-	use_fancy_tab_bar = false,
+	color_scheme = themes.rose_pine_dark,
 
 	colors = {
 		-- foreground = "#edeff0",
@@ -180,20 +180,20 @@ return {
 				fg_color = "#ffffff",
 				italic = false,
 			},
-			background = "#22273B",
-			inactive_tab = { bg_color = "#ffffff", fg_color = "#000000" },
+			background = "#181926",
+			inactive_tab = { bg_color = "#181926", fg_color = "#A4A6A9" },
 			inactive_tab_hover = { bg_color = "#22273B", fg_color = "#ffffff" },
 			new_tab = { bg_color = "#22273B", fg_color = "#fff" },
-			new_tab_hover = { bg_color = "#6791c9", fg_color = "#090909" },
+			new_tab_hover = { bg_color = "#A1D391", fg_color = "#090909" },
 		},
 	},
 
 	-- Padding
 	window_padding = {
-		left = 25,
-		right = 25,
-		top = 30,
-		bottom = 30,
+		left = 20,
+		right = 20,
+		top = 20,
+		bottom = 20,
 	},
 
 	-- Tab Bar
@@ -201,6 +201,7 @@ return {
 	hide_tab_bar_if_only_one_tab = true,
 	show_tab_index_in_tab_bar = true,
 	tab_bar_at_bottom = true,
+	use_fancy_tab_bar = false,
 	
 
 	-- General

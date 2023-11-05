@@ -42,7 +42,7 @@ ruled.client.connect_signal("request::rules", function()
     ruled.client.append_rule {
         id         = "floating",
         rule_any   = {
-            class    = { "Sxiv", "Zathura", "Galculator", "Xarchiver" },
+            class    = { "Sxiv", "Galculator", "Xarchiver" },
             role     = { "pop-up" },
             instance = { "spad", "discord", "music" }
         },

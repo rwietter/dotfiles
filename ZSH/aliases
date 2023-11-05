@@ -153,3 +153,22 @@ alias lsa='ls -lha | sort'
 alias lsd='ls -lha | sort -r'
 
 alias teel='bash ~/Documentos/teel.sh "$(pwd)"'
+alias rss='nohup xdg-open http://localhost:7070/ &>/dev/null & disown'
+alias k9t='cd $HOME/github/prod/kill-tabs && yarn start && cd --'
+
+# ---- my awk scripts -----
+alias mem='ps auxe --sort=-%mem | $HOME/Público/DSA/Languages/awk/mem.awk | head -n 15 | spin'
+alias memd='ps -A --sort -rsz -o comm,pmem,pcpu|awk "NR<=20" | spin'
+alias key="xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf \"%-3s %s\n\", $5, $8 }'"
+
+calc () {
+  awk "BEGIN{ print $* }"
+}
+
+# hash() {
+#   echo -n "$1" | base64
+# }
+
+# decode() {
+#   echo -n "$1" | base64 -d
+# }

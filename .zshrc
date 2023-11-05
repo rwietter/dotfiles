@@ -11,9 +11,19 @@ export LD_LIBRARY_PATH=/usr/lib/jvm/java-17-openjdk/lib/libnio.so
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~ Powerline Prompt ~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-source /usr/share/powerline/bindings/zsh/powerline.zsh
 setxkbmap -model abnt2 -layout br -variant abnt2
 
+export ZPLUG_HOME=/home/rwietter/.zplug
+ZSH_THEME="dracula"
+
+source ~/.zplug/init.zsh
+zplug load
+zplug "modules/prompt", from:prezto, defer:2
+zplug "zdharma/fast-syntax-highlighting", defer:2
+# zplug "dracula/zsh", as:theme
+zplug load
+
+source /usr/share/powerline/bindings/zsh/powerline.zsh
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~ LS_COLORS ~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,16 +117,6 @@ test -r ~/ZSH/aliases && source ~/ZSH/aliases
 test -r ~/ZSH/aliases-git && source ~/ZSH/aliases-git
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# ~~~~~~~~~~~~~~~~~~~ Options ~~~~~~~~~~~~~~~~~~~
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-setopt AUTO_CD
-setopt NO_CASE_GLOB
-setopt NO_CASE_MATCH # case insensitive
-setopt NO_HUP        # don't kill jobs on exit
-setopt NO_LIST_BEEP  # no beep on error
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~ History ~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 HISTSIZE=2000
@@ -124,185 +124,9 @@ HISTFILE=~/.zsh_history
 setopt SHARE_HISTORY
 SAVEHIST=2000
 HISTDUP=erase # erase duplicates in the history file
-setopt INC_APPEND_HISTORY
-setopt HIST_IGNORE_SPACE
-setopt EXTENDED_HISTORY
-setopt HIST_VERIFY
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_EXPIRE_DUPS_FIRST # expire duplicates first
-setopt HIST_IGNORE_DUPS       # do not store duplications
-setopt HIST_FIND_NO_DUPS      #ignore duplicates when searching
-setopt HIST_REDUCE_BLANKS     # removes blank lines from history
-setopt autopushd pushdsilent pushdtohome
-setopt prompt_subst
-setopt appendhistory
-setopt sharehistory
-setopt incappendhistory
-setopt nohashdirs
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
-
-# You may need to manually set your language environment
-export LANG=pt_BR.UTF-8
-
-# Remove duplicate entries
-setopt PUSHD_IGNORE_DUPS
-
-# Autocomplete for aliases
-setopt COMPLETE_ALIASES
-
-## This reverts the +/- operators.
-setopt PUSHD_MINUS
-
-# Loading some useful modules:
-zmodload -i zsh/complete
-zmodload -i zsh/mapfile
-zmodload -i zsh/mathfunc
-zmodload -i zsh/complist
-zmodload -i zsh/curses
-zmodload -i zsh/datetime
-zmodload -i zsh/terminfo
-zmodload -i zsh/zle
-
-# Loading module zmv
-autoload -U zmv
-
-# Enabling self-correction:
-setopt correct
-setopt correct_all
-
-# Allows the use of wildcards: *?_-.[]~=/&;!#$%^(){}<>
-setopt extended_glob
-
-# Allowing self cd (There is no need to use the command cd):
-setopt cdable_vars
-setopt auto_pushd
-setopt pushd_ignore_dups
-setopt pushd_silent
-
-# Auto-complete with <TAB>
-setopt auto_list
-setopt auto_menu
-setopt case_glob
-setopt list_types
-setopt glob_complete
-setopt menu_complete
-setopt complete_in_word
-setopt complete_aliases
-autoload -Uz compinit promptinit vcs_info
-compinit
-promptinit
-autoload -U colors && colors
-
-# Expansion of variables like in bash CTRL+ALT+E
-zstyle ':completion:*' completer _expand _complete
-autoload -Uz compinit
-compinit
-
-# Misc
-#setopt ZLE
-
-# Enabling verbose mode:
-zstyle ':completion:*' verbose 'yes'
-zstyle ':completion:*' show-completer
-
-# Persistent repetition:
-zstyle ':completion:*' rehash true
-
-# Colored stripe complementation:
-# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-zstyle ':completion:*' list-colors 'reply=( "=(#b)(*$VAR)(?)*=00=$color[green]=$color[bg-green]" )'
-zstyle ':completion:*:*:*:*:hosts' list-colors '=*=30;41'
-zstyle ':completion:*:*:*:*:users' list-colors '=*=$color[green]=$color[red]'
-zstyle ':completion:*' menu select
-
-# Visual selection menu:
-zstyle ':completion:*' menu select=3 _complete _i-patterns ignored_approximate
-zstyle ':completion:*' select-prompt '%S zsh: Seleção atual = %p %s'
-
-# Auto description of possible additions:
-zstyle ':completion:*:options' description 'yes'
-zstyle ':completion:*:options' auto-description '%d'
-
-# Format of self-completion messages:
-zstyle ':completion:*:corrections' format '%Bzsh: %d (erros: %e)%b'
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
-zstyle ':completion:*:warnings' format '%Bzsh: Inválido como: %d%b'
-
-# Listing self-complementation groups:
-zstyle ':completion:*:matches' groups 'yes'
-zstyle ':completion:*' list-grouped
-zstyle ':completion:*' group-name ''
-zstyle ':completion:*:*:-command-:*' group-order commands builtins
-
-# Expand as much as possible:
-zstyle ':completion:incremental:*' completer _complete _correct
-zstyle ':completion:*' completer _complete _correct _match _approximate
-zstyle ':completion:*:expand:*' tag-order all-expansions
-
-# Number of errors to accept for autocompletion:
-zstyle ':completion:*:approximate:*' max-errors 2 numeric
-
-# Use '/d/s <TAB>' to expand to '/dir/subdir':
-zstyle ':completion:*' expand 'yes'
-zstyle ':completion:*' squeeze-slashes 'yes'
-
-# Preserve prefix/suffix for autocompletion:
-zstyle ':completion:*' expand prefix suffix
-zstyle ':completion:*' completer _complete _prefix _match _approximate
-zstyle ':completion:*' preserve-prefix '//[^ /]##/'
-zstyle ':completion:*:match:*' original only
-zstyle ':completion:*approximate :*' max-errors 1 numeric
-
-# Option auto-cd should ignore the current directory:
-zstyle ':completion:*:cd:*' ignore-parents parent pwd
-
-# Avoid duplicate entries for the commands below:
-zstyle ':completion:*:rm:*' ignore-line 'yes'
-zstyle ':completion:*:cp:*' ignore-line 'yes'
-zstyle ':completion:*:mv:*' ignore-line 'yes'
-
-# Case-sensitive self-complementation:
-zstyle ':completion:*:complete:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-
-# Self-complementary from Wildcards:
-zstyle ':completion:*:complete-extended:*' matcher 'r:|[.,_-]=* r:|=*'
-
-# Ignore auto-completion of internal functions of zsh:
-zstyle ':completion:*:functions' ignored-patterns '_*'
-
-# Autocomplete for the command 'kill':
-zstyle ':completion:*:processes' command 'ps x -o pid,command'
-zstyle ':completion:*:kill:*' menu yes select
-zstyle ':completion:*:kill:*' force-list always
-zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-
-# Do menu-driven completion.
-zstyle ':completion:*' menu select
-
-# Command help in the Zsh
-autoload -U run-help
-autoload run-help-git
-autoload run-help-svn
-autoload run-help-svk
-
-# Zpty Module
-zmodload zsh/zpty
-
-unsetopt nomatch
-
-# Disable percent sign
-setopt PROMPT_CR
-setopt PROMPT_SP
-
-# Stop on '/' character when deleting words using ^H.
-autoload -U select-word-style
-select-word-style bash
-
-# Automatically quote meta-characters like question marks, quotes and ampersands during typing or pasting.
-autoload -U url-quote-magic
-zle -N self-insert url-quote-magic
 
 ## -------------------------------------------------------------------------------------- ##
 
@@ -447,3 +271,5 @@ export PATH="$PNPM_HOME:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
