@@ -163,12 +163,12 @@ return {
 
 	colors = {
 		-- foreground = "#edeff0",
-		background = "#11111B",
+		-- background = "#11111B",
 		-- cursor_bg = "#edeff0",
 		-- cursor_fg = "#edeff0",
 		-- cursor_border = "#232526",
-		selection_fg = "#ffffff",
-		selection_bg = "#F4F5F2",
+		-- selection_fg = "#ffffff",
+		-- selection_bg = "#F4F5F2",
 		-- scrollbar_thumb = "#edeff0",
 		-- split = "#090909",
 		-- ansi = { "#22273B", "#777ABC", "#6562A8", "#4F9062", "#4D6BB6", "#716CAE", "#7FE4D2", "#A4A6A9" },

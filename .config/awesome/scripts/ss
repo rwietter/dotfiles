@@ -20,7 +20,7 @@ function shot() {
 	check_dir
 
 	file_loc="${screenshot_dir}screensht_$(date +%y-%m-%d_%H:%M:%S).png"
-	
+
 	maim_command="$1"
 	notif_message="$2"
 
@@ -61,5 +61,5 @@ then
 elif [ "$1" = 'area' ];
 then
 	msg="saved and copied to clipboard!"
-	shot 'maim -u -b 2 -m 5 -s' "${msg}"
+	shot 'maim -s -m 10 -d 5 -u -o'
 fi

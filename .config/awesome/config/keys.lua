@@ -163,9 +163,9 @@ awful.keyboard.append_global_keybindings(
         ),
         awful.key(
             {modkey},
-            "s",
+            "a",
             function()
-                awful.spawn(home_var .. "/.config/awesome/scripts/ss full", false)
+                awful.spawn(home_var .. "/.config/awesome/scripts/ss area", false)
             end,
             {
                 description = "screenshot",
@@ -202,7 +202,7 @@ awful.keyboard.append_global_keybindings(
         ),
         awful.key(
             {alt},
-            "p",
+            "s",
             function()
                 awful.util.spawn_with_shell(user_likes.ss, false)
             end,

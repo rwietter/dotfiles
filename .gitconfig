@@ -4,6 +4,7 @@
 	# email = mauricio.witter@acad.ufsm.br
 	# name = rwietters
 	defaultBranch = main
+	signingkey = 2F4A8C59535F3EDA
 [init]
 	defaultBranch = main
 [editor]
@@ -134,3 +135,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
