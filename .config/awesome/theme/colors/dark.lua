@@ -4,22 +4,17 @@
 local colors = {}
 
 -- foreground color
-colors.foreground = "#ccd0d9"
-
-colors.emphasis = "#ffffff"
+colors.foreground = "#EFECF4"
+colors.emphasis = "#EFECF4"
 
 -- backgrounds
--- colors.bg_color = "#11111B"
--- colors.bg_2     = "#151726"
--- colors.bg_3     = "#1A1C30"
--- colors.bg_4     = "#202339"
-colors.bg_color = "#151726"
-colors.bg_2     = "#1A1C30"
-colors.bg_3     = "#202339"
-colors.bg_4     = "#1A1C2C"
+colors.bg_color = "#1A2026"
+colors.bg_2     = "#1d242a"
+colors.bg_3     = "#1f262e"
+colors.bg_4     = "#212931"
 
 -- base green
-colors.green   = "#6acc85"
+colors.green   = "#6CCB6E"
 colors.green_2 = colors.green .. "99"
 colors.green_3 = "#1e2720"
 colors.green_4 = "#94CF95"

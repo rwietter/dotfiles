@@ -11,13 +11,15 @@ local fonts = {
 	fantasque = "Fantasque Sans Mono",
 	aesthetic = "AestheticIosevka Nerd Font Mono",
 	geist = "Geist Mono",
+	berkeley = 'Berkeley Mono',
 }
 
-local font_name = fonts.pragmata
+local font_name = fonts.berkeley
 
 local themes = {
 	rose_pine_dark = 'rose-pine',
 	rose_pine_light = 'rose-pine-dawn',
+	atelier_cave_light = 'Atelier Cave Light (base16)',
 	night_owlish_light = 'Night Owlish Light',
 	catppuccin_mocha = 'Catppuccin Mocha',
 	nebula_16 = 'Nebula (base16)',
@@ -27,6 +29,9 @@ local themes = {
 }
 
 return {
+	
+	color_scheme = themes.rose_pine_dark,
+	
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
 
@@ -48,7 +53,7 @@ return {
 		},
 	},
 	warn_about_missing_glyphs = true,
-	font_size = 14,
+	font_size = 12.5,
 	line_height = 1.4,
 
 	-- Cursor style
@@ -139,52 +144,51 @@ return {
 			key = "Tab",
 			mods = "CTRL|SHIFT",
 			action = wezterm.action({ ActivateTabRelative = -1 }),
-		}, -- standard copy/paste bindings
+		},
 		{
-			key = "x",
+			key = "M",
 			mods = "CTRL",
 			action = "ActivateCopyMode",
 		},
 		{
 			key = "v",
-			mods = "CTRL|SHIFT",
+			mods = "SHIFT",
 			action = wezterm.action({ PasteFrom = "Clipboard" }),
 		},
 		{
 			key = "c",
-			mods = "CTRL|SHIFT",
+			mods = "SHIFT",
 			action = wezterm.action({ CopyTo = "ClipboardAndPrimarySelection" }),
 		},
 	},
 
 	bold_brightens_ansi_colors = true,
 
-	color_scheme = themes.rose_pine_dark,
 
 	colors = {
-		-- foreground = "#edeff0",
-		-- background = "#11111B",
-		-- cursor_bg = "#edeff0",
-		-- cursor_fg = "#edeff0",
-		-- cursor_border = "#232526",
-		-- selection_fg = "#ffffff",
-		-- selection_bg = "#F4F5F2",
-		-- scrollbar_thumb = "#edeff0",
-		-- split = "#090909",
-		-- ansi = { "#22273B", "#777ABC", "#6562A8", "#4F9062", "#4D6BB6", "#716CAE", "#7FE4D2", "#A4A6A9" },
-		-- brights = { "#526170", "#F92D72", "#6CCB6E", "#F26190", "#4CB9D6", "#C269BC", "#58D6BF", "#F4F5F2" },
-		-- indexed = { [136] = "#edeff0" },
+		foreground = "#EFECF4",
+		background = "#1A2026",
+		cursor_bg = "#EFECF4",
+		cursor_fg = "#EFECF4",
+		cursor_border = "#EFECF4",
+		selection_fg = "#EFECF4",
+		selection_bg = "#56687E",
+		scrollbar_thumb = "#edeff0",
+		split = "#EFECF4",
+		ansi = { "#242D35", "#F48FB1", "#A1EFD3", "#F1FA8C", "#92B6F4", "#BD99FF", "#87DFEB", "#FFFFFF" },
+		brights = { "#56687E", "#EE4F84", "#53E2AE", "#F1FF52", "#6498EF", "#985EFF", "#24D1E7", "#F4F5F2" },
+		indexed = { [136] = "#edeff0" },
 		tab_bar = {
 			active_tab = {
-				bg_color = "#22273B",
-				fg_color = "#ffffff",
+				bg_color = "#1A2026", 
+				fg_color = "#F692B2",
 				italic = false,
 			},
-			background = "#181926",
-			inactive_tab = { bg_color = "#181926", fg_color = "#A4A6A9" },
-			inactive_tab_hover = { bg_color = "#22273B", fg_color = "#ffffff" },
-			new_tab = { bg_color = "#22273B", fg_color = "#fff" },
-			new_tab_hover = { bg_color = "#A1D391", fg_color = "#090909" },
+			background = "#1A2026",
+			inactive_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
+			inactive_tab_hover = { bg_color = "#1A2026", fg_color = "#EFECF4" },
+			new_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
+			-- new_tab_hover = { bg_color = "#A1D391", fg_color = "#090909" },
 		},
 	},
 

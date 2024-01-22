@@ -70,3 +70,435 @@ Apr 16 18:11 : player: played "new/X2Download.app - Dream Chaos, Della - Supergi
 Apr 16 18:58 : config: option 'server' on line 12 was not recognized
 Apr 16 18:58 : config: option 'sink' on line 13 was not recognized
 Apr 16 18:59 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Nov 24 14:30 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Nov 24 14:30 : config: option 'server' on line 12 was not recognized
+Nov 24 14:30 : config: option 'sink' on line 13 was not recognized
+Nov 24 14:30 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:06 : config: option 'server' on line 12 was not recognized
+Dec 31 12:06 : config: option 'sink' on line 13 was not recognized
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:07 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:07 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:08 : config: option 'server' on line 12 was not recognized
+Dec 31 12:08 : config: option 'sink' on line 13 was not recognized
+Dec 31 12:08 : client: [0] command "currentsong" during idle
+Dec 31 12:09 : config: option 'server' on line 12 was not recognized
+Dec 31 12:09 : config: option 'sink' on line 13 was not recognized
+Dec 31 12:09 : config: option 'server' on line 12 was not recognized
+Dec 31 12:09 : config: option 'sink' on line 13 was not recognized
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:09 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:09 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:09 : client: [1] command "currentsong" during idle
+Dec 31 12:12 : config: option 'server' on line 12 was not recognized
+Dec 31 12:12 : config: option 'sink' on line 13 was not recognized
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:12 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:12 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:13 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3"
+Dec 31 12:13 : exception: Failed to decode /home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3; Failed to open '/home/rwietter/Músicas/new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3': No such file or directory
+Dec 31 12:13 : player: played "new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3"
+Dec 31 12:13 : update: removing X2Download.app - Tiësto - Lay Low (Official Music Video) (320 kbps).mp3
+Dec 31 12:13 : update: removing X2Download.app - Swedish House Mafia ft. John Martin - Don't You Worry Child (Official Video) (320 kbps).mp3
+Dec 31 12:13 : update: removing X2Download.app - Nirvana - Smells Like Teen Spirit (Official Music Video) (320 kbps).mp3
+Dec 31 12:13 : update: removing X2Download.app - Martin Garrix - Animals (Official Video) (320 kbps).mp3
+Dec 31 12:13 : update: removing X2Download.app - Calvin Harris - Summer (Official Video) (320 kbps).mp3
+Dec 31 12:13 : update: removing X2Download.app - Anyma & Chris Avantgarde - Eternity [Live from GENESYS London] (320 kbps).mp3
+Dec 31 12:13 : update: removing new/X2Download.app - Max Martis & HALUNA - California Dreamin' (320 kbps).mp3
+Dec 31 12:13 : update: removing new/X2Download.app - Elise Lieberth & Le Bober - Say It Right (Magic Cover Release) (320 kbps).mp3
+Dec 31 12:13 : update: removing new/X2Download.app - Dream Chaos, Della - Supergirl [DEEP HOUSE 2023] (320 kbps).mp3
+Dec 31 12:13 : update: removing X2Download.app - Tiësto & The Chainsmokers - Split (Only U) [Official Music Video] (320 kbps).mp3
+Dec 31 12:13 : update: added /soundsperale-shy-video-edit.mp3
+Dec 31 12:13 : update: added /T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3
+Dec 31 12:13 : update: added /black-pumas-colors-live-at-abbey-road-studios.mp3
+Dec 31 12:13 : update: added /soundsperale-power-a-rassevich-remix-video-edit.mp3
+Dec 31 12:13 : update: added /rassevich-the-red-space-qrvzh-remix-video-edit.mp3
+Dec 31 12:13 : update: added /mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3
+Dec 31 12:13 : update: added /soundsperale-dont-leave-me-alone-original-mix.mp3
+Dec 31 12:13 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:20 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Dec 31 12:20 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:24 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Dec 31 12:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:26 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Dec 31 12:26 : exception: Failed to decode /home/rwietter/Music/rassevich-the-red-space-qrvzh-remix-video-edit.mp3; Failed to open '/home/rwietter/Music/rassevich-the-red-space-qrvzh-remix-video-edit.mp3': No such file or directory
+Dec 31 12:26 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Dec 31 12:26 : exception: Failed to decode /home/rwietter/Music/soundsperale-dont-leave-me-alone-original-mix.mp3; Failed to open '/home/rwietter/Music/soundsperale-dont-leave-me-alone-original-mix.mp3': No such file or directory
+Dec 31 12:26 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Dec 31 12:26 : exception: inotify_add_watch() has failed: No such file or directory
+Dec 31 12:26 : config: option 'server' on line 17 was not recognized
+Dec 31 12:26 : config: option 'sink' on line 18 was not recognized
+Dec 31 12:26 : config: option 'path' on line 20 was not recognized
+Dec 31 12:26 : config: option 'volume_normalization' on line 23 was not recognized
+Dec 31 12:26 : mixer: Failed to read mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:26 : client: [0] command "currentsong" during idle
+Dec 31 12:26 : config: option 'server' on line 17 was not recognized
+Dec 31 12:26 : config: option 'sink' on line 18 was not recognized
+Dec 31 12:26 : config: option 'path' on line 20 was not recognized
+Dec 31 12:26 : config: option 'volume_normalization' on line 23 was not recognized
+Dec 31 12:26 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:26 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Dec 31 12:26 : config: option 'server' on line 17 was not recognized
+Dec 31 12:26 : config: option 'sink' on line 18 was not recognized
+Dec 31 12:26 : config: option 'path' on line 20 was not recognized
+Dec 31 12:26 : config: option 'volume_normalization' on line 23 was not recognized
+Dec 31 12:26 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:27 : exception: Failed to open audio output
+Dec 31 12:27 : client: [1] command "currentsong" during idle
+Dec 31 12:27 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:27 : exception: Failed to open audio output
+Dec 31 12:27 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:27 : exception: Failed to open audio output
+Dec 31 12:27 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:27 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:27 : exception: Failed to open audio output
+Dec 31 12:27 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:27 : exception: Failed to open audio output
+Dec 31 12:28 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:28 : exception: Failed to open audio output
+Dec 31 12:28 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:29 : exception: Failed to open audio output
+Dec 31 12:29 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:29 : exception: Failed to open audio output
+Dec 31 12:29 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:29 : exception: Failed to open audio output
+Dec 31 12:30 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:30 : exception: Failed to open audio output
+Dec 31 12:30 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:30 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 12:30 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:30 : exception: Failed to open audio output
+Dec 31 12:30 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Dec 31 12:30 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 12:31 : exception: Failed to open audio output
+Dec 31 12:31 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 12:31 : config: option 'server' on line 17 was not recognized
+Dec 31 12:31 : config: option 'sink' on line 18 was not recognized
+Dec 31 12:31 : config: option 'path' on line 20 was not recognized
+Dec 31 12:31 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:31 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:31 : client: [1] command "currentsong" during idle
+Dec 31 12:31 : exception: Failed to open audio output
+Dec 31 12:31 : config: option 'server' on line 17 was not recognized
+Dec 31 12:31 : config: option 'sink' on line 18 was not recognized
+Dec 31 12:31 : config: option 'path' on line 20 was not recognized
+Dec 31 12:32 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:38 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Dec 31 12:38 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:42 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Dec 31 12:42 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 12:46 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Dec 31 12:51 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Dec 31 12:56 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Dec 31 13:01 : player: played "soundsperale-shy-video-edit.mp3"
+Dec 31 13:01 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 13:03 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 20:01 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 20:03 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Dec 31 20:03 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 20:03 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 20:21 : config: option 'server' on line 17 was not recognized
+Dec 31 20:21 : config: option 'sink' on line 18 was not recognized
+Dec 31 20:21 : config: option 'path' on line 20 was not recognized
+Dec 31 20:21 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 20:21 : client: [0] command "currentsong" during idle
+Dec 31 20:21 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 20:23 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Dec 31 20:25 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 20:30 : player: played "soundsperale-shy-video-edit.mp3"
+Dec 31 20:30 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Dec 31 20:32 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 09 19:46 : config: option 'server' on line 17 was not recognized
+Jan 09 19:46 : config: option 'sink' on line 18 was not recognized
+Jan 09 19:46 : config: option 'path' on line 20 was not recognized
+Jan 09 19:46 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 14 20:00 : config: option 'server' on line 17 was not recognized
+Jan 14 20:00 : config: option 'sink' on line 18 was not recognized
+Jan 14 20:00 : config: option 'path' on line 20 was not recognized
+Jan 14 20:00 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 14 20:08 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 14 20:09 : config: option 'server' on line 17 was not recognized
+Jan 14 20:09 : config: option 'sink' on line 18 was not recognized
+Jan 14 20:09 : config: option 'path' on line 20 was not recognized
+Jan 14 20:09 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 14 22:07 : config: option 'server' on line 17 was not recognized
+Jan 14 22:07 : config: option 'sink' on line 18 was not recognized
+Jan 14 22:07 : config: option 'path' on line 20 was not recognized
+Jan 14 22:07 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 17 09:03 : config: option 'server' on line 17 was not recognized
+Jan 17 09:03 : config: option 'sink' on line 18 was not recognized
+Jan 17 09:03 : config: option 'path' on line 20 was not recognized
+Jan 17 09:03 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 19 11:28 : config: option 'server' on line 17 was not recognized
+Jan 19 11:28 : config: option 'sink' on line 18 was not recognized
+Jan 19 11:28 : config: option 'path' on line 20 was not recognized
+Jan 19 13:00 : config: option 'server' on line 17 was not recognized
+Jan 19 13:00 : config: option 'sink' on line 18 was not recognized
+Jan 19 13:00 : config: option 'path' on line 20 was not recognized
+Jan 19 13:00 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 19 20:10 : config: option 'server' on line 17 was not recognized
+Jan 19 20:10 : config: option 'sink' on line 18 was not recognized
+Jan 19 20:10 : config: option 'path' on line 20 was not recognized
+Jan 19 20:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 19 20:14 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 19 20:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 19 20:18 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 19 20:26 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 19 20:26 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 19 20:30 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 19 20:30 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 19 20:34 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 19 20:39 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 20 10:09 : config: option 'server' on line 17 was not recognized
+Jan 20 10:09 : config: option 'sink' on line 18 was not recognized
+Jan 20 10:09 : config: option 'path' on line 20 was not recognized
+Jan 20 10:09 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 10:19 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 10:24 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 20 10:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 10:27 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 20 10:29 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 10:29 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 10:31 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 20 11:20 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 11:27 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 20 11:27 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 11:31 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 20 11:31 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 11:35 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 20 11:40 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 20 11:45 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 20 11:50 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 20 11:50 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 11:52 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 20 13:35 : config: option 'server' on line 17 was not recognized
+Jan 20 13:35 : config: option 'sink' on line 18 was not recognized
+Jan 20 13:35 : config: option 'path' on line 20 was not recognized
+Jan 20 13:35 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 13:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 13:42 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 20 13:42 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 13:46 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 20 13:46 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 13:50 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 20 13:54 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 20 13:59 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 20 14:04 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 20 14:04 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 20 14:07 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"

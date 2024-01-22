@@ -14,16 +14,16 @@ local mstab = bling.layout.mstab
 local equal = bling.layout.equalarea
 local deck = bling.layout.deck
 
--- layout machi
+-- layout machi  
 lmachi.editor.nested_layouts = {
-	["I"] = deck,
-	["II"] = awful.layout.suit.spiral,
-	["III"] = awful.layout.suit.fair,
-	["IV"] = awful.layout.suit.fair.horizontal,
+	[""] = deck,
+	[""] = awful.layout.suit.spiral,
+	[""] = awful.layout.suit.fair,
+	[""] = awful.layout.suit.fair.horizontal,
 }
 
 -- names/numbers of layouts
-local names = {"I", "II", "III", "IV"}
+local names = {"", "", "", ""}
 local l = awful.layout.suit
 
 -- Configurations

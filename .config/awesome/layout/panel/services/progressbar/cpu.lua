@@ -25,7 +25,7 @@ local cpu_bar = awful.widget.watch('ruby ' .. home_var .. '/.config/awesome/scri
 		shape            = gears.shape.rounded_bar,
 		border_width     = 0,
 		color            = beautiful.red_4,
-		background_color = beautiful.red_4 .. '55',
+		background_color = beautiful.red_4 .. 'dd',
 		paddings         = 0,
 		widget           = wibox.widget.progressbar,
 	})

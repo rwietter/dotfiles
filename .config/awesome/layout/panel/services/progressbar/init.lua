@@ -25,7 +25,7 @@ local superbar = wibox.widget {
 	},
 	widget = wibox.container.background,
 	forced_height = dpi(220),
-	bg = beautiful.bg_2,
+	bg = beautiful.bg_2 .. "BF",
 	shape = helpers.rrect(beautiful.rounded)
 }
 

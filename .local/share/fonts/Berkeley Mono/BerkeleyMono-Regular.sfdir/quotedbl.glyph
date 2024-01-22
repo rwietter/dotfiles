@@ -1,0 +1,90 @@
+StartChar: quotedbl
+Encoding: 34 34 82
+Width: 600
+GlyphClass: 1
+Flags: W
+TtInstrs:
+NPUSHB
+ 9
+ 11
+ 8
+ 3
+ 0
+ 4
+ 1
+ 0
+ 1
+ 76
+MPPEM
+PUSHB_1
+ 35
+LT
+IF
+NPUSHB
+ 13
+ 3
+ 1
+ 1
+ 1
+ 0
+ 95
+ 2
+ 1
+ 0
+ 0
+ 16
+ 1
+ 78
+ELSE
+NPUSHB
+ 19
+ 2
+ 1
+ 0
+ 1
+ 1
+ 0
+ 87
+ 2
+ 1
+ 0
+ 0
+ 1
+ 95
+ 3
+ 1
+ 1
+ 0
+ 1
+ 79
+EIF
+PUSHB_7
+ 18
+ 17
+ 18
+ 17
+ 4
+ 7
+ 26
+CALL
+EndTTInstrs
+LayerCount: 2
+Fore
+SplineSet
+151 655 m 1,0,-1
+ 151 726 l 1,1,-1
+ 247 726 l 1,2,-1
+ 247 655 l 1,3,-1
+ 229 405 l 1,4,-1
+ 169 405 l 1,5,-1
+ 151 655 l 1,0,-1
+351 726 m 1,6,-1
+ 447 726 l 1,7,-1
+ 447 655 l 1,8,-1
+ 429 405 l 1,9,-1
+ 369 405 l 1,10,-1
+ 351 655 l 1,11,-1
+ 351 726 l 1,6,-1
+EndSplineSet
+Validated: 1
+EndChar

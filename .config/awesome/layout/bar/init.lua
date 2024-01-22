@@ -8,6 +8,7 @@ local gears = require("gears")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local helpers = require("helpers")
+local theme = require("theme.ui_vars")
 local dpi = beautiful.xresources.apply_dpi
 
 -- misc/vars
@@ -31,8 +32,8 @@ awful.screen.connect_for_each_screen(
 		local launcher =
 			wibox.widget {
 			widget = wibox.widget.textbox,
-			markup = helpers.colorize_text("", beautiful.fg_color),
-			font = beautiful.icon_var .. "20",
+			markup = helpers.colorize_text("", beautiful.fg_color),
+			font = beautiful.icon_var .. "18",
 			align = "center",
 			valign = "center"
 		}
@@ -56,7 +57,7 @@ awful.screen.connect_for_each_screen(
 		local panel_system =
 			wibox.widget {
 			widget = wibox.widget.textbox,
-			markup = helpers.colorize_text("", beautiful.fg_color),
+			markup = helpers.colorize_text("", beautiful.fg_color),
 			font = beautiful.icon_var .. "15",
 			align = "center",
 			valign = "center"
@@ -261,7 +262,7 @@ awful.screen.connect_for_each_screen(
 				visible = true,
 				ontop = false,
 				type = "dock",
-				width = dpi(50),
+				width = dpi(theme.bar_size),
 				shape = helpers.rrect(beautiful.rounded - 4),
 				bg = beautiful.bg_color,
 				height = screen_height - beautiful.useless_gap * 4

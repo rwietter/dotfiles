@@ -3,8 +3,6 @@
 
 -- ("signal::brightness"), function(value(int))
 
-
-
 local awful = require("awful")
 
 local brightness_subscribe_script = [[

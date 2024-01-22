@@ -5,12 +5,12 @@
 -- its better not to add/remove lines above line 16
 
 return {
-	font = "Roboto",
+	font = "Berkeley Mono",
 	titlebar_position = "bottom",
 	gaps = 4,
 	border_width = 0, -- adds border around the window
-	round_corners = 8, -- adds round corners to the window
-	bar_size = 54,
+	round_corners = 12, -- adds round corners to the window
+	bar_size = 50,
 	scheme = "dark",
-	color_scheme = "dark"
+	color_scheme = "dark",
 }

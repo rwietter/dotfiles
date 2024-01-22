@@ -68,7 +68,7 @@ local get_taglist = function(s)
 			border_width = dpi(0),
 			border_color = beautiful.bg_3,
 			widget = wibox.container.background,
-			bg = beautiful.bg_color .. "90",
+			bg = beautiful.bg_color,
 			fg = beautiful.fg_color,
 			font = beautiful.font_var .. "10",
 			align = "center",
@@ -121,19 +121,19 @@ local get_taglist = function(s)
 				if c3.selected then
 					self:get_children_by_id("background_role")[1].bg = beautiful.bg_3
 				elseif #c3:clients() == 0 then
-					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color .. "33"
+					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
 				else
-					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color .. "99"
+					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
 				end
 			end,
 			update_callback = function(self, c3, _)
 				if c3.selected then
 					self:get_children_by_id("background_role")[1].bg = beautiful.bg_3
 				elseif #c3:clients() == 0 then
-					self.bg = beautiful.fg_color .. "33"
-					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color .. "33"
+					self.bg = beautiful.fg_color
+					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
 				else
-					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color .. "99"
+					self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
 				end
 			end
 		},

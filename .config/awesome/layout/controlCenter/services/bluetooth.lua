@@ -116,7 +116,7 @@ awesome.connect_signal("signal::bluetooth", function (value, isrun)
         update_everything(true)
 
         alright:buttons(gears.table.join(
-            	awful.button( {}, 1, function () 
+            	awful.button( {}, 1, function ()
                     awful.spawn("bluetoothctl power off", false)
                     update_everything(false)
                 end)

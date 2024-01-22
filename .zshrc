@@ -1,40 +1,17 @@
 # Fig pre block. Keep at the top of this file.
 # [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-export gcb="git -C "$1" branch | sed  '/^\*/!d;s/\* //"
-export PATH="$PATH:/home/rwietter/.bin"
-
-export C_INCLUDE_PATH=/usr/include/tirpc
-export CPLUS_INCLUDE_PATH=/usr/include/tirpc
-export LD_LIBRARY_PATH=/usr/lib
-export LD_LIBRARY_PATH=/usr/lib/jvm/java-17-openjdk/lib/libnio.so
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# ~~~~~~~~~~~~ Powerline Prompt ~~~~~~~~~~~~~~~~~
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 setxkbmap -model abnt2 -layout br -variant abnt2
 
-export ZPLUG_HOME=/home/rwietter/.zplug
-ZSH_THEME="dracula"
-
-source ~/.zplug/init.zsh
-zplug load
-zplug "modules/prompt", from:prezto, defer:2
-zplug "zdharma/fast-syntax-highlighting", defer:2
-# zplug "dracula/zsh", as:theme
-zplug load
-
+# ~~~~~~~~~~~~ Powerline Prompt ~~~~~~~~~~~~~~~~~
 source /usr/share/powerline/bindings/zsh/powerline.zsh
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 # ~~~~~~~~~~~~~~~~~~ LS_COLORS ~~~~~~~~~~~~~~~~~~
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 eval $(dircolors ~/.dir_colors)
 alias ls='eza'
 alias ll='eza --octal-permissions -lha'
 alias grep='grep --color=auto'
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ~~~~~~~~~~~~~~~~~ Export PATH ~~~~~~~~~~~~~~~~~
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
@@ -53,6 +30,8 @@ export ANDROID_SDK_ROOT='/opt/android-sdk'
 export ANDROID_HOME='~/Android/Sdk'
 JAVA_OPTS='-XX:+IgnoreUnrecognizedVMOptions'
 export PATH="$PATH:$(pwd)/flutter/bin"
+export PATH="$PATH:/home/rwietter/.bin"
+export RUST_BACKTRACE=1
 
 # react-native
 export ANDROID_HOME='~/Android/Sdk'
@@ -102,7 +81,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 # source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source ~/ZSH/zsh-wakatime/zsh-wakatime.plugin.zsh
+# source ~/ZSH/zsh-wakatime/zsh-wakatime.plugin.zsh
 source ~/ZSH/completion.zsh
 # source ~/ZSH/prompt.zsh # powerline alternative
 # source ~/ZSH/zsh_functions

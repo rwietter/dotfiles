@@ -49,8 +49,8 @@
 
 	# Update local repository with remote repository using rebase.
 	# Usage: git up
-	up = pull --rebase
-	
+	syncstash = pull --rebase --autostash origin main
+
 	# Unstage a file (remove from staging area)
 	# Usage: git unstage <file>
 	unstaged = reset HEAD --
@@ -139,3 +139,5 @@
 	gpgSign = true
 [tag]
 	gpgSign = true
+[pull]
+	rebase = true

@@ -1,21 +1,27 @@
 mpd_host = "localhost"
 mpd_port = "6600"
-mpd_crossfade_time = "3"
-mpd_music_dir = "$HOME/Music"
+mpd_crossfade_time = "1"
+mpd_music_dir = "$HOME/Músicas"
 visualizer_data_source = "/tmp/mpd.fifo"
-visualizer_output_name = "my_fifo"
-#visualizer_sync_internal = "30"
+visualizer_output_name = "MPD"
 visualizer_in_stereo = "yes"
-visualizer_type = "spectrum"
+visualizer_type = "spectrum" (spectrum/wave)
 visualizer_look = "▄▄"
 colors_enabled = "yes"
-playlist_display_mode = "classic" (classic/columns)
+playlist_display_mode = "columns" (classic/columns)
 autocenter_mode = "yes"
 centered_cursor = "yes"
 cyclic_scrolling = "yes"
-mouse_list_scroll_whole_page = "no"
-#song_list_format = "$8%a$9 ✖ $2%t$9 "
+mouse_list_scroll_whole_page = "yes"
+
+# song_list_format = "{%a - }{%t}|{%f}$R{(%l)}"
+# song_status_format = "{%n. }{%t}|{%f}{ - %a}{ (%b)}"
+# song_library_format = "{%n - }{%t}|{%f}"
+
+song_status_format = "$8%a$9 - $2%t$9"
+song_list_format = "$8%a$9 - $2%t$9 "
 song_library_format = "{%n > }{%t}|{%f}"
+
 progressbar_look = "▄▄ "
 now_playing_suffix = " $7♫$9 "
 selected_item_prefix = " √ "
@@ -33,7 +39,6 @@ main_window_color = "white"
 #main_window_highlight_color = "white"
 progressbar_color = "red"
 statusbar_color = "yellow"
-#song_status_format = "$8%a$9 ✖ $2%t$9"
 #active_column_color = "red"
 visualizer_color = "red"
 song_window_title_format = "%a - %t"
@@ -41,4 +46,3 @@ song_window_title_format = "%a - %t"
 search_engine_display_mode = "columns" (classic/columns)
 follow_now_playing_lyrics = "yes"
 #display_screens_numbers_on_start = "no"
-#  vim: set ts=2 sw=2 tw=0 :

@@ -1,6 +1,25 @@
+#!/usr/bin/env bash
 # ----------------------------------------------------------------------------##
 # ALIASES
 # ----------------------------------------------------------------------------##
+
+function ss() {
+    if [ -z "$1" ]; then
+        echo "Usage: ss <file> or <directory>"
+        return 1
+    fi
+    
+    kind=$(file $1 | awk '{print $2}')
+    
+    case $kind in
+        "directory") ls -lha $1 ;;
+        "symbolic") ls -lha $1 ;;
+        *) bat $1 ;;
+    esac
+}
+
+# GPG
+alias gpl='gpg --list-secret-keys --keyid-format LONG'
 
 # Isso pode evitar ataques de phishing, por exemplo, se
 # você criar um script que se chama sudo e colocar ele em um
@@ -53,9 +72,9 @@ alias nmap_full_with_scripts="sudo nmap -sS -sU -T4 -A -v -PE -PP -PS21,22,23,25
 alias nmap_web_safe_osscan="sudo nmap -p 80,443 -O -v --osscan-guess --fuzzy "
 
 alias scanregular="sudo nmap -R -Pn -sC -sV --version-all -T5 -p- --open -v  -oN %y%m%d-target-name"
-alias fastfullhost="sudo nmap --min-rate=400 --min-parallelism=512 -p22,445,3389,80,443 -Pn -R -PS -oA 
+alias fastfullhost="sudo nmap --min-rate=400 --min-parallelism=512 -p22,445,3389,80,443 -Pn -R -PS -oA
 %y%m%d-Full"
-alias sshbrute="sudo nmap -p 22 --script ssh-brute --script-args user=root,passdb=pass.lst 
+alias sshbrute="sudo nmap -p 22 --script ssh-brute --script-args user=root,passdb=pass.lst
 --script-args ssh-brute.timeout=4s"
 alias snmpscan="sudo nmap -P0 -v -sU -p 161 -oA snmp_scan"
 
@@ -105,7 +124,7 @@ alias cpustats='sudo i7z'
 alias cpupowfreqinf='sudo cpupower frequency-info'
 alias cpusave='sudo cpupower frequency-set -g powersave'
 alias cpuperf='sudo cpupower frequency-set -g performance'
-alias cpuclock='watch grep \"cpu MHz\" /proc/cpuinfo' 
+alias cpuclock='watch grep \"cpu MHz\" /proc/cpuinfo'
 
 ### yt-dlp
 alias ymp3='yt-dlp --extract-audio --audio-format mp3 --audio-quality 0'
@@ -162,13 +181,11 @@ alias memd='ps -A --sort -rsz -o comm,pmem,pcpu|awk "NR<=20" | spin'
 alias key="xev | awk -F'[ )]+' '/^KeyPress/ { a[NR+2] } NR in a { printf \"%-3s %s\n\", $5, $8 }'"
 
 calc () {
-  awk "BEGIN{ print $* }"
+    awk "BEGIN{ print $* }"
 }
 
-# hash() {
-#   echo -n "$1" | base64
-# }
-
-# decode() {
-#   echo -n "$1" | base64 -d
-# }
+alias z='zathura'
+alias e='nvim'
+alias cat='bat'
+alias finder='fd ^.*$1$'
+alias whp='sudo netstat -tulpn | grep :7070'

@@ -209,11 +209,11 @@ theme.tasklist_plain_task_name = true
 -- ~~~~~~~~~~~~~
 theme.hotkeys_shape = helpers.rrect(theme.rounded)
 theme.hotkeys_border_width = 0
-theme.hotkeys_font = "JetBrainsMono Nerd Font 11"
+theme.hotkeys_font = "Berkeley Mono 11"
 theme.hotkeys_group_margin = 30
 theme.hotkeys_label_bg = theme.accent
 theme.hotkeys_label_fg = theme.bg_color
-theme.hotkeys_description_font = "JetBrainsMono Nerd Font 8"
+theme.hotkeys_description_font = "Berkeley Mono 8"
 theme.hotkeys_modifiers_fg = theme.fg_color .. "33"
 theme.hotkeys_bg = theme.bg_color
 

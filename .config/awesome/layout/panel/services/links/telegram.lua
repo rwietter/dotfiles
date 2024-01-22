@@ -50,7 +50,7 @@ local telegram_widget = wibox.widget {
 	border_color = beautiful.fg_color .. "33",
 	forced_width = dpi(50),
 	forced_height = dpi(50),
-	bg = beautiful.bg_2
+	bg = beautiful.bg_2 .. "BF"
 }
 
 

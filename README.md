@@ -1,2 +1,119 @@
-# workspace
-A  collection of dotfiles configurations for enhancing developer workflows. Curated with care, it offers a diverse range of setups and customization options
+<p align="center"> 
+<img src="https://i.imgur.com/SIJmkjl.png" alt="drawing" width="100%">
+</p>
+
+<br/>
+
+<h2 align="center">Dotfiles</h2>
+
+<br/>
+
+<div>
+    <img src="https://0x0.st/HGH0.png" alt="screenshots" align="right" width="65%" />
+    <h3>Description</h3>
+    <p>This my Arch Linux System dotfiles</p>
+    <h3>Setup</h3>
+    <ul>
+      <li><strong>WM</strong>: Awesome</li>
+      <li><strong>Browser</strong>: Chromium</li>
+      <li><strong>Text Editor</strong>: Code</li>
+      <li><strong>Music</strong>: MPD</li>
+      <li><strong>Music Visualizer</strong>: NCMPCPP</li>
+      <li><strong>Terminal</strong>: Wezterm</li>
+      <li><strong>Compositor</strong>: Picom</li>
+    </ul>
+</div>
+
+<br/><hr/>
+
+
+<h3>SETUP</h3>
+
+| `Description`        | `Packages`                            |
+| -------------------- | ------------------------------------- |
+| Window Manager       | awesome-git                           |
+| File Manager         | nautilus                              |
+| Browser              | chromium                              |
+| Text Editor          | code                                  |
+| Music                | mpd - ncmpcpp - fmui                  |
+| Menu Launcher        | rofi                                  |
+| Terminal             | wezterm                               |
+| Compositor           | picom                                 |
+| Screen Capture       | scrot and maim                        |
+| SHELL                | fish                                  |
+| Markdown Viewer      | glow                                  |
+| Notes                | obsidian                              |
+| Translations         | trans                                 |
+| Content Viewer (cat) | bat                                   |
+| List files           | exa                                   |
+| Search files         | fd                                    |
+| Notifications        | dunst                                 |
+| Benchmark tool       | hyperfine                             |
+| Terminal recorder    | asciinema                             |
+| System info          | nitch - dzen2 - neofetch - inxi       |
+| JSON parser          | jq                                    |
+| Network info         | vnstat                                |
+| System monitor       | bashtop - gotop (gtop) - bottom (btm) |
+| Cron                 | cronie                                |
+| Line tracer          | ltrace                                |
+| System tracer        | strace                                |
+| Process tracer       | pax-utils                             |
+| Line code tracker    | tokei                                 |
+| Command info         | tealdeer (tldr <command>)             |
+| File manager         | ranger                                |
+| Feed RSS             | yarr                                  |
+| Git manager          | tig                                   |
+| Reader PDF           | zathura - zotero                      |
+| Password manager     | keepassxc                             |
+| Movies               | stremio                               |
+| Music                | spotify                               |
+| Containers           | docker - podman                       |
+| Container stats      | ctop                                  |
+| Menus                | rofi                                  |
+
+
+
+## Colors
+
+Ephemeral based
+
+```bash
+*background:	#242D35
+*foreground:	#EFECF4
+*cursorColor:	#EFECF4
+*color0:	#242D35
+*color1:	#F48FB1
+*color2:	#A1EFD3
+*color3:	#F1FA8C
+*color4:	#92B6F4
+*color5:	#BD99FF
+*color6:	#87DFEB
+*color7:	#F8F8F2
+*color8:	#56687E
+*color9:	#EE4F84
+*color10:	#53E2AE
+*color11:	#F1FF52
+*color12:	#6498EF
+*color13:	#985EFF
+*color14:	#24D1E7
+*color15:	#E5E5E5
+```
+
+## Fonts
+
+- [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/)
+- [Geist Mono](https://vercel.com/font/mono)
+
+## Applications
+
+Mainly used applications
+
+```bash
+sudo pacman -S docker inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools gucharmap nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip  usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop
+```
+
+AUR Packages
+
+```bash
+paru -S visual-studio-code-bin google-chrome-dev awesome-git brave-nightly-bin insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop
+``````

@@ -150,6 +150,17 @@ awful.keyboard.append_global_keybindings(
                 group = "launcher"
             }
         ),
+				awful.key(
+					{modkey},
+					"f",
+					function()
+							awful.spawn(home_var .. "/.config/awesome/scripts/foosysinfo.sh", true)
+					end,
+					{
+							description = "display system info",
+							group = "launcher"
+					}
+			),
         awful.key(
             {modkey},
             "/",

@@ -60,7 +60,7 @@ local ram_widget = wibox.widget {
 	widget = wibox.container.background,
 	forced_width = dpi(105),
 	forced_height = dpi(105),
-	bg = beautiful.bg_2
+	bg = beautiful.bg_2 .. "BF"
 }
 
 return ram_widget

@@ -1,0 +1,56 @@
+StartChar: bracketleft
+Encoding: 91 91 80
+Width: 600
+GlyphClass: 1
+Flags: W
+TtInstrs:
+NPUSHB
+ 31
+ 0
+ 0
+ 0
+ 1
+ 2
+ 0
+ 1
+ 103
+ 0
+ 2
+ 3
+ 3
+ 2
+ 87
+ 0
+ 2
+ 2
+ 3
+ 95
+ 0
+ 3
+ 2
+ 3
+ 79
+ 17
+ 17
+ 17
+ 16
+ 4
+ 7
+ 26
+CALL
+EndTTInstrs
+LayerCount: 2
+Fore
+SplineSet
+237 768 m 1,0,-1
+ 480 768 l 1,1,-1
+ 480 695 l 1,2,-1
+ 319 695 l 1,3,-1
+ 319 -41 l 1,4,-1
+ 480 -41 l 1,5,-1
+ 480 -114 l 1,6,-1
+ 237 -114 l 1,7,-1
+ 237 768 l 1,0,-1
+EndSplineSet
+Validated: 1
+EndChar

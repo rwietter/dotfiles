@@ -3,7 +3,7 @@
 # edited from manilarome
 
 # screenshot direcotry
-screenshot_dir=$HOME/Imagens/Prints/
+screenshot_dir=$HOME/Imagens/Prints
 
 # Check save directory
 # Create it if it doesn't exist
@@ -21,11 +21,13 @@ function shot() {
 
 	file_loc="${screenshot_dir}screensht_$(date +%y-%m-%d_%H:%M:%S).png"
 
+	echo "file_loc: ${file_loc}"
+
 	maim_command="$1"
 	notif_message="$2"
 
 	# Execute maim command
-	${maim_command} "${file_loc}"
+	${maim_command} ${file_loc}
 
 	# Exit if the user cancels the screenshot
 	# So it means there's no new screenshot image file
@@ -38,8 +40,7 @@ function shot() {
 	xclip -selection clipboard -t image/png -i "${screenshot_dir}"/`ls -1 -t "${screenshot_dir}" | head -1` &
 
 
-./notify/notify-send.sh -i ${file_loc} -o "open:xdg-open ${file_loc}" -o "delete:gio trash ${file_loc}" "Shoted!" "${notif_message}"
-
+# ./notify/notify-send.sh -i ${file_loc} -o "open:xdg-open ${file_loc}" -o "delete:gio trash ${file_loc}" "Shoted!" "${notif_message}"
 }
 
 
@@ -61,5 +62,5 @@ then
 elif [ "$1" = 'area' ];
 then
 	msg="saved and copied to clipboard!"
-	shot 'maim -s -m 10 -d 5 -u -o'
+	shot 'maim -s -m 10 -d 1 -u -o'
 fi
