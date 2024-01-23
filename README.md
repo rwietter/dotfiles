@@ -29,49 +29,49 @@
 
 <h3>SETUP</h3>
 
-| `Description`        | `Packages`                            |
-| -------------------- | ------------------------------------- |
-| Window Manager       | awesome-git                           |
-| File Manager         | nautilus                              |
-| Browser              | chromium                              |
-| Text Editor          | code                                  |
-| Music                | mpd - ncmpcpp                         |
-| Menu Launcher        | rofi                                  |
-| Terminal             | wezterm                               |
-| Compositor           | picom                                 |
-| Screen Capture       | scrot and maim                        |
-| SHELL                | fish                                  |
-| Markdown Viewer      | glow                                  |
-| Notes                | obsidian                              |
-| Translations         | trans                                 |
-| Content Viewer (cat) | bat                                   |
-| List files           | exa                                   |
-| Search files         | fd                                    |
-| Notifications        | dunst                                 |
-| Benchmark tool       | hyperfine                             |
-| Terminal recorder    | asciinema                             |
-| System info          | nitch - dzen2 - neofetch - inxi       |
-| JSON parser          | jq                                    |
-| Network info         | vnstat                                |
-| System monitor       | bashtop - gotop (gtop) - bottom (btm) |
-| Cron                 | cronie                                |
-| Line tracer          | ltrace                                |
-| System tracer        | strace                                |
-| Process tracer       | pax-utils                             |
-| Line code tracker    | tokei                                 |
-| Command info         | tealdeer (tldr <command>)             |
-| File manager         | ranger                                |
-| Feed RSS             | yarr                                  |
-| Git manager          | tig                                   |
-| Reader PDF           | zathura - zotero                      |
-| Password manager     | keepassxc                             |
-| Movies               | stremio                               |
-| Music                | spotify                               |
-| Containers           | docker - podman                       |
-| Container stats      | ctop                                  |
-| Menus                | rofi                                  |
-| API Client           | bruno - curl - insomnia               |
-| Database Client      | beekeeper-studio-bin                  |
+| `Description`        | `Packages`                                    |
+| -------------------- | --------------------------------------------- |
+| Window Manager       | awesome-git                                   |
+| File Manager         | nautilus                                      |
+| Browser              | chromium                                      |
+| Text Editor          | code                                          |
+| Music                | mpd - ncmpcpp                                 |
+| Menu Launcher        | rofi                                          |
+| Terminal             | wezterm                                       |
+| Compositor           | picom                                         |
+| Screen Capture       | scrot and maim                                |
+| SHELL                | fish                                          |
+| Markdown Viewer      | glow                                          |
+| Notes                | obsidian                                      |
+| Translations         | trans                                         |
+| Content Viewer (cat) | bat                                           |
+| List files           | exa                                           |
+| Search files         | fd                                            |
+| Notifications        | dunst                                         |
+| Benchmark tool       | hyperfine                                     |
+| Terminal recorder    | asciinema                                     |
+| System info          | nitch - dzen2 - neofetch - inxi               |
+| JSON parser          | jq                                            |
+| Network info         | vnstat                                        |
+| System monitor       | bashtop - gotop (gtop) - bottom (btm)         |
+| Cron                 | cronie                                        |
+| Line tracer          | ltrace                                        |
+| System tracer        | strace                                        |
+| Process tracer       | pax-utils                                     |
+| Line code tracker    | tokei                                         |
+| Command info         | tealdeer (tldr <command>)                     |
+| File manager         | ranger                                        |
+| Feed RSS             | yarr                                          |
+| Reader PDF           | zathura - zotero                              |
+| Password manager     | keepassxc                                     |
+| Movies               | stremio                                       |
+| Music                | spotify                                       |
+| Containers           | docker - podman                               |
+| Container stats      | ctop                                          |
+| Menus                | rofi                                          |
+| API Client           | bruno - curl - insomnia                       |
+| Database Client      | beekeeper-studio-bin                          |
+| Git                  | better-commits - tig - Git File History (ext) |
 
 
 
@@ -124,4 +124,10 @@ Snap Packages
 
 ```bash
 sudo snap install bruno
+```
+
+NPM Packages
+
+```bash
+npm install -g better-commits
 ```
