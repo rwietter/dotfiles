@@ -12,7 +12,7 @@ SETUVAR _fisher_patrickf1_2F_fzf_2E_fish_files:\x7e/\x2econfig/fish/functions/_f
 SETUVAR _fisher_plugins:dracula/fish\x1ejorgebucaran/hydro\x1etuvistavie/fish\x2dssh\x2dagent\x1ejorgebucaran/fisher\x1ekidonng/zoxide\x2efish\x1epatrickf1/fzf\x2efish\x1emeaningful\x2dooo/sponge\x1ejoseluisq/gitnow\x1elaughedelic/pisces
 SETUVAR _fisher_tuvistavie_2F_fish_2D_ssh_2D_agent_files:\x7e/\x2econfig/fish/functions/__ssh_agent_is_started\x2efish\x1e\x7e/\x2econfig/fish/functions/__ssh_agent_start\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fish\x2dssh\x2dagent\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR _hydro_git_3846550:main\x20\u21911\x20
+SETUVAR _hydro_git_3846550:main\u2022\x20
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue

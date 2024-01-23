@@ -43,7 +43,7 @@
 | SHELL                | fish                                          |
 | Markdown Viewer      | glow                                          |
 | Notes                | obsidian                                      |
-| Translations         | trans                                         |
+| Translations         | translate-shell                               |
 | Content Viewer (cat) | bat                                           |
 | List files           | exa                                           |
 | Search files         | fd                                            |
