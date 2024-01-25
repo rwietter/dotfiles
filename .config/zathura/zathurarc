@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 # Catppuccin Mocha
-set default-bg                  "#1A2026"
+set default-bg                  "#0F0F11"
 set default-fg                  "#EFECF4"
 
 set statusbar-fg                "#EFECF4"
@@ -30,7 +30,7 @@ set completion-fg               "#ebbcba"
 set completion-highlight-fg     "#26233a"
 set completion-highlight-bg     "#ebbcba"
 
-set recolor-lightcolor          "#1A2026"
+set recolor-lightcolor          "#0F0F11"
 set recolor-darkcolor           "#EFECF4"
 
 set recolor                     "true"
