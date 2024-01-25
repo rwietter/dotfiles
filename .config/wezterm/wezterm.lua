@@ -152,18 +152,17 @@ return {
 		},
 		{
 			key = "v",
-			mods = "SHIFT",
+			mods = "CTRL|SHIFT",
 			action = wezterm.action({ PasteFrom = "Clipboard" }),
 		},
 		{
 			key = "c",
-			mods = "SHIFT",
+			mods = "CTRL|SHIFT",
 			action = wezterm.action({ CopyTo = "ClipboardAndPrimarySelection" }),
 		},
 	},
 
 	bold_brightens_ansi_colors = true,
-
 
 	colors = {
 		foreground = "#EFECF4",
@@ -214,7 +213,7 @@ return {
 		saturation = 0,
 		brightness = 0
 	},
-	window_background_opacity = 1,
+	window_background_opacity = 0.7,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

@@ -502,3 +502,74 @@ Jan 20 13:59 : player: played "soundsperale-power-a-rassevich-remix-video-edit.m
 Jan 20 14:04 : player: played "soundsperale-shy-video-edit.mp3"
 Jan 20 14:04 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
 Jan 20 14:07 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 24 06:47 : config: option 'server' on line 17 was not recognized
+Jan 24 06:47 : config: option 'sink' on line 18 was not recognized
+Jan 24 06:47 : config: option 'path' on line 20 was not recognized
+Jan 24 06:47 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 07:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:00 : player: problems opening audio device while playing "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 24 07:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:01 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:01 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:01 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:01 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 24 07:03 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 07:07 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 24 07:07 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 07:11 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 24 07:15 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 24 07:20 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 24 07:25 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 24 07:25 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 07:28 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 24 14:41 : config: option 'server' on line 17 was not recognized
+Jan 24 14:41 : config: option 'sink' on line 18 was not recognized
+Jan 24 14:41 : config: option 'path' on line 20 was not recognized
+Jan 24 14:42 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 14:42 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 14:48 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 24 14:48 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 14:53 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 24 14:53 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 14:57 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 24 15:01 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 24 15:06 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 24 15:11 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 24 15:11 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Jan 24 15:12 : update: added Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Jan 24 15:12 : update: added Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Jan 24 15:12 : update: added Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Jan 24 15:12 : update: added Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Jan 24 15:12 : update: added Music/Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Jan 24 15:12 : update: added Music/Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Jan 24 15:12 : update: added Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3
+Jan 24 15:12 : update: added Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3
+Jan 24 15:12 : update: added Music/Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Jan 24 15:12 : update: added Music/Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Jan 24 15:12 : update: added Music/ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Jan 24 15:12 : exception: Failed to save database: Failed to commit /home/rwietter/.mpd/tag_cache: File exists
+Jan 24 15:14 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 24 15:16 : exception: Failed to create /home/rwietter/.mpd/mpdstate: No such file or directory
+Jan 24 16:05 : config: option 'server' on line 17 was not recognized
+Jan 24 16:05 : config: option 'sink' on line 18 was not recognized
+Jan 24 16:05 : config: option 'path' on line 20 was not recognized
+Jan 24 16:05 : config: option 'server' on line 17 was not recognized
+Jan 24 16:05 : config: option 'sink' on line 18 was not recognized
+Jan 24 16:05 : config: option 'path' on line 20 was not recognized
+Jan 24 16:05 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 24 16:32 : config: option 'server' on line 17 was not recognized
+Jan 24 16:32 : config: option 'sink' on line 18 was not recognized
+Jan 24 16:32 : config: option 'path' on line 20 was not recognized
+Jan 24 16:32 : config: option 'server' on line 17 was not recognized
+Jan 24 16:32 : config: option 'sink' on line 18 was not recognized
+Jan 24 16:32 : config: option 'path' on line 20 was not recognized
+Jan 24 16:33 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM

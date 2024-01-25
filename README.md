@@ -1,12 +1,6 @@
-<p align="center"> 
-<img src="https://i.imgur.com/SIJmkjl.png" alt="drawing" width="100%">
-</p>
-
-<br/>
-
 <h2 align="center">Dotfiles</h2>
 
-<br/>
+<img src="https://0x0.st/HGfF.png" alt="screenshots" align="center" width="65%" />
 
 <div>
     <img src="https://0x0.st/HGH0.png" alt="screenshots" align="right" width="65%" />
@@ -25,7 +19,6 @@
 </div>
 
 <br/><hr/>
-
 
 <h3>SETUP</h3>
 
@@ -68,38 +61,20 @@
 | Music                | spotify                                       |
 | Containers           | docker - podman                               |
 | Container stats      | ctop                                          |
-| Menus                | rofi                                          |
 | API Client           | bruno - curl - insomnia                       |
 | Database Client      | beekeeper-studio-bin                          |
 | Git                  | better-commits - tig - Git File History (ext) |
-
+| GitHub Client        | github-cli                                    |
+| Image Viewer         | feh - nitrogen                                |
+| Image Upload         | 0x0.st                                        |
+| Character Map        | gucharmap                                     |
 
 
 ## Colors
 
 Ephemeral based
 
-```bash
-*background:	#242D35
-*foreground:	#EFECF4
-*cursorColor:	#EFECF4
-*color0:	#242D35
-*color1:	#F48FB1
-*color2:	#A1EFD3
-*color3:	#F1FA8C
-*color4:	#92B6F4
-*color5:	#BD99FF
-*color6:	#87DFEB
-*color7:	#F8F8F2
-*color8:	#56687E
-*color9:	#EE4F84
-*color10:	#53E2AE
-*color11:	#F1FF52
-*color12:	#6498EF
-*color13:	#985EFF
-*color14:	#24D1E7
-*color15:	#E5E5E5
-```
+![img](https://0x0.st/HGfx.png)
 
 ## Fonts
 
@@ -108,16 +83,16 @@ Ephemeral based
 
 ## Applications
 
-Mainly used applications
+Pacman Packages
 
 ```bash
-sudo pacman -S docker inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools gucharmap nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted
+sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip
 ```
 
 AUR Packages
 
 ```bash
-paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin
+paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin cutefish-cursor-themes-git cutefish-icons
 ``````
 
 Snap Packages
@@ -131,3 +106,30 @@ NPM Packages
 ```bash
 npm install -g better-commits
 ```
+
+## How to install using Stow
+
+```bash
+sudo pacman -S stow
+```
+
+Clone the repository
+
+```bash
+git clone https://github.com/rwietter/dotfiles.git
+stow -vSt ~ dotfiles # -v for verbose, -S for stow, -t for target
+```
+
+If any conflict occurs with existing files, remove them and make a backup or run `--restore` (**delete + stow**), this will **delete** the files and create a dotfiles symbolic link for them.
+
+## License
+
+This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file for details.
+
+## Credits
+
+- [Harry](https://github.com/saimoomedits) by Awesome base configuration
+
+---
+
+**<samp>Dotfiles [rwietter](rwietter.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>

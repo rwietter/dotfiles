@@ -1,46 +1,38 @@
 #!/bin/bash
 
-# /**
-#  * Git aliases
-#  *
-#  * @author  @rwietter
-#  * @version 1.0.0
-#  * @since   2023-02-19
-#  */
-
 # References
 # - https://cli.github.com/manual/gh_alias_set
 
 # ------------ Functions -----------
 gdiff() {
-	if test "$#" = 0; then
-		(
-			git diff --color
-			git ls-files --others --exclude-standard |
-				while read -r i; do git diff --color -- /dev/null "$i"; done
-		) | $(git config --get core.pager)
-	else
-		git diff "$@"
-	fi
+    if test "$#" = 0; then
+        (
+            git diff --color
+            git ls-files --others --exclude-standard |
+            while read -r i; do git diff --color -- /dev/null "$i"; done
+        ) | $(git config --get core.pager)
+    else
+        git diff "$@"
+    fi
 }
 
 function make_rebase() {
-	git rebase $1
+    git rebase $1
 }
 
 function delete_branch() {
-	git branch -D $1
+    git branch -D $1
 }
 
 git_current_branch() {
-	local ref
-	ref=$(command git symbolic-ref --quiet HEAD 2>/dev/null)
-	local ret=$?
-	if [[ $ret != 0 ]]; then
-		[[ $ret == 128 ]] && return
-		ref=$(command git rev-parse --short HEAD 2>/dev/null) || return
-	fi
-	echo ${ref#refs/heads/}
+    local ref
+    ref=$(command git symbolic-ref --quiet HEAD 2>/dev/null)
+    local ret=$?
+    if [[ $ret != 0 ]]; then
+        [[ $ret == 128 ]] && return
+        ref=$(command git rev-parse --short HEAD 2>/dev/null) || return
+    fi
+    echo ${ref#refs/heads/}
 }
 
 # ------------- Git ----------------

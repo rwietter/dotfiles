@@ -1,0 +1,82 @@
+[date]
+style = { fg = "magenta" }
+# To shorten the date, uncomment the line below
+# shorten = { to = "␣", style = { fg = "magenta" } }
+
+[time]
+time = { fg = "blue" }
+zone = { fg = "red" }
+# To shorten the time, uncomment the line below
+# shorten = { to = "␣", style = { fg = "blue" } }
+
+[[keywords]]
+words = ['true', 'false']
+style = { fg = "black", bg = "magenta", italic = false, bold = false, underline = false }
+border = true
+
+[[keywords]]
+words = ['PID', 'CPU', 'MEM', 'VSZ', 'RSS', 'TTY', 'STAT', 'START', 'TIME', 'COMMAND']
+style = { fg = "black", bg = "magenta" }
+border = false
+
+[[keywords]]
+words = ['GET']
+style = { fg = "black", bg = "green" }
+border = true
+
+[[keywords]]
+words = ['POST']
+style = { fg = "black", bg = "yellow" }
+border = true
+
+[[keywords]]
+words = ['PUT']
+style = { fg = "black", bg = "blue" }
+border = true
+
+[[keywords]]
+words = ['DELETE']
+style = { fg = "black", bg = "red" }
+border = true
+
+[[keywords]]
+words = ['PATCH']
+style = { fg = "black", bg = "magenta" }
+border = true
+
+[url]
+http = { faint = true }
+https = { bold = true }
+host = { fg = "blue", faint = true }
+path = { fg = "blue" }
+query_params_key = { fg = "magenta" }
+query_params_value = { fg = "cyan" }
+symbols = { fg = "red" }
+
+[number]
+style = { fg = "cyan" }
+
+[ip]
+segment = { fg = "blue", italic = true }
+separator = { fg = "red" }
+
+[quotes]
+style = { fg = "yellow" }
+token = '"'
+
+[path]
+segment = { fg = "green", underline = true }
+separator = { fg = "yellow" }
+
+[uuid]
+segment = { fg = "blue", italic = true }
+separator = { fg = "red" }
+
+[key_value]
+key = { faint = true }
+separator = { fg = "white" }
+
+[process]
+name = { fg = "green" }
+separator = { fg = "red" }
+id = { fg = "yellow" }

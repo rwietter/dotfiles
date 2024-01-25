@@ -1,0 +1,142 @@
+!-----------------------------------------------------------------------
+!                         Xft settings
+!-----------------------------------------------------------------------
+
+! DPI/Font
+Xft.dpi: 70
+!Xft.autohint: 1
+!Xft.antialias: 1
+!Xft.hinting: true
+!Xft.hintstyle: hintslight
+!Xft.rgba: rgb
+!Xft.lcdfilter: lcddefault
+
+
+! Dylans Xresources
+URxvt*buffered: true
+
+Xft.autohint:           0
+Xft.antialias:          true
+Xft.rgba:               rgb
+Xft.hinting:            true
+Xft.lcdfilter:          lcddefault
+Xft.hintstyle:          hintsfull
+
+
+!-----------------------------------------------------------------------
+!                        URxvt settings
+!-----------------------------------------------------------------------
+
+*.foreground:   #EFECF4
+*.background:   #1A2026
+*.cursorColor:  #EFECF4
+
+! black
+*.color0:       #242D35
+*.color8:       #56687E
+
+! red
+*.color1:       #F48FB1
+*.color9:       #EE4F84
+
+! green
+*.color2:       #A1EFD3
+*.color10:      #53E2AE
+
+! yellow
+*.color3:       #F1FA8C
+*.color11:      #F1FF52
+
+! blue
+*.color4:       #92B6F4
+*.color12:      #6498EF
+
+! magenta
+*.color5:       #BD99FF
+*.color13:      #985EFF
+
+! cyan
+*.color6:       #87DFEB
+*.color14:      #24D1E7
+
+! white
+*.color7:       #FFFFFF
+*.color15:      #F4F5F2
+
+URxvt.colorIT:                        #DEDEDE
+URxvt.colorBD:                        #B1ACAC
+!URxvt.colorUL:                       #1A8A74
+URxvt.highlightTextColor:             #ffffff
+URxvt.highlightColor:                 #1A8A74
+!URxvt.underlineColor:                #1D1F21
+
+
+! +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+
+Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+
+URxvt.internalBorder:    25
+URxvt.externalBorder:    10
+URxvt.lineSpace:         0
+URxvt*shading:           30
+URxvt.depth:             32
+URxvt.saveLines:         700
+URxvt*geometry:          140x30
+URxvt*terminalName:      rxvt-unicode-256color
+URxvt*visualBell:        false
+
+!! Scrollbar
+!URxvt.scrollStyle:      rxvt
+URxvt.scrollBar:         false
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
+
+! fonts
+urxvt.font:xft:Iosevka Slab:size=12,xft:meguri:pixelsize=11,xft:PowerlineSymbols:size=9,xft:Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=9,xft:FontAwesome:size=10
+
+URxvt.letterSpace:       true
+
+!! Keybinding
+URxvt.keysym.C-Up:       perl:font-size:increase
+URxvt.keysym.C-Down:     perl:font-size:decrease
+URxvt.keysym.C-S-Up:     perl:font-size:incglobal
+URxvt.keysym.C-S-Down:   perl:font-size:decglobal
+!Home and End keys to jump to the beginning and end of lines
+URxvt*keysym.Home:       \033[1~
+URxvt*keysym.End:        \033[4~
+
+!! Tabs
+URxvt.tabbed.tabbar-bg:  -1
+URxvt.tabbed.tabbar-fg:  -2
+URxvt.tabbed.tab-bg:     -2
+URxvt.tabbed.tab-fg:     -1
+URxvt.tabbed.title-bg:   -1
+URxvt.tabbed.title-fg:   -2
+URxvt.tabbed.autohide:   true
+URxvt.tabbed.new-button: true
+URxvt.tabbed.title:      true
+
+!! Perl extensions
+! url-select (part of urxvt-perls package)
+URxvt.perl-ext-common:      default,clipboard,matcher,keyboard-select
+URxvt.keysym.M-u: perl:     url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.underline: true
+URxvt.url-launcher:         /usr/bin/opera
+URxvt.matcher.button:       1
+
+!! CopyPaste Keys
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+!! Disable the stupid ctrl+shift 'feature'
+URxvt.iso14755:            false
+URxvt.iso14755_52:         false
+
+!! Cursor
+Xcursor.theme:             Sweet-Mars
+
+!! Pointer
+!URxvt.pointerBlank:        true

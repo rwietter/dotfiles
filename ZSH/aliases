@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# ----------------------------------------------------------------------------##
-# ALIASES
-# ----------------------------------------------------------------------------##
 
 function ss() {
     if [ -z "$1" ]; then
@@ -21,11 +18,9 @@ function ss() {
 # GPG
 alias gpl='gpg --list-secret-keys --keyid-format LONG'
 
-# Isso pode evitar ataques de phishing, por exemplo, se
-# você criar um script que se chama sudo e colocar ele em um
-# diretório que está no PATH do usuário, quando ele digitar sudo, ele
-# vai executar o seu script e não o comando sudo. Para evitar isso,
-# você pode criar um alias para o comando sudo, assim, mesmo que o
+# Isso pode evitar certos ataques, por exemplo, se você criar um script que se chama sudo e colocar ele em um
+# diretório que está no PATH do usuário, quando ele digitar sudo, ele vai executar o seu script e não
+# o comando sudo. Para evitar isso, você pode criar um alias para o comando sudo, assim, mesmo que o
 # usuário digite sudo, ele vai executar o comando /bin/sudo.
 alias sudo='/bin/sudo'
 
@@ -49,7 +44,6 @@ alias ls="exa --color=auto --icons -F"
 alias lt="ls --tree"
 alias cp='cp -v'
 alias cat="bat --color always --plain"
-alias sr='source ~/.zshrc'
 alias mu='sudo reflector --verbose -c Brazil --sort rate --save /etc/pacman.d/mirrorlist'
 
 ### Alias Nmap
@@ -185,7 +179,5 @@ calc () {
 }
 
 alias z='zathura'
-alias e='nvim'
-alias cat='bat'
 alias finder='fd ^.*$1$'
 alias whp='sudo netstat -tulpn | grep :7070'

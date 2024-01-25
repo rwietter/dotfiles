@@ -1,8 +1,3 @@
-# --- Fisher
-# - fisher install <plugin> (install plugin)
-# - fisher ls (list installed plugins)
-# - fisher rm <plugin> (remove plugin)
-
 dracula/fish
 jorgebucaran/hydro
 tuvistavie/fish-ssh-agent
@@ -12,3 +7,4 @@ patrickf1/fzf.fish
 meaningful-ooo/sponge
 joseluisq/gitnow
 laughedelic/pisces
+fischerling/plugin-wd

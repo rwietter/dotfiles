@@ -1,7 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-# [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-setxkbmap -model abnt2 -layout br -variant abnt2
-
 # ~~~~~~~~~~~~ Powerline Prompt ~~~~~~~~~~~~~~~~~
 source /usr/share/powerline/bindings/zsh/powerline.zsh
 
