@@ -1,6 +1,6 @@
 <h2 align="center">Dotfiles</h2>
 
-<img src="https://0x0.st/HGfF.png" alt="screenshots" align="center" width="65%" />
+<img src="https://0x0.st/HGfF.png" alt="screenshots" align="center" width="100%" />
 
 <div>
     <img src="https://0x0.st/HGH0.png" alt="screenshots" align="right" width="65%" />
@@ -132,4 +132,4 @@ This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file f
 
 ---
 
-**<samp>Dotfiles [rwietter](rwietter.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>
+**<samp>Dotfiles [rwietter](https;//rwietter.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>
