@@ -28,7 +28,7 @@
 | File Manager         | nautilus                                      |
 | Browser              | chromium                                      |
 | Text Editor          | code                                          |
-| Music                | mpd - ncmpcpp                                 |
+| Music                | mpd - ncmpcpp - spotify (spicetify)           |
 | Menu Launcher        | rofi                                          |
 | Terminal             | wezterm                                       |
 | Compositor           | picom                                         |
@@ -58,7 +58,6 @@
 | Reader PDF           | zathura - zotero                              |
 | Password manager     | keepassxc                                     |
 | Movies               | stremio                                       |
-| Music                | spotify                                       |
 | Containers           | docker - podman                               |
 | Container stats      | ctop                                          |
 | API Client           | bruno - curl - insomnia                       |
