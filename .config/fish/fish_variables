@@ -20,7 +20,7 @@ SETUVAR _fisher_tuvistavie_2F_fish_2D_ssh_2D_agent_files:\x7e/\x2econfig/fish/fu
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _hydro_git_1060659:\x1d
 SETUVAR _hydro_git_1415025:main\u2022\x20
-SETUVAR _hydro_git_1448248:main\u2022\x20\u21913\x20
+SETUVAR _hydro_git_1741016:main\u2022\x20\u21918\x20
 SETUVAR _hydro_git_19087:main\u2022\x20
 SETUVAR _hydro_git_3846550:main\u2022\x20
 SETUVAR fish_color_autosuggestion:brblack
@@ -51,7 +51,7 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/rwietter/\x2espicetify\x1e/home/rwietter/Downloads/roc_nightly\x2dlinux_x86_64\x2d2024\x2d01\x2d20\x2debfcd71\x1e/home/rwietter/\x2enpm\x2dglobal/bin
+SETUVAR fish_user_paths:/home/rwietter/\x2ecargo/bin\x1e/home/rwietter/\x2espicetify\x1e/home/rwietter/Downloads/roc_nightly\x2dlinux_x86_64\x2d2024\x2d01\x2d20\x2debfcd71\x1e/home/rwietter/\x2enpm\x2dglobal/bin
 SETUVAR pisces_pairs:\x28\x2c\x29\x1e\x5b\x2c\x5d\x1e\x7b\x2c\x7d\x1e\x22\x2c\x22\x1e\x27\x2c\x27
 SETUVAR sponge_allow_previously_successful:true
 SETUVAR sponge_delay:2
