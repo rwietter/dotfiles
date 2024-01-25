@@ -128,6 +128,7 @@ This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file f
 ## Credits
 
 - [Harry](https://github.com/saimoomedits) by Awesome base configuration
+- [Andreas](https://github.com/andreasgrafen/cascade) by Cascade Firefox theme
 
 ---
 
