@@ -8,9 +8,9 @@ colors.foreground = "#EFECF4"
 colors.emphasis = "#EFECF4"
 
 -- backgrounds
-colors.bg_color = "#1A2026"
-colors.bg_2     = "#1d242a"
-colors.bg_3     = "#1f262e"
+colors.bg_color = "#0F0F11"
+colors.bg_2     = "#1a1a1d"
+colors.bg_3     = "#212125"
 colors.bg_4     = "#212931"
 
 -- base green
