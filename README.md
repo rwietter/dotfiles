@@ -132,4 +132,4 @@ This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file f
 
 ---
 
-**<samp>Dotfiles [rwietter](https;//rwietter.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>
+**<samp>Dotfiles [rwietter](https://rwietter.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>
