@@ -166,7 +166,7 @@ return {
 
 	colors = {
 		foreground = "#EFECF4",
-		background = "#1A2026",
+		background = "#0F0F11",
 		cursor_bg = "#EFECF4",
 		cursor_fg = "#EFECF4",
 		cursor_border = "#EFECF4",
@@ -179,11 +179,11 @@ return {
 		indexed = { [136] = "#edeff0" },
 		tab_bar = {
 			active_tab = {
-				bg_color = "#1A2026", 
+				bg_color = "#0F0F11", 
 				fg_color = "#F692B2",
 				italic = false,
 			},
-			background = "#1A2026",
+			background = "#0F0F11",
 			inactive_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
 			inactive_tab_hover = { bg_color = "#1A2026", fg_color = "#EFECF4" },
 			new_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
@@ -213,7 +213,7 @@ return {
 		saturation = 0,
 		brightness = 0
 	},
-	window_background_opacity = 0.8,
+	window_background_opacity = 1,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
