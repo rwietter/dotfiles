@@ -1,6 +1,10 @@
 # -- configs
 # ----------
 set fish_greeting # disable fish greeting
+set -g fish_history 10000 # Increase history size
+set fish_complete_select_descriptions yes
+set fish_complete_select_colorize yes
+
 
 # -- Set cursor to block and blink
 set -g fish_vi_force_cursor 1
@@ -10,11 +14,9 @@ set fish_cursor_replace_one line blink
 set fish_cursor_external line blink
 set fish_cursor_visual line blink
 set -x fish_key_bindings fish_vi_key_bindings # This enables vi keybindings
-# set -x fish_key_bindings fish_default_key_bindings # This disables vi keybindings
 
 # -- Prompt settings
-# starship init fish | source # Enable starship prompt
-# set --global hydro_symbol_prompt "λ" # Set new icon for prompt
+# ------------------
 
 # -- Paths
 # --------
@@ -34,6 +36,7 @@ function fish_mode_prompt; end # Disable fish mode prompt
 
 # -- Plugins
 # ----------
+zoxide init fish | source
 set fzf_preview_dir_cmd eza --all --color=always
 set --universal zoxide_cmd j
 
