@@ -17,3 +17,18 @@
 | p        | Cola o conteúdo copiado ou recortado após o cursor                                                          |
 | :/       | Pesquisa no histórico de comandos                                                                           |
 | 0        | Move o cursor para o início da linha                                                                        |
+
+---
+
+```bash
+# -- Configs
+# ----------
+set -g fish_color_autosuggestion ccc # Set color for autosuggestions
+set -g fish_color_cancel -r # Set color for cancel
+set -x fish_key_bindings fish_default_key_bindings # Disable vi mode
+
+# -- Prompt settings
+starship init fish | source # Enable starship prompt
+set --global hydro_symbol_prompt "λ" # Set new icon for prompt
+
+```
