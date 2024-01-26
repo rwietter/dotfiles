@@ -7,6 +7,7 @@ set -g fish_complete_select_colorize yes # Colorize completions
 set -g fish_autosuggestion_enabled 1 # Enable autosuggestions
 
 fish_config theme choose "Dracula Official" # Set theme
+abbr -g # Enable global abbreviations
 
 set -g fish_vi_force_cursor 1 # Force cursor to be line
 set fish_cursor_default line blink # Set cursor to line and blink
@@ -32,6 +33,7 @@ set -gx TERM wezterm # Set terminal to wezterm
 set -gx EDITOR nvim # Set editor to nvim
 set -gx VISUAL nvim # Set visual editor to nvim
 set -gx BROWSER firefox # Set browser to firefox
+set -gx ABBR_TIPS_PROMPT "\n💡 \e[1m{{ .abbr }}\e[0m => {{ .cmd }}"
 
 # -- Functions
 # ------------
