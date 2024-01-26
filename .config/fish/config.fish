@@ -22,7 +22,8 @@ set -x fish_key_bindings fish_vi_key_bindings # This enables vi keybindings
 # --------
 fish_add_path -U ~/.npm-global/bin
 fish_add_path -U ~/.cargo/bin
-fish_add_path ~/Downloads/roc_nightly-linux_x86_64-2024-01-20-ebfcd71
+fish_add_path -U /home/rwietter/.spicetify
+fish_add_path -U ~/Downloads/roc_nightly-linux_x86_64-2024-01-20-ebfcd71
 
 # -- Environments
 # ---------------
@@ -46,4 +47,4 @@ set --universal zoxide_cmd j # jump to directory with zoxide (use j instead of z
 # - https://fishshell.com/docs/current/commands.html
 # - https://fishshell.com/docs/current/cmds/set.html
 # - https://fishshell.com/docs/3.2/fish_for_bash_users.html
-fish_add_path /home/rwietter/.spicetify
+# - https://github.com/ajeetdsouza/zoxide

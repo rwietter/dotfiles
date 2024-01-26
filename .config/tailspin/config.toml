@@ -15,7 +15,18 @@ style = { fg = "black", bg = "magenta", italic = false, bold = false, underline 
 border = true
 
 [[keywords]]
-words = ['PID', 'CPU', 'MEM', 'VSZ', 'RSS', 'TTY', 'STAT', 'START', 'TIME', 'COMMAND']
+words = [
+    'PID',
+    'CPU',
+    'MEM',
+    'VSZ',
+    'RSS',
+    'TTY',
+    'STAT',
+    'START',
+    'TIME',
+    'COMMAND',
+]
 style = { fg = "black", bg = "magenta" }
 border = false
 
@@ -80,3 +91,59 @@ separator = { fg = "white" }
 name = { fg = "green" }
 separator = { fg = "red" }
 id = { fg = "yellow" }
+
+[[regexps]]
+regular_expression = '#242D35'
+style = { fg = "white", bg = "black" }
+[[regexps]]
+regular_expression = '#56687E'
+style = { fg = "black", bg = "white" }
+
+[[regexps]]
+regular_expression = '#F48FB1'
+style = { fg = "white", bg = "red" }
+[[regexps]]
+regular_expression = '#EE4F84'
+style = { fg = "red", bg = "white" }
+
+[[regexps]]
+regular_expression = '#A1EFD3'
+style = { fg = "white", bg = "green" }
+[[regexps]]
+regular_expression = '#53E2AE'
+style = { fg = "green", bg = "white" }
+
+[[regexps]]
+regular_expression = '#F1FA8C'
+style = { fg = "white", bg = "yellow" }
+[[regexps]]
+regular_expression = '#F1FF52'
+style = { fg = "yellow", bg = "white" }
+
+[[regexps]]
+regular_expression = '#92B6F4'
+style = { fg = "white", bg = "blue" }
+[[regexps]]
+regular_expression = '#6498EF'
+style = { fg = "blue", bg = "white" }
+
+[[regexps]]
+regular_expression = '#BD99FF'
+style = { fg = "white", bg = "magenta" }
+[[regexps]]
+regular_expression = '#985EFF'
+style = { fg = "magenta", bg = "white" }
+
+[[regexps]]
+regular_expression = '#87DFEB'
+style = { fg = "white", bg = "cyan" }
+[[regexps]]
+regular_expression = '#24D1E7'
+style = { fg = "cyan", bg = "white" }
+
+[[regexps]]
+regular_expression = '#FFFFFF'
+style = { fg = "black", bg = "white" }
+[[regexps]]
+regular_expression = '#F4F5F2'
+style = { fg = "white", bg = "black" }

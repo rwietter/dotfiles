@@ -573,3 +573,21 @@ Jan 24 16:32 : config: option 'server' on line 17 was not recognized
 Jan 24 16:32 : config: option 'sink' on line 18 was not recognized
 Jan 24 16:32 : config: option 'path' on line 20 was not recognized
 Jan 24 16:33 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 19:57 : config: option 'server' on line 17 was not recognized
+Jan 25 19:57 : config: option 'sink' on line 18 was not recognized
+Jan 25 19:57 : config: option 'path' on line 20 was not recognized
+Jan 25 20:02 : config: option 'server' on line 17 was not recognized
+Jan 25 20:02 : config: option 'sink' on line 18 was not recognized
+Jan 25 20:02 : config: option 'path' on line 20 was not recognized
+Jan 25 20:02 : config: option 'server' on line 17 was not recognized
+Jan 25 20:02 : config: option 'sink' on line 18 was not recognized
+Jan 25 20:02 : config: option 'path' on line 20 was not recognized
+Jan 25 20:02 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 20:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 20:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 20:10 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 20:14 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 20:19 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 25 20:24 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 25 20:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 25 20:27 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"

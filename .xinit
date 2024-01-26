@@ -13,7 +13,7 @@ fi
 # -----------------
 session=${A:-awesome}
 case $session in
-    awesome          )     exec awesome;;
+    awesome          )     exec awesome --config $HOME/.config/awesome/rc.lua;;
     bspwm            )     exec bspwm;;
     gnome            )     exec gnome-session;;
     dwm              )     exec dwm;;

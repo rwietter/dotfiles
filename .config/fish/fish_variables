@@ -19,9 +19,9 @@ SETUVAR _fisher_plugins:dracula/fish\x1ejorgebucaran/hydro\x1etuvistavie/fish\x2
 SETUVAR _fisher_tuvistavie_2F_fish_2D_ssh_2D_agent_files:\x7e/\x2econfig/fish/functions/__ssh_agent_is_started\x2efish\x1e\x7e/\x2econfig/fish/functions/__ssh_agent_start\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/fish\x2dssh\x2dagent\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _hydro_git_1060659:\x1d
-SETUVAR _hydro_git_1415025:main\u2022\x20
-SETUVAR _hydro_git_1741016:main\u2022\x20\u21918\x20
 SETUVAR _hydro_git_19087:main\u2022\x20
+SETUVAR _hydro_git_214646:main\u2022\x20
+SETUVAR _hydro_git_221427:main\u2022\x20
 SETUVAR _hydro_git_3846550:main\u2022\x20
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr

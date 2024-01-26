@@ -166,7 +166,7 @@ return {
 
 	colors = {
 		foreground = "#EFECF4",
-		background = "#0F0F11",
+		background = "#1A2026",
 		cursor_bg = "#EFECF4",
 		cursor_fg = "#EFECF4",
 		cursor_border = "#EFECF4",
@@ -179,11 +179,11 @@ return {
 		indexed = { [136] = "#edeff0" },
 		tab_bar = {
 			active_tab = {
-				bg_color = "#0F0F11", 
+				bg_color = "#1A2026", 
 				fg_color = "#F692B2",
 				italic = false,
 			},
-			background = "#0F0F11",
+			background = "#1A2026",
 			inactive_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
 			inactive_tab_hover = { bg_color = "#1A2026", fg_color = "#EFECF4" },
 			new_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
