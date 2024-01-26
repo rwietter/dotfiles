@@ -84,6 +84,7 @@ abbr --add gph 'git push -u origin $(git rev-parse --abbrev-ref HEAD)' # push ch
 abbr --add gst 'git status' # show git status
 abbr --add gsh 'git show' # show git commit
 abbr --add gshs 'git show --stat' # show git commit with statistics
+abbr --add jump 'cd' # jump to directory with zoxide
 
 # This will update the keys and values, so that tips and abbreviations are displayed correctly.
 function abbr_update_keys_and_values
