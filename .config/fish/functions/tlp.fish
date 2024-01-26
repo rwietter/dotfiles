@@ -1,4 +1,4 @@
 function tlp --wraps='sudo tlp-stat' --description 'alias tlp sudo tlp-stat'
-  sudo tlp-stat $argv
+  sudo tlp-stat
         
 end

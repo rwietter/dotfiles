@@ -22,6 +22,15 @@ set -q fisher_path; or set -Ux fisher_path "$HOME/.config/fish"
 # ----------------- Prompt ---------------------
 # ----------------------------------------------
 
+# ----------------- Source ---------------------
+# ----------------------------------------------
+function source_aliases # Source aliases
+    for file in (find ~/.config/fish/functions -type f -name '*.fish')
+        source $file
+    end
+end
+
+source_aliases
 
 # ----------------- Aliases --------------------
 # ----------------------------------------------
@@ -41,8 +50,8 @@ set -gx TERM wezterm # Set terminal to wezterm
 set -gx EDITOR nvim # Set editor to nvim
 set -gx VISUAL nvim # Set visual editor to nvim
 set -gx BROWSER firefox # Set browser to firefox
-set -gx LANG en_US.UTF-8 # Set language to en_US.UTF-8
-set -gx LC_ALL en_US.UTF-8 # Set locale to en_US.UTF-8
+set -gx LANG pt_BR.UTF-8 # Set language to pt_BR.UTF-8
+set -gx LC_ALL pt_BR.UTF-8 # Set locale to pt_BR.UTF-8
 set -U ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m" # Set abbr tips prompt
 
 # ----------------- Functions ------------------
@@ -61,10 +70,27 @@ set --universal zoxide_cmd j # jump to directory with zoxide (use j instead of z
 set fzf_preview_dir_cmd eza --all --color=always # preview directories with exa
 
 # -- gazorby/fish-abbreviation-tips
-abbr -a gds 'git diff --stat' $argv # git diff with --staged as argument
-abbr -a ga 'git add .' # git add with . as argument add just the current directory
-abbr -a gc 'git commit -m' # git commit with -m as argument
-abbr -a gcm 'git commit -am' # git commit with -am as argument
+abbr --erase (abbr --list)
+abbr --add gds 'git diff --stat' # show changes as statistics
+abbr --add ga 'git add .' # add all changes in current directory and subdirectories
+abbr --add gc 'git commit -m' # commit with message
+abbr --add gcm 'git commit -am' # add all changes and commit with message
+abbr --add gco 'git checkout' # checkout to branch
+abbr --add gwc 'git switch -c' # checkout to new branch
+abbr --add gws 'git switch' # switch to branch
+abbr --add gll 'git pull' # pull changes from remote
+abbr --add gps 'git push' # push changes to remote
+abbr --add gph 'git push -u origin $(git rev-parse --abbrev-ref HEAD)' # push changes to remote
+abbr --add gst 'git status' # show git status
+abbr --add gsh 'git show' # show git commit
+
+# This will update the keys and values, so that tips and abbreviations are displayed correctly.
+function abbr_update_keys_and_values
+    __abbr_tips_init
+end
+
+abbr_update_keys_and_values
+
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
