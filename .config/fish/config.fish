@@ -73,7 +73,7 @@ set fzf_preview_dir_cmd eza --all --color=always # preview directories with exa
 # abbr --erase (abbr --list)
 abbr --add gds 'git diff --stat' # show changes as statistics
 abbr --add ga 'git add .' # add all changes in current directory and subdirectories
-abbr --add gc 'git commit -m $argv' # commit with message
+abbr --add gc 'git commit -m' # commit with message
 abbr --add gcm 'git commit -am' # add all changes and commit with message
 abbr --add gco 'git checkout' # checkout to branch
 abbr --add gwc 'git switch -c' # checkout to new branch
