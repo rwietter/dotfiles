@@ -27,7 +27,6 @@ set -q fisher_path; or set -Ux fisher_path "$HOME/.config/fish"
 # ----------------------------------------------
 alias ls "exa --icons --group-directories-first --color=always" # ls with icons
 
-
 # ------------------ Paths ---------------------
 # ----------------------------------------------
 fish_add_path -U ~/.npm-global/bin # Add npm global bin to path
@@ -62,12 +61,10 @@ set --universal zoxide_cmd j # jump to directory with zoxide (use j instead of z
 set fzf_preview_dir_cmd eza --all --color=always # preview directories with exa
 
 # -- gazorby/fish-abbreviation-tips
-abbr -a g 'git diff --stat' $argv # git diff with --staged as argument
-abbr -a a 'git add .' # git add with . as argument add just the current directory
-abbr -a c 'git commit -m' # git commit with -m as argument
-abbr -a cm 'git commit -am' # git commit with -am as argument
-abbr -a w 'git switch' # git switch with -c as argument
-abbr -a d 'docker run -it' # docker ps with -a as argument
+abbr -a gds 'git diff --stat' $argv # git diff with --staged as argument
+abbr -a ga 'git add .' # git add with . as argument add just the current directory
+abbr -a gc 'git commit -m' # git commit with -m as argument
+abbr -a gcm 'git commit -am' # git commit with -am as argument
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
