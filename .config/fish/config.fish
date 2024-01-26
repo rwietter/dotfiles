@@ -70,7 +70,7 @@ set --universal zoxide_cmd j # jump to directory with zoxide (use j instead of z
 set fzf_preview_dir_cmd eza --all --color=always # preview directories with exa
 
 # -- gazorby/fish-abbreviation-tips
-abbr --erase (abbr --list)
+# abbr --erase (abbr --list)
 abbr --add gds 'git diff --stat' # show changes as statistics
 abbr --add ga 'git add .' # add all changes in current directory and subdirectories
 abbr --add gc 'git commit -m' # commit with message
@@ -83,6 +83,7 @@ abbr --add gps 'git push' # push changes to remote
 abbr --add gph 'git push -u origin $(git rev-parse --abbrev-ref HEAD)' # push changes to remote
 abbr --add gst 'git status' # show git status
 abbr --add gsh 'git show' # show git commit
+abbr --add gshs 'git show --stat' # show git commit with statistics
 
 # This will update the keys and values, so that tips and abbreviations are displayed correctly.
 function abbr_update_keys_and_values
