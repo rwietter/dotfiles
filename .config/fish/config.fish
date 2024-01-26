@@ -26,7 +26,7 @@ set -q fisher_path; or set -Ux fisher_path "$HOME/.config/fish"
 # ----------------- Aliases --------------------
 # ----------------------------------------------
 alias ls "exa --icons --group-directories-first --color=always" # ls with icons
-alias cm "git commit -am" $argv # git diff with --staged as argument
+
 
 # ------------------ Paths ---------------------
 # ----------------------------------------------
