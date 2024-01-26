@@ -20,6 +20,17 @@
 
 ---
 
+## Shortcuts
+
+| shortcut | description                       |
+| -------- | --------------------------------- |
+| CTRL + L | Limpa a tela                      |
+| CTRL + R | Pesquisa no histórico de comandos |
+| CTRL + D | Sai do terminal                   |
+| CTRL + U | Apaga a linha inteira             |
+
+---
+
 ```bash
 # -- Configs
 # ----------
