@@ -16,6 +16,8 @@ set fish_cursor_external line blink # Set cursor to line and blink in external m
 set fish_cursor_visual line blink # Set cursor to line and blink in visual mode
 set -x fish_key_bindings fish_vi_key_bindings # This enables vi keybindings
 
+set -q fisher_path; or set -Ux fisher_path "$HOME/.config/fish"
+
 
 # ----------------- Prompt ---------------------
 # ----------------------------------------------
@@ -24,7 +26,7 @@ set -x fish_key_bindings fish_vi_key_bindings # This enables vi keybindings
 # ----------------- Aliases --------------------
 # ----------------------------------------------
 alias ls "exa --icons --group-directories-first --color=always" # ls with icons
-
+# alias gds "git diff --stat" $argv # git diff with --staged as argument
 
 # ------------------ Paths ---------------------
 # ----------------------------------------------
@@ -60,10 +62,11 @@ set --universal zoxide_cmd j # jump to directory with zoxide (use j instead of z
 set fzf_preview_dir_cmd eza --all --color=always # preview directories with exa
 
 # -- gazorby/fish-abbreviation-tips
-abbr ga "git add ." # git add with . as argument add just the current directory
-abbr gm "git commit -m" # git commit with -m as argument
-abbr gmm "git commit -am" # git commit with -am as argument
-abbr gsc "git switch -c" # git switch with -c as argument
+abbr -a g 'git diff --stat' $argv # git diff with --staged as argument
+abbr -a a 'git add .' # git add with . as argument add just the current directory
+abbr -a c 'git commit -m' # git commit with -m as argument
+abbr -a cm 'git commit -am' # git commit with -am as argument
+abbr -a w 'git switch -c' # git switch with -c as argument
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
