@@ -60,7 +60,7 @@ set -gx BROWSER firefox                 # Set browser to firefox
 set -gx LANG pt_BR.UTF-8                # Set language to pt_BR.UTF-8
 set -gx LC_ALL pt_BR.UTF-8              # Set locale to pt_BR.UTF-8
 set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m"
-set -gx ABBR_TIPS_REGEXES '^((\w+\s+){2}(.){0,2})'
+set -agx ABBR_TIPS_REGEXES '^((\w+\s+){2}(.){0,2})'
 
 # ----------------- Functions ------------------
 # ----------------------------------------------
