@@ -621,3 +621,13 @@ Jan 26 16:21 : player: played "soundsperale-shy-video-edit.mp3"
 Jan 26 16:21 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
 Jan 26 16:24 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
 Jan 26 21:55 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 26 22:01 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 26 22:01 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 26 22:05 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 26 22:05 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 26 22:10 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 26 22:14 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 26 22:19 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 26 22:24 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 26 22:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 26 22:27 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"

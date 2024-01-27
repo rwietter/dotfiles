@@ -64,6 +64,7 @@
 | Database Client      | beekeeper-studio-bin                          |
 | Git                  | better-commits - tig - Git File History (ext) |
 | GitHub Client        | github-cli                                    |
+| Git Highlight        | git-delta                                     |
 | Image Viewer         | feh - nitrogen                                |
 | Image Upload         | 0x0.st                                        |
 | Character Map        | gucharmap                                     |
@@ -86,7 +87,7 @@ Ephemeral based
 Pacman Packages
 
 ```bash
-sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip dive vivid
+sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip dive vivid git-delta
 ```
 
 AUR Packages

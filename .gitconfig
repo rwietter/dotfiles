@@ -20,6 +20,9 @@
   ui = auto
 [merge]
   log = true # Include summaries of merged commits in newly created merge commit messages
+[delta]
+    side-by-side = true
+	line-numbers = true
 [alias]
 	# ----------------------------------------------------------------------------------------------------------------- #
 	# -------------------------------------------- Git config aliases ------------------------------------------------- #

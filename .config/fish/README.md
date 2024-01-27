@@ -20,12 +20,18 @@
 
 ## Shortcuts
 
-| shortcut | description                       |
-| -------- | --------------------------------- |
-| CTRL + L | Limpa a tela                      |
-| CTRL + R | Pesquisa no histórico de comandos |
-| CTRL + D | Sai do terminal                   |
-| CTRL + U | Apaga a linha inteira             |
+| shortcut       | description           |
+| -------------- | --------------------- |
+| CTRL + L       | Limpa a tela          |
+| CTRL + D       | Sai do terminal       |
+| CTRL + U       | Apaga a linha inteira |
+| CTRL + V       | Search Variables      |
+| CTRL + R       | Search history        |
+| CTRL + ALT + F | Search directory      |
+| CTRL + ALT + L | Search git log        |
+| CTRL + ALT + S | Git status            |
+| CTRL + ALT + P | Search Processes      |
+
 
 ## Others configs
 
