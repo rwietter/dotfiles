@@ -12,6 +12,6 @@ localectl set-locale LANG=pt_BR.UTF-8
 ## Settings
 ## ----------------------------------------------------------------------------##
 nitrogen --restore &
-(sleep 2s && dunst) &
+# (sleep 2s && dunst) &
 #exec --no-startup-id dunst
 picom --config ~/.config/picom.conf -b &> /tmp/picom.log --respect-prop-shadow

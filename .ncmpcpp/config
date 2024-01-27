@@ -7,7 +7,6 @@ visualizer_output_name = "MPD"
 mpd_connection_timeout = "5"
 mpd_crossfade_time = "5"
 lyrics_directory  = ~/.config/ncmpcpp/lyrics
-execute_on_song_change = notify-send -r 277353 "♫ Now Playing" "$(mpc current)"
 
 visualizer_in_stereo = "no"
 visualizer_fps = "60"

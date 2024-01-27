@@ -60,7 +60,6 @@ set -gx BROWSER firefox                 # Set browser to firefox
 set -gx LANG pt_BR.UTF-8                # Set language to pt_BR.UTF-8
 set -gx LC_ALL pt_BR.UTF-8              # Set locale to pt_BR.UTF-8
 set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m"
-set -agx ABBR_TIPS_REGEXES '^((\w+\s+){2}(.){0,2})'
 
 # ----------------- Functions ------------------
 # ----------------------------------------------
@@ -77,21 +76,34 @@ set -gx zoxide_cmd j # jump to directory with zoxide (use j instead of z and ji 
 set -gx fzf_preview_dir_cmd eza --all --color=always --icons # preview directories with exa
 
 # -- gazorby/fish-abbreviation-tips
+: '
+ - Create abbreviations in a hierarchy of parameters. The match will be closest to the entered command.
+'
 abbr gds 'git diff --stat'                                       # show changes as statistics
 abbr ga 'git add .'                                              # add all changes in current directory and subdirectories
-abbr gc 'git commit -m'                                          # commit with message
+
 abbr gcm 'git commit -am'                                        # add all changes and commit with message
+abbr gc 'git commit -m'                                          # commit with message
+
 abbr gco 'git checkout'                                          # checkout to branch
+
 abbr gwc 'git switch -c'                                         # checkout to new branch
 abbr gws 'git switch'                                            # switch to branch
+
 abbr gll 'git pull'                                              # pull changes from remote
-abbr gps 'git push'                                              # push changes to remote
+
 abbr gph 'git push -u origin $(git rev-parse --abbrev-ref HEAD)' # push changes to remote
+abbr gpms 'git push origin main --all'                           # push changes to remote main
+abbr gpm 'git push origin main'                                  # push changes to remote main
+abbr gps 'git push'                                              # push changes to remote
+
 abbr gst 'git status'                                            # show git status
-abbr gsh 'git show'                                              # show git commit
-abbr gshs 'git show --stat'                                      # show git commit with statistics
-abbr gshw 'git show --word-diff'                                 # show git commit with word diff
+
 abbr gshws 'git show --word-diff --stat'
+abbr gshc 'git show --color-words'                               # show git commit with color words
+abbr gshw 'git show --word-diff'                                 # show git commit with word diff
+abbr gshs 'git show --stat'                                      # show git commit with statistics
+abbr gsh 'git show'                                              # show git commit
 
 function abbr_update_keys_and_values
     __abbr_tips_init

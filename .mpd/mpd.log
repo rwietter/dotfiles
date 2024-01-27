@@ -631,3 +631,102 @@ Jan 26 22:19 : player: played "soundsperale-power-a-rassevich-remix-video-edit.m
 Jan 26 22:24 : player: played "soundsperale-shy-video-edit.mp3"
 Jan 26 22:24 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
 Jan 26 22:27 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 27 11:28 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 27 11:34 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 27 11:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 27 11:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 27 11:35 : output: Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Jan 27 11:38 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Jan 27 11:38 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Jan 27 11:38 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 27 11:38 : config: option 'server' on line 17 was not recognized
+Jan 27 11:38 : config: option 'sink' on line 18 was not recognized
+Jan 27 11:38 : config: option 'path' on line 20 was not recognized
+Jan 27 11:38 : mixer: Failed to read mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:38 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:38 : client: [2] command "currentsong" during idle
+Jan 27 11:38 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:42 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:42 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:43 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 27 11:44 : config: option 'server' on line 17 was not recognized
+Jan 27 11:44 : config: option 'sink' on line 18 was not recognized
+Jan 27 11:44 : config: option 'path' on line 20 was not recognized
+Jan 27 11:44 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:44 : config: option 'server' on line 17 was not recognized
+Jan 27 11:44 : config: option 'sink' on line 18 was not recognized
+Jan 27 11:44 : config: option 'path' on line 20 was not recognized
+Jan 27 11:44 : exception: Failed to open "MPD" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 27 11:44 : exception: Failed to open "MPD" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 27 11:44 : player: problems opening audio device while playing "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 27 11:47 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:47 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:48 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:48 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:51 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 11:51 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:06 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:08 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:09 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:11 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:17 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:17 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:21 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:22 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:23 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:23 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:23 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:24 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:27 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:28 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:28 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:28 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:29 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:29 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:29 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:29 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:31 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:35 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:35 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:36 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:42 : player: played "Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3"
+Jan 27 12:46 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:46 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:47 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:47 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:48 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:48 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:48 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:49 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:49 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:50 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:51 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:52 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:53 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 12:56 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:05 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:05 : config: option 'server' on line 17 was not recognized
+Jan 27 13:05 : config: option 'sink' on line 18 was not recognized
+Jan 27 13:05 : config: option 'path' on line 20 was not recognized
+Jan 27 13:05 : exception: Failed to open "MPD" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 27 13:05 : exception: Failed to open "MPD" (alsa); Failed to open ALSA device "hw:0,0": Device or resource busy
+Jan 27 13:05 : player: problems opening audio device while playing "Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3"
+Jan 27 13:05 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:11 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:11 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:12 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:12 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:14 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:14 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:14 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:14 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:17 : player: played "Music/Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3"
+Jan 27 13:17 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:24 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 27 13:24 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:28 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 27 13:28 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 27 13:32 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 27 13:37 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 27 13:42 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 27 13:47 : player: played "soundsperale-shy-video-edit.mp3"
