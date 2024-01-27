@@ -59,8 +59,8 @@ set -gx VISUAL nvim                     # Set visual editor to nvim
 set -gx BROWSER firefox                 # Set browser to firefox
 set -gx LANG pt_BR.UTF-8                # Set language to pt_BR.UTF-8
 set -gx LC_ALL pt_BR.UTF-8              # Set locale to pt_BR.UTF-8
-set -gx ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m"
-set -gx ABBR_TIPS_REGEXES '(^( ?\w+){3}).*' '(^( ?\w+){2}).*' '(^( ?\w+){1}).*' '(^(\w+\s+)+(-{1,2})\w+)(\s\S+)'
+set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m"
+set -gx ABBR_TIPS_REGEXES '^((\w+\s+){2}(.){0,2})'
 
 # ----------------- Functions ------------------
 # ----------------------------------------------
@@ -90,7 +90,8 @@ abbr gph 'git push -u origin $(git rev-parse --abbrev-ref HEAD)' # push changes 
 abbr gst 'git status'                                            # show git status
 abbr gsh 'git show'                                              # show git commit
 abbr gshs 'git show --stat'                                      # show git commit with statistics
-
+abbr gshw 'git show --word-diff'                                 # show git commit with word diff
+abbr gshws 'git show --word-diff --stat'
 
 function abbr_update_keys_and_values
     __abbr_tips_init
