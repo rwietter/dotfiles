@@ -40,6 +40,13 @@ abbr --erase (abbr --list) # Clear all abbr
 # -- Prompt settings
 starship init fish | source # Enable starship prompt
 set --global hydro_symbol_prompt "λ" # Set new icon for prompt
+
+# Add colors to ls
+set -x LS_COLORS (vivid generate nord)  # Set LS_COLORS
+
+# Erase environment variables
+set --erase <VAR_NAME>
+
 ```
 
 ## External plugins

@@ -1,23 +1,32 @@
 # ---------------- Settings --------------------
 # ----------------------------------------------
-set -g fish_greeting                          # disable fish greeting
-set -g fish_history 10000                     # Increase history size
-set -g fish_complete_select_descriptions yes  # Show descriptions for completions
-set -g fish_complete_select_colorize yes      # Colorize completions
-set -g fish_autosuggestion_enabled 1          # Enable autosuggestions
+set -g fish_greeting                           # disable fish greeting
+set -g fish_history 10000                      # Increase history size
+set -g fish_complete_select_descriptions yes   # Show descriptions for completions
+set -g fish_complete_select_colorize yes       # Colorize completions
+set -g fish_autosuggestion_enabled 1           # Enable autosuggestions
 
-fish_config theme choose "Dracula Official"   # Set theme
 
 set -g fish_vi_force_cursor 1                  # Force cursor to be line
-set fish_cursor_default line blink             # Set cursor to line and blink
-set fish_cursor_insert line blink              # Set cursor to line and blink in insert mode
-set fish_cursor_replace_one line blink         # Set cursor to line and blink in replace mode
-set fish_cursor_external line blink            # Set cursor to line and blink in external mode
-set fish_cursor_visual line blink              # Set cursor to line and blink in visual mode
-set -x fish_key_bindings fish_vi_key_bindings  # This enables vi keybindings
+set -g fish_cursor_default line blink          # Set cursor to line and blink
+set -g fish_cursor_insert line blink           # Set cursor to line and blink in insert mode
+set -g fish_cursor_replace_one line blink      # Set cursor to line and blink in replace mode
+set -g fish_cursor_external line blink         # Set cursor to line and blink in external mode
+set -g fish_cursor_visual line blink           # Set cursor to line and blink in visual mode
+
+set -g hydro_fetch true                        # Enable git background fetch
+set -g hydro_multiline false                   # Disable multiline git status
+set -g hydro_symbol_git_dirty " "             # Set git dirty symbol
+
+
+# -------------- Theme Colors ------------------
+# ----------------------------------------------
+# fish_config theme choose "Dracula Official"   # Set theme
+
 
 # ----------------- Prompt ---------------------
 # ----------------------------------------------
+
 
 # ----------------- Source ---------------------
 # ----------------------------------------------
@@ -51,7 +60,6 @@ set -gx BROWSER firefox                 # Set browser to firefox
 set -gx LANG pt_BR.UTF-8                # Set language to pt_BR.UTF-8
 set -gx LC_ALL pt_BR.UTF-8              # Set locale to pt_BR.UTF-8
 set -U ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m" # Set abbr tips prompt
-set -x LS_COLORS (vivid generate nord)  # Set LS_COLORS to vivid molokai
 
 # ----------------- Functions ------------------
 # ----------------------------------------------
@@ -62,7 +70,7 @@ function fish_mode_prompt; end # Disable fish mode prompt (vi mode)
 # ----------------------------------------------
 # kidonng/zoxide.fish
 zoxide init fish | source    # like cd with superpowers
-set --universal zoxide_cmd j # jump to directory with zoxide (use j instead of z and ji instead of zi)
+set -gx zoxide_cmd j # jump to directory with zoxide (use j instead of z and ji instead of zi)
 
 # patrickf1/fzf.fish
 set -gx fzf_preview_dir_cmd eza --all --color=always --icons # preview directories with exa
