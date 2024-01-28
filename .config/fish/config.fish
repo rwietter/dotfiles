@@ -112,24 +112,24 @@ end
 abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
 # Forgit plugin
-set -U forgit_log glo
-set -U forgit_diff gd
-set -U forgit_add fa
-set -U forgit_reset_head grh
-set -U forgit_ignore gi
-set -U forgit_checkout_file gcf
-set -U forgit_checkout_branch gcb
-set -U forgit_branch_delete gbd
-set -U forgit_checkout_tag gct
-set -U forgit_checkout_commit gco
-set -U forgit_revert_commit grc
-set -U forgit_clean gclean
-set -U forgit_stash_show gss
-set -U forgit_stash_push gsp
-set -U forgit_cherry_pick gcp
-set -U forgit_rebase grb
-set -U forgit_blame gbl
-set -U forgit_fixup gfu
+set -U forgit_log flo
+set -U forgit_diff fdf
+set -U forgit_add fad
+set -U forgit_reset_head frh
+set -U forgit_ignore fig
+set -U forgit_checkout_file fch
+set -U forgit_checkout_branch fcb
+set -U forgit_branch_delete fbd
+set -U forgit_checkout_tag fct
+set -U forgit_checkout_commit fco
+set -U forgit_revert_commit frc
+set -U forgit_clean fclean
+set -U forgit_stash_show fss
+set -U forgit_stash_push fsp
+set -U forgit_cherry_pick fcp
+set -U forgit_rebase frb
+set -U forgit_blame fbl
+set -U forgit_fixup ffu
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
@@ -139,7 +139,8 @@ bind \eç __gitnow_current_branch_list
 
 # ---------------- References ------------------
 # ----------------------------------------------
-# - https://fishshell.com/docs/current/commands.html
-# - https://fishshell.com/docs/current/cmds/set.html
-# - https://fishshell.com/docs/3.2/fish_for_bash_users.html
-# - https://github.com/ajeetdsouza/zoxide
+# - [Fish for bash users](https://fishshell.com/docs/3.2/fish_for_bash_users.html)
+# - [Zoxide](https://github.com/ajeetdsouza/zoxide)
+# - [Fish Language](https://fishshell.com/docs/current/language.html)
+# - [Commands](https://fishshell.com/docs/current/commands.html)
+# - [Set](https://fishshell.com/docs/current/cmds/set.html)
