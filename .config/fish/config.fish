@@ -68,11 +68,11 @@ set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2
 
 # ------------------ Plugins -------------------
 # ----------------------------------------------
-# kidonng/zoxide.fish
+# -- kidonng/zoxide.fish
 zoxide init fish | source    # like cd with superpowers
 set -gx zoxide_cmd j # jump to directory with zoxide (use j instead of z and ji instead of zi)
 
-# patrickf1/fzf.fish
+# -- patrickf1/fzf.fish
 set -gx fzf_preview_dir_cmd eza --all --color=always --icons # preview directories with exa
 
 # -- gazorby/fish-abbreviation-tips
@@ -111,7 +111,7 @@ end
 
 abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
-# Forgit plugin
+# -- Forgit plugin
 set -U forgit_log flo
 set -U forgit_diff fdf
 set -U forgit_add fad
