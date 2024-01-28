@@ -111,30 +111,37 @@ end
 
 abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
-# -- Forgit plugin
-set -U forgit_log flo
-set -U forgit_diff fdf
-set -U forgit_add fad
-set -U forgit_reset_head frh
-set -U forgit_ignore fig
-set -U forgit_checkout_file fch
-set -U forgit_checkout_branch fcb
-set -U forgit_branch_delete fbd
-set -U forgit_checkout_tag fct
-set -U forgit_checkout_commit fco
-set -U forgit_revert_commit frc
-set -U forgit_clean fclean
-set -U forgit_stash_show fss
-set -U forgit_stash_push fsp
-set -U forgit_cherry_pick fcp
-set -U forgit_rebase frb
-set -U forgit_blame fbl
-set -U forgit_fixup ffu
+# -- Forgit plugin (interactive git commands)
+set -U forgit_log flo              # git log
+set -U forgit_diff fdf             # git diff
+set -U forgit_add fad              # git add <file>         
+set -U forgit_reset_head frh       # git reset HEAD <file>
+set -U forgit_ignore fig           # git ignore generate
+set -U forgit_checkout_file fch    # git checkout <file>
+set -U forgit_checkout_branch fcb  # git checkout <branch>
+set -U forgit_branch_delete fbd    # git branch -D <branch>
+set -U forgit_checkout_tag fct     # git checkout <tag>
+set -U forgit_checkout_commit fco  # git checkout <commit>
+set -U forgit_revert_commit frc    # git revert <commit>
+set -U forgit_clean fclean         # git clean
+set -U forgit_stash_show fss       # git stash show
+set -U forgit_stash_push fsp       # git stash push
+set -U forgit_cherry_pick fcp      # git cherry-pick
+set -U forgit_rebase frb           # git rebase -i
+set -U forgit_blame fbl            # git blame
+set -U forgit_fixup ffu            # git commit --fixup && git rebase -i --autosquash
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
-bind \e\cz backward-kill-path-component
-bind \eç __gitnow_current_branch_list
+bind \e\cz backward-kill-path-component # Delete path component
+bind \cs state # Show the working tree status in compact way.
+
+# \c -> ctrl (case sensitive)
+# \e -> esc | alt (case insensitive)
+# \f -> fn
+# \s -> shift
+# \d -> alt
+# \b -> backspace
 
 
 # ---------------- References ------------------
