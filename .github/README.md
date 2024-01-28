@@ -9,7 +9,7 @@
     <h3>Setup</h3>
     <ul>
       <li><strong>WM</strong>: Awesome</li>
-      <li><strong>Browser</strong>: Chromium</li>
+      <li><strong>Browser</strong>: Thorium</li>
       <li><strong>Text Editor</strong>: Code</li>
       <li><strong>Music</strong>: MPD</li>
       <li><strong>Music Visualizer</strong>: NCMPCPP</li>
@@ -25,8 +25,8 @@
 | `Description`        | `Packages`                                    |
 | -------------------- | --------------------------------------------- |
 | Window Manager       | awesome-git                                   |
-| File Manager         | nautilus                                      |
-| Browser              | chromium                                      |
+| GUI File Manager     | nautilus                                      |
+| Browser              | thorium-browser                               |
 | Text Editor          | code                                          |
 | Music                | mpd - ncmpcpp - spotify (spicetify)           |
 | Menu Launcher        | rofi                                          |
@@ -53,7 +53,7 @@
 | Process tracer       | pax-utils                                     |
 | Line code tracker    | tokei                                         |
 | Command info         | tealdeer (tldr <command>)                     |
-| File manager         | ranger                                        |
+| CLI File Manager     | ranger - lf                                   |
 | Feed RSS             | yarr                                          |
 | Reader PDF           | zathura - zotero                              |
 | Password manager     | keepassxc                                     |
@@ -87,13 +87,13 @@ Ephemeral based
 Pacman Packages
 
 ```bash
-sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip dive vivid git-delta
+sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip dive vivid git-delta lf brightnessctl ueberzug w3m
 ```
 
 AUR Packages
 
 ```bash
-paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin cutefish-cursor-themes-git cutefish-icons
+paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin cutefish-cursor-themes-git cutefish-icons thorium-browser-bin cava
 ``````
 
 Snap Packages
