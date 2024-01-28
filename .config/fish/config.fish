@@ -63,7 +63,7 @@ set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2
 
 # ----------------- Functions ------------------
 # ----------------------------------------------
-function fish_mode_prompt; end # Disable fish mode prompt (vi mode)
+# function fish_mode_prompt; end # Disable fish mode prompt (vi mode)
 
 
 # ------------------ Plugins -------------------
@@ -114,7 +114,8 @@ abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
-
+bind \e\cz backward-kill-path-component
+bind \eç __gitnow_current_branch_list
 
 
 # ---------------- References ------------------

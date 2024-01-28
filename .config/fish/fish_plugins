@@ -1,11 +1,12 @@
-dracula/fish # Dracula theme
-jorgebucaran/hydro # a modern and minimal prompt manager for fish with async git status
 tuvistavie/fish-ssh-agent
-jorgebucaran/fisher # fish plugin manager
-kidonng/zoxide.fish # a faster way to navigate your filesystem using jump
-patrickf1/fzf.fish # fzf key bindings for fish
-meaningful-ooo/sponge # a fish plugin to soak up stdin and write to a file
-joseluisq/gitnow # git workflow automation tool
-laughedelic/pisces # auto pair parentheses, brackets, quotes, etc.
-fischerling/plugin-wd # manage directory bookmarks
-gazorby/fish-abbreviation-tips # fish abbreviation tips
+dracula/fish
+jorgebucaran/hydro
+jorgebucaran/fisher
+kidonng/zoxide.fish
+patrickf1/fzf.fish
+meaningful-ooo/sponge
+joseluisq/gitnow
+laughedelic/pisces
+fischerling/plugin-wd
+gazorby/fish-abbreviation-tips
+wfxr/forgit
