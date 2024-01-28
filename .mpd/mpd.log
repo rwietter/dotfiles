@@ -730,3 +730,4 @@ Jan 27 13:32 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp
 Jan 27 13:37 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
 Jan 27 13:42 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
 Jan 27 13:47 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 27 21:45 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
