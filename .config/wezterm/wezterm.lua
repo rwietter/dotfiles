@@ -125,8 +125,7 @@ return {
 			action = wezterm.action({ AdjustPaneSize = { "Down", 1 } }),
 		},
 		{
-			-- browser-like bindings for tabbing
-			key = "t",
+			key = "n",
 			mods = "CTRL",
 			action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
 		},
