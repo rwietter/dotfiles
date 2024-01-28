@@ -1,8 +1,8 @@
-sw_volume: 96
-audio_device_state:1:MPD
-state: pause
-current: 0
-time: 34.981000
+sw_volume: 98
+audio_device_state:1:ncmpcpp
+state: play
+current: 5
+time: 120.161000
 random: 0
 repeat: 0
 single: 0
@@ -11,29 +11,10 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:black-pumas-colors-live-at-abbey-road-studios.mp3
-1:mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3
-2:rassevich-the-red-space-qrvzh-remix-video-edit.mp3
-3:soundsperale-dont-leave-me-alone-original-mix.mp3
-4:soundsperale-power-a-rassevich-remix-video-edit.mp3
-5:soundsperale-shy-video-edit.mp3
-6:T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3
-7:Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3
-8:Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3
-9:Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3
-10:Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
-11:Music/ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
-12:Music/ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
-13:Music/ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
-14:Music/ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
-15:Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
-16:Music/Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
-17:T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3
-18:Music/Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
-19:black-pumas-colors-live-at-abbey-road-studios.mp3
-20:mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3
-21:rassevich-the-red-space-qrvzh-remix-video-edit.mp3
-22:soundsperale-dont-leave-me-alone-original-mix.mp3
-23:soundsperale-power-a-rassevich-remix-video-edit.mp3
-24:soundsperale-shy-video-edit.mp3
+0:[SPOTIFY-DOWNLOADER.COM] Float.mp3
+1:Mr. kitty - after dark.mp3
+2:Rassevich - red space.mp3
+3:Winona Oak & Robin Schulz - Oxygen.mp3
+4:T’art, Andreea Flavia - Stereo Love.mp3
+5:Soundsperale - power.mp3
 playlist_end

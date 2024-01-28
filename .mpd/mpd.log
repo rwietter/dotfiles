@@ -731,3 +731,133 @@ Jan 27 13:37 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3
 Jan 27 13:42 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
 Jan 27 13:47 : player: played "soundsperale-shy-video-edit.mp3"
 Jan 27 21:45 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 28 10:53 : output: Failed to open mixer for 'MPD': no such mixer control: PCM
+Jan 28 10:57 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 28 10:57 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 28 10:57 : player: played "Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3"
+Jan 28 10:57 : client: [1] command "currentsong" during idle
+Jan 28 11:00 : player: played "Music/Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3"
+Jan 28 11:03 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 28 11:06 : player: played "Music/Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3"
+Jan 28 11:16 : player: played "mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3"
+Jan 28 11:20 : player: played "rassevich-the-red-space-qrvzh-remix-video-edit.mp3"
+Jan 28 11:24 : player: played "soundsperale-dont-leave-me-alone-original-mix.mp3"
+Jan 28 11:29 : player: played "soundsperale-power-a-rassevich-remix-video-edit.mp3"
+Jan 28 11:34 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:35 : client: [0] command "currentsong" during idle
+Jan 28 11:39 : update: removing Music/[SPOTIFY-DOWNLOADER.COM] Float.mp3
+Jan 28 11:39 : update: removing Music/Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Jan 28 11:39 : update: removing Music/ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Jan 28 11:39 : update: removing Music/ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Jan 28 11:39 : update: removing Music/ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Jan 28 11:39 : update: removing Music/ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 28 11:39 : update: removing Music/Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Jan 28 11:39 : update: removing Music/Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Jan 28 11:39 : update: removing Music/Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Jan 28 11:39 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:40 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:40 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:41 : client: [2] command "currentsong" during idle
+Jan 28 11:43 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:43 : config: option 'path' on line 13 was not recognized
+Jan 28 11:43 : client: [2] command "currentsong" during idle
+Jan 28 11:44 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:44 : config: option 'path' on line 13 was not recognized
+Jan 28 11:44 : client: [2] command "currentsong" during idle
+Jan 28 11:44 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:45 : player: played "T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3"
+Jan 28 11:45 : config: option 'path' on line 13 was not recognized
+Jan 28 11:47 : exception: Failed to open audio output
+Jan 28 11:49 : config: option 'path' on line 13 was not recognized
+Jan 28 11:49 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 28 11:50 : player: played "black-pumas-colors-live-at-abbey-road-studios.mp3"
+Jan 28 11:50 : config: option 'path' on line 13 was not recognized
+Jan 28 11:50 : exception: Failed to open audio output
+Jan 28 11:50 : client: [3] command "currentsong" during idle
+Jan 28 11:51 : exception: Failed to open audio output
+Jan 28 11:51 : exception: Failed to open audio output
+Jan 28 11:52 : update: added /ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Jan 28 11:52 : update: added /ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 28 11:52 : update: added /ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Jan 28 11:52 : update: added /Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Jan 28 11:52 : update: added /Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Jan 28 11:52 : update: added /Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Jan 28 11:52 : update: added /[SPOTIFY-DOWNLOADER.COM] Float.mp3
+Jan 28 11:52 : update: added /Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Jan 28 11:52 : update: added /ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Jan 28 11:52 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 11:54 : exception: Failed to open audio output
+Jan 28 11:56 : player: played "[SPOTIFY-DOWNLOADER.COM] Float.mp3"
+Jan 28 11:56 : config: option 'path' on line 13 was not recognized
+Jan 28 11:56 : exception: Failed to open audio output
+Jan 28 11:57 : exception: Failed to open audio output
+Jan 28 11:58 : update: updating /soundsperale-shy-video-edit.mp3
+Jan 28 11:58 : update: updating /ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Jan 28 11:58 : update: updating /ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 28 11:58 : update: updating /ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Jan 28 11:58 : update: updating /T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3
+Jan 28 11:58 : update: updating /black-pumas-colors-live-at-abbey-road-studios.mp3
+Jan 28 11:58 : update: updating /Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Jan 28 11:58 : update: updating /Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Jan 28 11:58 : update: updating /soundsperale-power-a-rassevich-remix-video-edit.mp3
+Jan 28 11:58 : update: updating /Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Jan 28 11:58 : update: updating /rassevich-the-red-space-qrvzh-remix-video-edit.mp3
+Jan 28 11:58 : update: updating /Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Jan 28 11:58 : update: updating /mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3
+Jan 28 11:58 : update: updating /soundsperale-dont-leave-me-alone-original-mix.mp3
+Jan 28 11:58 : update: updating /ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Jan 28 11:58 : update: updating /Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+Jan 28 11:59 : update: updating /ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 28 12:00 : player: played "Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3"
+Jan 28 12:01 : update: removing ROBIN SCHULZ & MARC SCIBILIA - UNFORGETTABLE (OFFICIAL VIDEO) [RTergPAxY5Y].mp3
+Jan 28 12:01 : update: added /Robin Schulz & Marc Scibilia - unforgettable.mp3
+Jan 28 12:03 : player: played "[SPOTIFY-DOWNLOADER.COM] Float.mp3"
+Jan 28 12:03 : update: removing ROBIN SCHULZ & HUGEL - I BELIEVE I'M FINE (OFFICIAL MUSIC VIDEO) [hzp4upS8M8Y].mp3
+Jan 28 12:03 : update: added /Robin schulz & hugel - i believe i'm fine.mp3
+Jan 28 12:04 : update: removing ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3
+Jan 28 12:04 : update: added /Robin schulz & richard judge – show me love.mp3
+Jan 28 12:05 : update: removing ROBIN SCHULZ FEAT. ERIKA SIROLA – SPEECHLESS (OFFICIAL VIDEO) [wEzHUFvGO0Q].mp3
+Jan 28 12:05 : update: added /Robin schulz feat. Erika sirola – speechless.mp3
+Jan 28 12:06 : update: removing Robin Schulz - Headlights [feat. Ilsey] [Official Video] [vAEwLvxHVVk].mp3
+Jan 28 12:06 : update: added /Robin Schulz - Headlights.mp3
+Jan 28 12:07 : update: removing Robin Schulz - Sun Goes Down feat. Jasmine Thompson (Official Video) [Mo4cmTaEDIk].mp3
+Jan 28 12:07 : update: added /Robin Schulz - Sun Goes Down feat. Jasmine Thompson.mp3
+Jan 28 12:07 : update: removing T’art, Andreea Flavia - Stereo Love [pcUAdJI8M7Q].mp3
+Jan 28 12:07 : update: added /T’art, Andreea Flavia - Stereo Love.mp3
+Jan 28 12:08 : update: removing Winona Oak & Robin Schulz - Oxygen (Official Video) [aXuS6doNDQU].mp3
+Jan 28 12:08 : update: added /Winona Oak & Robin Schulz - Oxygen.mp3
+Jan 28 12:08 : update: removing black-pumas-colors-live-at-abbey-road-studios.mp3
+Jan 28 12:08 : update: added /Black Pumas - colors.mp3
+Jan 28 12:08 : player: played "ROBIN SCHULZ & RICHARD JUDGE – SHOW ME LOVE (OFFICIAL VIDEO) [DMg8LwfXdyc].mp3"
+Jan 28 12:09 : update: removing mr. kitty ＂after dark＂ + rain + traffic + reverb ｜ single loop version [T7DA5axoomA].mp3
+Jan 28 12:09 : update: added /Mr. kitty - after dark.mp3
+Jan 28 12:10 : update: removing rassevich-the-red-space-qrvzh-remix-video-edit.mp3
+Jan 28 12:10 : update: added /Rassevich - red space.mp3
+Jan 28 12:11 : update: removing soundsperale-dont-leave-me-alone-original-mix.mp3
+Jan 28 12:11 : update: added /Soundsperale - dont leave me alone.mp3
+Jan 28 12:12 : update: removing soundsperale-power-a-rassevich-remix-video-edit.mp3
+Jan 28 12:12 : update: added /Soundsperale - power.mp3
+Jan 28 12:13 : update: removing soundsperale-shy-video-edit.mp3
+Jan 28 12:13 : update: added /Soundsperale - shy.mp3
+Jan 28 12:15 : exception: Failed to open audio output
+Jan 28 12:17 : player: played "soundsperale-shy-video-edit.mp3"
+Jan 28 12:19 : config: option 'path' on line 13 was not recognized
+Jan 28 12:25 : player: played "Soundsperale - power.mp3"
+Jan 28 12:28 : player: played "T’art, Andreea Flavia - Stereo Love.mp3"
+Jan 28 12:28 : exception: Failed to open audio output
+Jan 28 12:30 : exception: Failed to open audio output
+Jan 28 12:33 : player: played "Soundsperale - power.mp3"
+Jan 28 12:37 : player: played "Rassevich - red space.mp3"
+Jan 28 12:44 : player: played "Rassevich - red space.mp3"
+Jan 28 12:47 : player: played "Winona Oak & Robin Schulz - Oxygen.mp3"
+Jan 28 12:49 : exception: Failed to open audio output
+Jan 28 12:50 : player: played "T’art, Andreea Flavia - Stereo Love.mp3"
+Jan 28 12:57 : player: played "[SPOTIFY-DOWNLOADER.COM] Float.mp3"
+Jan 28 13:02 : player: played "Mr. kitty - after dark.mp3"
+Jan 28 13:06 : player: played "Rassevich - red space.mp3"
+Jan 28 13:10 : player: played "Winona Oak & Robin Schulz - Oxygen.mp3"
+Jan 28 13:23 : player: played "Mr. kitty - after dark.mp3"
+Jan 28 13:27 : player: played "Rassevich - red space.mp3"
+Jan 28 13:31 : player: played "Winona Oak & Robin Schulz - Oxygen.mp3"
+Jan 28 13:33 : player: played "T’art, Andreea Flavia - Stereo Love.mp3"
+Jan 28 13:38 : player: played "Soundsperale - power.mp3"

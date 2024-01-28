@@ -111,6 +111,25 @@ end
 
 abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
+# Forgit plugin
+set -U forgit_log glo
+set -U forgit_diff gd
+set -U forgit_add fa
+set -U forgit_reset_head grh
+set -U forgit_ignore gi
+set -U forgit_checkout_file gcf
+set -U forgit_checkout_branch gcb
+set -U forgit_branch_delete gbd
+set -U forgit_checkout_tag gct
+set -U forgit_checkout_commit gco
+set -U forgit_revert_commit grc
+set -U forgit_clean gclean
+set -U forgit_stash_show gss
+set -U forgit_stash_push gsp
+set -U forgit_cherry_pick gcp
+set -U forgit_rebase grb
+set -U forgit_blame gbl
+set -U forgit_fixup gfu
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
