@@ -133,11 +133,11 @@ set -U forgit_fixup ffu            # git commit --fixup && git rebase -i --autos
 
 # ---------------- Keybindings -----------------
 # ----------------------------------------------
-bind -M insert \cb backward-kill-path-component # Delete path component
-bind -M insert \cz undo # Undo changes
+bind -M insert \cb backward-kill-path-component  # Delete path component
+bind -M insert \cz undo                          # Undo changes
 
 # -- git
-bind -M insert \cs state # Show the working tree status in compact way.
+bind -M insert \cs state                         # Show the working tree status in compact way.
 
 # \c -> ctrl (case sensitive)
 # \e -> esc | alt (case insensitive)

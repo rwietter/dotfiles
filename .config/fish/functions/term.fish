@@ -120,10 +120,6 @@ function kl --wraps="ps -efw | grep php | grep -v grep | awk '{print $2}' | xarg
         
 end
 
-function ls --wraps='exa --color=auto --icons -F' --description 'alias ls exa --color=auto --icons -F'
-  exa --color=auto --icons -F $argv
-end
-
 function lsa --wraps='ls -lha | sort' --description 'alias lsa ls -lha | sort'
   ls -lha | sort $argv
 end
