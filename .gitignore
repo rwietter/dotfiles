@@ -13,6 +13,9 @@
 pkg/
 src/
 
+### Fish
+fishd.tmp.*
+
 ### Zsh
 # Zsh compiled script + zrecompile backup
 *.zwc
