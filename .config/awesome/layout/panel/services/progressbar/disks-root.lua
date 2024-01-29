@@ -20,7 +20,7 @@ local disks_root_bar = awful.widget.watch('bash /home/rwietter/.config/awesome/s
 	end, wibox.widget {
 		max_value        = 100,
 		forced_height    = dpi(2),
-		forced_width     = dpi(250),
+		forced_width     = dpi(270),
 		margins          = {
 			top = 7,
 			bottom = 7,
@@ -44,14 +44,14 @@ local disks_root_icon = wibox.widget {
 }
 
 local disks_root_text = awful.widget.watch('bash ' .. home_var .. '/.config/awesome/scripts/disk-root-size.sh'
-	, 59, function(widget, stdout)
-		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color) .. "%"
-	end, wibox.widget {
-		font = beautiful.font_var .. "13",
-		widget = wibox.widget.textbox,
-		valign = "right",
-		align = "right"
-	})
+, 59, function(widget, stdout)
+	widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color) .. "%"
+end, wibox.widget {
+	font = beautiful.font_var .. "13",
+	widget = wibox.widget.textbox,
+	valign = "right",
+	align = "right"
+})
 
 local disks_root_widget = wibox.widget {
 	disks_root_icon,

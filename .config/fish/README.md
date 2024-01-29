@@ -69,6 +69,14 @@ asdf current <plugin-name> # Show current version for a specific plugin
 asdf uninstall <plugin-name> <version> # Uninstall a specific version
 ```
 
+### Forgit
+
+#### Keybindings
+
+| key      | description       |
+| -------- | ----------------- |
+| CTRL + W | Wrap/Unwrap lines |
+
 ## Docs
 
 ```bash

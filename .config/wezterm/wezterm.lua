@@ -29,9 +29,9 @@ local themes = {
 }
 
 return {
-	
+
 	color_scheme = themes.rose_pine_dark,
-	
+
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
 
@@ -165,7 +165,7 @@ return {
 
 	colors = {
 		foreground = "#EFECF4",
-		background = "#1A2026",
+		background = "#0F0F11", -- #1A2026 #0F0F11 #1E1E28
 		cursor_bg = "#EFECF4",
 		cursor_fg = "#EFECF4",
 		cursor_border = "#EFECF4",
@@ -173,12 +173,30 @@ return {
 		selection_bg = "#56687E",
 		scrollbar_thumb = "#edeff0",
 		split = "#EFECF4",
-		ansi = { "#242D35", "#F48FB1", "#A1EFD3", "#F1FA8C", "#92B6F4", "#BD99FF", "#87DFEB", "#FFFFFF" },
-		brights = { "#56687E", "#EE4F84", "#53E2AE", "#F1FF52", "#6498EF", "#985EFF", "#24D1E7", "#F4F5F2" },
+		ansi = {
+			"#6E6C7E",
+			"#F48FB1",
+			"#A1EFD3",
+			"#EBDDAA",
+			"#A4B9EF",
+			"#BD99FF",
+			"#87DFEB",
+			"#DADAE8"
+		},
+		brights = {
+			"#6E6C7E",
+			"#F48FB1",
+			"#A1EFD3",
+			"#EBDDAA",
+			"#A4B9EF",
+			"#BD99FF",
+			"#87DFEB",
+			"#DADAE8"
+		},
 		indexed = { [136] = "#edeff0" },
 		tab_bar = {
 			active_tab = {
-				bg_color = "#1A2026", 
+				bg_color = "#1A2026",
 				fg_color = "#F692B2",
 				italic = false,
 			},
@@ -204,7 +222,6 @@ return {
 	show_tab_index_in_tab_bar = true,
 	tab_bar_at_bottom = true,
 	use_fancy_tab_bar = false,
-	
 
 	-- General
 	automatically_reload_config = true,

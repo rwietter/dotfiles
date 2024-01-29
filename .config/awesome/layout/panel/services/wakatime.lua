@@ -28,7 +28,7 @@ local icon = wibox.widget {
 }
 
 -- ram
-local ram = watch('bash ' .. home_var .. '/.config/awesome/scripts/wakatime.sh'
+local wakatime = watch('bash ' .. home_var .. '/.config/awesome/scripts/wakatime.sh'
 	, 3600, function(widget, stdout)
 		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color)
 	end, wibox.widget {
@@ -40,14 +40,14 @@ local ram = watch('bash ' .. home_var .. '/.config/awesome/scripts/wakatime.sh'
 
 
 -- mix those
-local ram_widget = wibox.widget {
+local wakatime_widget = wibox.widget {
 	{
 		nil,
 		{
 			nil,
 			{
 				icon,
-				ram,
+				wakatime,
 				layout = wibox.layout.fixed.vertical,
 				spacing = dpi(6)
 			},
@@ -63,4 +63,4 @@ local ram_widget = wibox.widget {
 	bg = beautiful.bg_2 .. "BF"
 }
 
-return ram_widget
+return wakatime_widget

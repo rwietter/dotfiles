@@ -50,7 +50,7 @@ set -ag fish_user_paths "$HOME"/.cargo/blink
 set -ag fish_user_paths "$HOME"/.spicetify
 set -ag fish_user_paths "$HOME"/Downloads/roc_nightly-linux_x86_64-2024-01-20-ebfcd71
 set -ag fish_user_paths "$HOME"/.local/bin
-set -ag fish_user_paths "$HOME"/.local/bin/busybox
+# set -ag fish_user_paths "$HOME"/.local/bin/busybox
 
 # --------------- Environments -----------------
 # ----------------------------------------------

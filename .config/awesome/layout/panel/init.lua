@@ -20,7 +20,6 @@ local readwrite = require("misc.scripts.read_writer")
 ]]
 
 awful.screen.connect_for_each_screen(function(s)
-
 	-- Mainbox
 	-- ~~~~~~~~~~~~~~~~~
 	panel_info = wibox({
@@ -63,7 +62,6 @@ awful.screen.connect_for_each_screen(function(s)
 	local screen_backup = 1
 
 	panel_toggle = function(screen)
-
 		-- set screen to default, if none were found
 		if not screen then screen = s end
 
@@ -72,7 +70,6 @@ awful.screen.connect_for_each_screen(function(s)
 
 		-- toggle visibility
 		if panel_info.visible then
-
 			-- check if screen is different or the same
 			if screen_backup ~= screen.index then
 				panel_info.visible = true
@@ -80,14 +77,11 @@ awful.screen.connect_for_each_screen(function(s)
 				slide_end:again()
 				slide_right.target = s.geometry.height
 			end
-
 		elseif not panel_info.visible then
-
 			slide_right.target = s.geometry.height -
 					(panel_info.height + beautiful.useless_gap *
-							2)
+						2)
 			panel_info.visible = true
-
 		end
 
 		-- set screen_backup to new screen
@@ -150,5 +144,4 @@ awful.screen.connect_for_each_screen(function(s)
 		panel_info.height = dpi(300)
 	end
 	--------------------------------------------------------
-
 end)

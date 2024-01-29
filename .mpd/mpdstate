@@ -1,6 +1,8 @@
-sw_volume: 98
+sw_volume: 94
 audio_device_state:1:ncmpcpp
-state: stop
+state: play
+current: 4
+time: 120.195000
 random: 0
 repeat: 0
 single: 0
@@ -11,15 +13,14 @@ mixrampdelay: -1.000000
 playlist_begin
 0:[SPOTIFY-DOWNLOADER.COM] Float.mp3
 1:Mr. kitty - after dark.mp3
-2:Rassevich - red space.mp3
-3:Winona Oak & Robin Schulz - Oxygen.mp3
-4:T’art, Andreea Flavia - Stereo Love.mp3
-5:Soundsperale - power.mp3
-6:Black Pumas - colors.mp3
-7:Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
-8:Robin Schulz - Headlights.mp3
-9:Robin Schulz - Sun Goes Down feat. Jasmine Thompson.mp3
-10:Robin schulz & hugel - i believe i'm fine.mp3
-11:Robin Schulz & Marc Scibilia - unforgettable.mp3
-12:Robin schulz & richard judge – show me love.mp3
+2:Winona Oak & Robin Schulz - Oxygen.mp3
+3:T’art, Andreea Flavia - Stereo Love.mp3
+4:Soundsperale - power.mp3
+5:Black Pumas - colors.mp3
+6:Nora En Pure - Come With Me (Official Video) [MyNfuquQKJI].mp3
+7:Robin Schulz - Headlights.mp3
+8:Robin Schulz - Sun Goes Down feat. Jasmine Thompson.mp3
+9:Robin schulz & hugel - i believe i'm fine.mp3
+10:Robin Schulz & Marc Scibilia - unforgettable.mp3
+11:Robin schulz & richard judge – show me love.mp3
 playlist_end

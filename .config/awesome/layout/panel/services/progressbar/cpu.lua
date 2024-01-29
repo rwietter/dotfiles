@@ -13,22 +13,43 @@ local naughty = require('naughty')
 
 local cpu_bar = awful.widget.watch('ruby ' .. home_var .. '/.config/awesome/scripts/current-cpu', 5,
 	function(wid, stdout)
-		wid.value = tonumber(stdout)
+		wid.value = stdout and tonumber(stdout) or 0
 	end, wibox.widget {
-		max_value        = 100,
-		forced_height    = dpi(2),
-		forced_width     = dpi(250),
-		margins          = {
-			top = 7,
-			bottom = 7,
-		},
-		shape            = gears.shape.rounded_bar,
-		border_width     = 0,
-		color            = beautiful.red_4,
-		background_color = beautiful.red_4 .. 'dd',
-		paddings         = 0,
-		widget           = wibox.widget.progressbar,
+		min_value     = 1,
+		border_color  = beautiful.red_4 .. '22',
+		border_width  = dpi(7),
+		max_value     = 100,
+		value         = 10,
+		forced_height = dpi(55),
+		forced_width  = dpi(55),
+		color         = beautiful.red_4,
+		thickness     = 10,
+		start_angle   = math.pi / 2,
+		reverse       = true,
+		widget        = wibox.container.radialprogressbar,
 	})
+
+
+-- cpu_bar:connect_signal("mouse::enter", function()
+-- 	naughty.destroy(cpu_notif)
+-- 	cpu_notif = naughty.notify {
+-- 		text = "CPU Usage",
+-- 		timeout = 0,
+-- 		width = 200,
+-- 		height = 200,
+-- 		widget = wibox.widget {
+-- 			{
+-- 				cpu_bar,
+-- 				layout = wibox.layout.fixed.vertical,
+-- 				spacing = dpi(6)
+-- 			},
+-- 			layout = wibox.layout.align.vertical,
+-- 			expand = "none"
+-- 		},
+-- 	}
+-- end)
+
+awful.widget.progressbar.forced_direction = "clockwise"
 
 local cpu_icon = wibox.widget {
 	{
@@ -36,27 +57,69 @@ local cpu_icon = wibox.widget {
 		widget = wibox.widget.imagebox
 	},
 	widget = wibox.container.background,
-	forced_width = dpi(35),
-	forced_height = dpi(35),
+	forced_width = dpi(45),
+	forced_height = dpi(45),
 }
 
 local cpu_text = awful.widget.watch('ruby /home/rwietter/.config/awesome/scripts/current-cpu'
-	, 5, function(widget, stdout)
-		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color) .. "%"
-	end, wibox.widget {
-		font = beautiful.font_var .. "13",
-		widget = wibox.widget.textbox,
-		valign = "right",
-		align = "right"
-	})
+, 5, function(widget, stdout)
+	widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color) .. "%"
+end, wibox.widget {
+	font = beautiful.font_var .. "12",
+	widget = wibox.widget.textbox,
+	align = "center",
+	valign = "center",
+})
 
-local cpu_widget = wibox.widget {
-	cpu_icon,
-	cpu_bar,
-	cpu_text,
-	spacing = dpi(8),
-	forced_height = dpi(35),
-	layout = wibox.layout.fixed.horizontal,
+local cpu_constraint = wibox.widget {
+	widget = wibox.container.place,
+	halign = "center",
+	{
+		cpu_bar,
+		height = dpi(60),
+		width = dpi(60),
+		widget = wibox.container.constraint
+	},
 }
 
-return cpu_widget
+local cpu_widget = wibox.widget {
+	{
+		{
+			cpu_icon,
+			cpu_text,
+			spacing = dpi(2),
+			align = "center",
+			valign = "center",
+			layout = wibox.layout.fixed.vertical,
+		},
+		layout = wibox.layout.fixed.horizontal,
+		spacing = dpi(45),
+		cpu_constraint,
+	},
+	layout = wibox.container.margin,
+	margins = dpi(8),
+}
+
+local cpu_widget_container = wibox.widget {
+	{
+		nil,
+		{
+			nil,
+			{
+				cpu_widget,
+				layout = wibox.layout.fixed.vertical,
+				spacing = dpi(6)
+			},
+			layout = wibox.layout.align.vertical,
+			expand = "none"
+		},
+		layout = wibox.layout.stack
+	},
+	shape = helpers.rrect(beautiful.rounded),
+	widget = wibox.container.background,
+	forced_width = dpi(175),
+	forced_height = dpi(105),
+	bg = beautiful.bg_2 .. "BF"
+}
+
+return cpu_widget_container

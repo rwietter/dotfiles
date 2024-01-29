@@ -1,6 +1,6 @@
 <h2 align="center">Dotfiles</h2>
 
-<img src="https://0x0.st/HGfF.png" alt="screenshots" align="center" width="100%" />
+<img src="https://0x0.st/HDbF.png" alt="screenshots" align="center" width="100%" />
 
 <div>
     <img src="https://0x0.st/HGH0.png" alt="screenshots" align="right" width="65%" />
@@ -65,7 +65,7 @@
 | Git                  | better-commits - tig - Git File History (ext) |
 | GitHub Client        | github-cli                                    |
 | Git Highlight        | git-delta                                     |
-| Image Viewer         | feh - nitrogen                                |
+| Image Viewer         | feh - nitrogen - viewnior                     |
 | Image Upload         | 0x0.st                                        |
 | Character Map        | gucharmap                                     |
 | LS_COLORS            | vivid                                         |
@@ -87,7 +87,7 @@ Ephemeral based
 Pacman Packages
 
 ```bash
-sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip dive vivid git-delta lf brightnessctl ueberzug w3m
+sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc ctop dunst bottom docker-compose cronie git github-cli ltrace maim neofetch net-tools  nitrogen feh nmap pax-utils pavucontrol stow powerline rofi rsync strace unzip usbutils zsh wezterm tree vnstat tig dzen2 zsh-autosuggestions glow zsh-completions zsh-history-substring-search zsh-syntax-highlighting fish fisher fzf translate-shell fd bat ripgrep exa dust hyperfine tokei tealdeer bashtop curl asciinema ranger obsidian neovim ncmpcpp mpd ttf-roboto nautilus gnome-keyring nodejs yarn gparted inotify-tools bluez bluez-utils bluez-plugins playerctl redshift upower xorg xorg-init tar unzip dive vivid git-delta lf brightnessctl ueberzug w3m viewnior
 ```
 
 AUR Packages
@@ -131,6 +131,14 @@ This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file f
 
 - [Harry](https://github.com/saimoomedits) by Awesome base configuration
 - [Andreas](https://github.com/andreasgrafen/cascade) by Cascade Firefox theme
+
+## Screenshots
+
+![img3](https://0x0.st/HDcr.png)
+
+![img4](https://0x0.st/HDcs.png)
+
+![img5](https://0x0.st/HGfF.png)
 
 ---
 

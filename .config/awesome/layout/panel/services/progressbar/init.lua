@@ -3,30 +3,43 @@ local helpers = require("helpers")
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 
-
-local rambar = require("layout.panel.services.progressbar.ram-bar")
-local cpubar = require("layout.panel.services.progressbar.cpu")
+local ram_bar = require("layout.panel.services.progressbar.ram-bar")
+local cpu_bar = require("layout.panel.services.progressbar.cpu")
 local disks_home = require("layout.panel.services.progressbar.disks-home")
 local disks_root = require("layout.panel.services.progressbar.disks-root")
 
-
-local superbar = wibox.widget {
+local linear_bars = wibox.widget {
+	widget = wibox.container.background,
+	forced_height = dpi(100),
+	bg = beautiful.bg_2 .. "BF",
+	shape = helpers.rrect(beautiful.rounded),
 	{
 		{
-			rambar,
-			cpubar,
 			disks_home,
 			disks_root,
-			spacing = dpi(12),
+			spacing = dpi(8),
 			layout = wibox.layout.fixed.vertical,
+			align = "center",
+			valign = "center",
+			halign = "center",
 		},
-		margins = { top = dpi(20), bottom = dpi(12), left = dpi(15), right = dpi(12) },
+		margins = dpi(8),
 		widget = wibox.container.margin
-	},
-	widget = wibox.container.background,
-	forced_height = dpi(220),
-	bg = beautiful.bg_2 .. "BF",
-	shape = helpers.rrect(beautiful.rounded)
+	}
 }
 
-return superbar
+local radial_bars = wibox.widget {
+	cpu_bar,
+	ram_bar,
+	layout = wibox.layout.fixed.horizontal,
+	spacing = dpi(22),
+}
+
+local bars = wibox.widget {
+	radial_bars,
+	linear_bars,
+	layout = wibox.layout.fixed.vertical,
+	spacing = dpi(22),
+}
+
+return bars
