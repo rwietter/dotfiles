@@ -50,7 +50,7 @@
 | Cron                 | cronie                                        |
 | Line tracer          | ltrace                                        |
 | System tracer        | strace                                        |
-| Process tracer       | pax-utils                                     |
+| Process tracer       | ptrace                                        |
 | Line code tracker    | tokei                                         |
 | Command info         | tealdeer (tldr <command>)                     |
 | CLI File Manager     | ranger - lf                                   |
