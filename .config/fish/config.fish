@@ -71,7 +71,6 @@ set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2
 # ----------------------------------------------
 # -- kidonng/zoxide.fish
 zoxide init fish | source    # like cd with superpowers
-set -gx zoxide_cmd j # jump to directory with zoxide (use j instead of z and ji instead of zi)
 
 # -- patrickf1/fzf.fish
 set -gx fzf_preview_dir_cmd eza --all --color=always --icons # preview directories with exa
@@ -142,6 +141,7 @@ bind -M insert \cz undo                          # Undo changes
 # -- git
 bind -M insert \cs state                         # Show the working tree status in compact way.
 bind -M insert \ca fad                           # Add file contents to the index.
+bind -M insert \cd fbd                           # Delete a branch.
 
 # \c -> ctrl (case sensitive)
 # \e -> esc | alt (case insensitive)
