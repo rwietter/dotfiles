@@ -476,7 +476,7 @@ li>div::after {
 }
 
 /* add main backshadow */
-#dribbblish-back-shadow {
+#illusion-back-shadow {
     z-index: 5;
     grid-area: main-view / main-view / now-playing-bar / main-view;
     box-shadow: 0 0 10px 3px #0000003b;

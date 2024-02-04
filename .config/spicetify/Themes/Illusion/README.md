@@ -1,67 +1,25 @@
-# Dribbblish
+# Illusion
 
-### Base
-![base](base.png)
-### White
-![white](white.png)
-### Dark
-![dark](dark.png)
-### Nord-Light
-![nord-light](nord-light.png)
-### Nord-Dark
-![nord-dark](nord-dark.png)
-### Beach-Sunset
-![beach-sunset](beach-sunset.png)
-### Purple
-![purple](purple.png)
-### Samurai
-![samurai](samurai.png)
-### Gruvbox
-![gruvbox](gruvbox.png)
-### Rosé Pine
-![rosepine](rosepine.png)
-### Lunar
-![lunar](lunar.png)
-### Catppuccin Latte
-![catppuccin-latte](catppuccin-latte.png)
-### Catppuccin Frappe
-![catppuccin-frappe](catppuccin-frappe.png)
-### Catppuccin Macchiato
-![catppuccin-macchiato](catppuccin-macchiato.png)
-### Catppuccin Mocha
-![catppuccin-mocha](catppuccin-mocha.png)
+![Playlist](https://0x0.st/HDBZ.png)
 
-##  Features
-### Resizable sidebar
+![Home](https://0x0.st/HDBq.png)
 
-<img src="https://i.imgur.com/1zomkmd.png" alt="img" align="center" width="500px"> 
+<!-- ## Auto-install
 
-### Customizable sidebar
-Rearrange icons positions, stick icons to header or hide unnecessary to save space.
-Turn on "Sidebar config" mode in Profile menu and hover on icon to show control buttons.
-After you finish customizing, turn off Config mode in Profile menu to save.
+Make sure you are using spicetify >= v2.30.0 and Spotify >= v1.2.26.
 
-<img src="https://i.imgur.com/86gqPe8.png" alt="img" align="center" width="500px"> 
-
-### Playlist Folder image
-Right click at folder and choose images for your playlist folder. Every image formats supported by Chrome can be used, but do keep image size small and in compressed format.
-
-<img src="https://i.imgur.com/WGQ7Bev.gif" alt="img" align="center" width="500px"> 
-
-### Left/Right expanded cover
-In profile menu, toggle option "Right expanded cover" to change expaned current track cover image to left or right side, whereever you prefer.
-
-## Auto-install
-Make sure you are using spicetify >= v2.5.0 and Spotify >= v1.1.56.
 ### Windows
+
 ```powershell
 Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/spicetify/spicetify-themes/master/Dribbblish/install.ps1" | Invoke-Expression
 ```
 
 ## Manual Install
+
 Run these commands:
 
 ### Linux and MacOS:
+
 In **Bash**:
 ```bash
 cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
@@ -71,6 +29,7 @@ spicetify apply
 ```
 
 ### Windows
+
 In **Powershell**:
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes\Dribbblish"
@@ -86,13 +45,6 @@ xpui.js_find_8008 = ,(\w+=)32,
 xpui.js_repl_8008 = ,${1}56,
 ```
 
-## Change Color Schemes
-There are 9 color schemes you can choose: `base`, `white`, `dark`, `dracula`, `nord-dark`, `nord-light`, `beach-sunset`, `samourai`, `purple`, `catppuccin-latte`, `catppuccin-frappe`, `catppuccin-macchiato`, and `catppuccin-mocha`. Change scheme with commands:
-```
-spicetify config color_scheme <scheme name>
-spicetify apply
-```
-
 ## Auto-uninstall 
 ### Windows
 ```powershell
@@ -105,4 +57,4 @@ Remove the dribbblish theme with the following commands
 ```
 spicetify config current_theme " " color_scheme " "
 spicetify apply
-```
+``` -->

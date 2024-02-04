@@ -1,4 +1,4 @@
-# Contributing guidelines
+<!-- # Contributing guidelines
 
 Here are the guidelines for contributing to this repository.
 
@@ -116,4 +116,4 @@ If you want to add your theme:
     ```
     chore(Turntable): add screenshots of the Turntable
     ```
-If you want to learn more, view the [Angular - Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
+If you want to learn more, view the [Angular - Git Commit Guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines). -->

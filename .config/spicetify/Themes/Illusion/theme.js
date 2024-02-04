@@ -7,12 +7,12 @@ function waitForElement(els, func, timeout = 100) {
     }
 }
 
-let DribbblishShared = {};
+let IllusionShared = {};
 
 // back shadow
 waitForElement([".Root__top-container"], ([topContainer]) => {
     const shadow = document.createElement("div");
-    shadow.id = "dribbblish-back-shadow";
+    shadow.id = "illusion-back-shadow";
     topContainer.prepend(shadow);
 });
 
@@ -35,13 +35,13 @@ waitForElement([".main-navBar-mainNav .os-viewport.os-viewport-native-scrollbars
 let version;
 let ylx;
 
-(function Dribbblish() {
+(function Illusion() {
     // dynamic playback time tooltip
     const progBar = document.querySelector(".playback-bar");
     const root = document.querySelector(".Root");
 
     if (!Spicetify.Player.origin || !progBar || !root) {
-        setTimeout(Dribbblish, 300);
+        setTimeout(Illusion, 300);
         return;
     }
 
@@ -95,11 +95,11 @@ let ylx;
             const result = event.target.result;
             const id = Spicetify.URI.from(filePickerInput.uri).id;
             try {
-                localStorage.setItem("dribbblish:folder-image:" + id, result);
+                localStorage.setItem("illusion:folder-image:" + id, result);
             } catch {
                 Spicetify.showNotification("File too large");
             }
-            DribbblishShared.loadPlaylistImage?.call();
+            IllusionShared.loadPlaylistImage?.call();
         };
         reader.readAsDataURL(file);
     };
@@ -109,8 +109,8 @@ let ylx;
         "Remove folder image",
         ([uri]) => {
             const id = Spicetify.URI.from(uri).id;
-            localStorage.removeItem("dribbblish:folder-image:" + id);
-            DribbblishShared.loadPlaylistImage?.call();
+            localStorage.removeItem("illusion:folder-image:" + id);
+            IllusionShared.loadPlaylistImage?.call();
         },
         ([uri]) => Spicetify.URI.isFolder(uri) && !ylx,
         "x"
@@ -210,14 +210,14 @@ function legacy() {
                 if (app === "playlist") {
                     uri = `spotify:playlist:${uid}`;
                 } else if (app === "folder") {
-                    const base64 = localStorage.getItem("dribbblish:folder-image:" + uid);
+                    const base64 = localStorage.getItem("illusion:folder-image:" + uid);
                     let img = link.querySelector("img");
                     if (!img) {
                         img = document.createElement("img");
                         img.classList.add("playlist-picture");
                         link.prepend(img);
                     }
-                    img.src = base64 || "https://cdn.jsdelivr.net/gh/spicetify/spicetify-themes@master/Dribbblish/images/tracklist-row-song-fallback.svg";
+                    img.src = base64 || "https://cdn.jsdelivr.net/gh/rwietter/illusion-spicetify@master/Illusion/assets/song-fallback.svg";
                     continue;
                 }
 
@@ -229,12 +229,12 @@ function legacy() {
                         img.classList.add("playlist-picture");
                         link.prepend(img);
                     }
-                    img.src = meta.picture || "https://cdn.jsdelivr.net/gh/spicetify/spicetify-themes@master/Dribbblish/images/tracklist-row-song-fallback.svg";
+                    img.src = meta.picture || "https://cdn.jsdelivr.net/gh/rwietter/illusion-spicetify@master/Illusion/assets/song-fallback.svg";
                 });
             }
         }
 
-        DribbblishShared.loadPlaylistImage = loadPlaylistImage;
+        IllusionShared.loadPlaylistImage = loadPlaylistImage;
         loadPlaylistImage();
 
         new MutationObserver(loadPlaylistImage).observe(listElem, { childList: true });
