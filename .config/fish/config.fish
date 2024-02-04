@@ -86,25 +86,27 @@ abbr ga 'git add .'                                              # add all chang
 abbr gcm 'git commit -am'                                        # add all changes and commit with message
 abbr gc 'git commit -m'                                          # commit with message
 
-abbr gco 'git checkout'                                          # checkout to branch
+abbr gu 'git checkout'                                           # checkout to branch
 
 abbr gwc 'git switch -c'                                         # checkout to new branch
-abbr gws 'git switch'                                            # switch to branch
+abbr gw 'git switch'                                             # switch to branch
 
-abbr gll 'git pull'                                              # pull changes from remote
+abbr gl 'git pull'                                               # pull changes from remote
 
 abbr gph 'git push -u origin $(git rev-parse --abbrev-ref HEAD)' # push changes to remote
-abbr gpms 'git push origin main --all'                           # push changes to remote main
+abbr gpa 'git push origin main --all'                            # push changes to remote main
 abbr gpm 'git push origin main'                                  # push changes to remote main
-abbr gps 'git push'                                              # push changes to remote
+abbr gp 'git push'                                               # push changes to remote
 
-abbr gst 'git status'                                            # show git status
+abbr gt 'git status'                                             # show git status
 
-abbr gshws 'git show --word-diff --stat'
-abbr gshc 'git show --color-words'                               # show git commit with color words
-abbr gshw 'git show --word-diff'                                 # show git commit with word diff
-abbr gshs 'git show --stat'                                      # show git commit with statistics
-abbr gsh 'git show'                                              # show git commit
+abbr ge 'git reset'                                              # reset added changes to working directory
+
+abbr gsw 'git show --word-diff --stat'
+abbr gsc 'git show --color-words'                                # show git commit with color words
+abbr gsd 'git show --word-diff'                                  # show git commit with word diff
+abbr gss 'git show --stat'                                       # show git commit with statistics
+abbr gs 'git show'                                               # show git commit
 
 function abbr_update_keys_and_values
     __abbr_tips_init
@@ -117,7 +119,7 @@ set -U forgit_log flo              # git log
 set -U forgit_diff fdf             # git diff
 set -U forgit_add fad              # git add <file>         
 set -U forgit_reset_head frh       # git reset HEAD <file>
-set -U forgit_ignore fig           # git ignore generate
+set -U forgit_ignore fig           # git ignore ge 'git reset' nerate
 set -U forgit_checkout_file fch    # git checkout <file>
 set -U forgit_checkout_branch fcb  # git checkout <branch>
 set -U forgit_branch_delete fbd    # git branch -D <branch>
@@ -139,6 +141,7 @@ bind -M insert \cz undo                          # Undo changes
 
 # -- git
 bind -M insert \cs state                         # Show the working tree status in compact way.
+bind -M insert \ca fad                           # Add file contents to the index.
 
 # \c -> ctrl (case sensitive)
 # \e -> esc | alt (case insensitive)
