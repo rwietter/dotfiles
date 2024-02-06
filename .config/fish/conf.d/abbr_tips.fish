@@ -104,12 +104,12 @@ function __abbr_tips --on-event fish_postexec -d "Abbreviation reminder for the 
     set -l abb
     if not set abb (contains -i -- "$cmd" $__ABBR_TIPS_VALUES)
         for r in $ABBR_TIPS_REGEXES
-            set -l matching (string match -r $r -- $cmd)
-            echo $matching
+            set -l possible_matchs (string match -r $r -- $cmd)
             for tip in $__ABBR_TIPS_VALUES
-            set -l mt (string match -r -- $tip $matching[1])
-                if test -n "$mt"
+            set -l exact_match (string match -r -- $tip $possible_matchs[1])
+                if test -n "$exact_match"
                     set abb (contains -i -- $tip $__ABBR_TIPS_VALUES)
+                    echo $abb
                     break # if you want display only the first matching tip
                 end
             end
