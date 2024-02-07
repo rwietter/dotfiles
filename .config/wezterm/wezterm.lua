@@ -11,21 +11,21 @@ local fonts = {
 	fantasque = "Fantasque Sans Mono",
 	aesthetic = "AestheticIosevka Nerd Font Mono",
 	geist = "Geist Mono",
-	berkeley = 'Berkeley Mono',
+	berkeley = "Berkeley Mono",
 }
 
 local font_name = fonts.berkeley
 
 local themes = {
-	rose_pine_dark = 'rose-pine',
-	rose_pine_light = 'rose-pine-dawn',
-	atelier_cave_light = 'Atelier Cave Light (base16)',
-	night_owlish_light = 'Night Owlish Light',
-	catppuccin_mocha = 'Catppuccin Mocha',
-	nebula_16 = 'Nebula (base16)',
-	rouge = 'Rouge 2',
-	palenight = 'Palenight (Gogh)',
-	catppuccin_macchiato = 'Catppuccin Macchiato',
+	rose_pine_dark = "rose-pine",
+	rose_pine_light = "rose-pine-dawn",
+	atelier_cave_light = "Atelier Cave Light (base16)",
+	night_owlish_light = "Night Owlish Light",
+	catppuccin_mocha = "Catppuccin Mocha",
+	nebula_16 = "Nebula (base16)",
+	rouge = "Rouge 2",
+	palenight = "Palenight (Gogh)",
+	catppuccin_macchiato = "Catppuccin Macchiato",
 }
 
 return {
@@ -165,7 +165,7 @@ return {
 
 	colors = {
 		foreground = "#EFECF4",
-		background = "#0F0F11", -- #1A2026 #0F0F11 #1E1E28
+		background = "#0F0F11", -- #1E1D2D #0F0F11 #1A2026 #0F0F11 #1E1E28
 		cursor_bg = "#EFECF4",
 		cursor_fg = "#EFECF4",
 		cursor_border = "#EFECF4",
@@ -181,7 +181,7 @@ return {
 			"#A4B9EF",
 			"#BD99FF",
 			"#87DFEB",
-			"#DADAE8"
+			"#DADAE8",
 		},
 		brights = {
 			"#6E6C7E",
@@ -191,7 +191,7 @@ return {
 			"#A4B9EF",
 			"#BD99FF",
 			"#87DFEB",
-			"#DADAE8"
+			"#DADAE8",
 		},
 		indexed = { [136] = "#edeff0" },
 		tab_bar = {
@@ -221,18 +221,18 @@ return {
 	hide_tab_bar_if_only_one_tab = true,
 	show_tab_index_in_tab_bar = true,
 	tab_bar_at_bottom = true,
-	use_fancy_tab_bar = false,
+	use_fancy_tab_bar = true,
 
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = {
 		saturation = 0,
-		brightness = 0
+		brightness = 0,
 	},
-	window_background_opacity = 1,
+	window_background_opacity = 0.85,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
-		font = font_with_fallback(font_name, { bold = true })
+		font = font_with_fallback(font_name, { bold = true }),
 	},
 }
