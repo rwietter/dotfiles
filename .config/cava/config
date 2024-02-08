@@ -1,6 +1,6 @@
 [general]
-bar_width = 3
-bar_spacing = 0
+bar_width = 1
+bar_spacing = 2
 framerate = 120
 autosens = 1
 overshoot = 20
@@ -60,13 +60,10 @@ xaxis = none
 gradient = 1
 gradient_count = 5
 gradient_color_1 = '#BD99FF'
-gradient_color_2 = '#87DFEB'
-gradient_color_3 = '#BD99FF'
-gradient_color_4 = '#A1EFD3'
-gradient_color_5 = '#53E2AE'
-gradient_color_6 = '#F1FA8C'
-gradient_color_7 = '#F48FB1'
-gradient_color_8 = '#EE4F84'
+gradient_color_2 = '#C3A3FF
+gradient_color_3 = '#C2A1FF'
+gradient_color_4 = '#C5A5FF'
+gradient_color_5 = '#C7A9FF'
 
 
 [smoothing]
