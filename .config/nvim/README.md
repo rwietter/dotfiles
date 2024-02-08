@@ -50,6 +50,7 @@ S = Shift
 | Alt + h       | Abre o terminal na horizontal                                  |
 | Alt + v       | Abre o terminal na vertical                                    |
 | Space + f + g | Abre a pesquisa por grep                                       |
+| Space + S     | pesquisa por palavra no nvim-tree (nvim-tree focus)            |
 
 
 ### Visual
@@ -93,3 +94,13 @@ S = Shift
 | -------- | ------------------------------------- |
 | H        | hide/display hidden files and folders |
 | R        | refresh                               |
+
+
+## Telescope File Browser
+
+| Shortcut      | Description                                                                             |
+| ------------- | --------------------------------------------------------------------------------------- |
+| Space + s + B | Abre o Telescope Browser                                                                |
+| Tab           | Seleciona files up to down                                                              |
+| Shift + Tab   | Seleciona files down to up                                                              |
+| Alt + m       | Navegue até o diretório e clique em `Alt + m` para mover o arquivo para outro diretório |
