@@ -83,7 +83,7 @@ local plugins = {
       },
     },
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-    cmd = "Telescope",
+    -- cmd = "Telescope",
     config = function()
       require("telescope").load_extension "file_browser"
     end,
