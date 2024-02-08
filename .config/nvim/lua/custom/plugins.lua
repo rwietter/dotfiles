@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -16,7 +16,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -66,7 +66,7 @@ local plugins = {
   -- zen mode
   {
     "Pocco81/true-zen.nvim",
-    event = 'VeryLazy',
+    event = "VeryLazy",
     config = function(_, opts)
       require("true-zen").setup(opts)
     end,
@@ -89,13 +89,17 @@ local plugins = {
     end,
   },
 
+  {
+    "wakatime/vim-wakatime",
+    lazy = false,
+  },
   -- All NvChad plugins are lazy-loaded by default
   -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
   -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
   {
     "mg979/vim-visual-multi",
     lazy = true,
-  }
+  },
 }
 
 return plugins
