@@ -30,7 +30,7 @@ local themes = {
 
 return {
 
-	color_scheme = themes.rose_pine_dark,
+	color_scheme = themes.night_owlish_light,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -229,7 +229,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.85,
+	window_background_opacity = 1,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
