@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "catppuccin",
-  theme_toggle = { "catppuccin", "one_light" },
+  theme = "nord",
+  theme_toggle = { "nord", "one_light" },
   transparency = true,
 
   hl_override = highlights.override,
@@ -17,5 +17,9 @@ M.plugins = "custom.plugins"
 
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
+
+vim.g.loaded_matchparen = true
+vim.g.loaded_matchbracket = true
+-- vim.opt.matchparen = true
 
 return M

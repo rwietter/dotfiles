@@ -1,7 +1,17 @@
+## Escape sequences
+
 leader = Space
 A = Alt
 C = Ctrl
 S = Shift
+
+## Keymap modes
+
+Insert = i
+Normal = Esc
+Visual = v
+V-block = Ctrl + v
+V-line = Shift + v
 
 ## Favorite Shortcuts
 
@@ -52,8 +62,8 @@ S = Shift
 | Space + f + g | Abre a pesquisa por grep                                       |
 | Space + S     | pesquisa por palavra no nvim-tree (nvim-tree focus)            |
 
-
 ### Visual
+
 | Shortcut                  | Description                               |
 | ------------------------- | ----------------------------------------- |
 | v                         | muda para o modo visual                   |
@@ -61,7 +71,6 @@ S = Shift
 | dd                        | deleta a linha no modo visual             |
 | yy                        | copia a linha ou a seleção no modo visual |
 | p                         | cola a linha no modo visual               |
-
 
 ## Commands
 
@@ -76,7 +85,6 @@ S = Shift
 | :vsp    | Abre um novo arquivo na vertical     |
 | :tabnew | Abre um novo arquivo em uma nova aba |
 
-
 ## Leader (Space)
 
 | Shortcut  | Description                 |
@@ -86,15 +94,12 @@ S = Shift
 | Space + p | Abre a pesquisa por texto   |
 | Space x   | Fecha o arquivo atual       |
 
-
-
 ### Tree file
 
 | Shortcut | Description                           |
 | -------- | ------------------------------------- |
 | H        | hide/display hidden files and folders |
 | R        | refresh                               |
-
 
 ## Telescope File Browser
 
@@ -104,3 +109,22 @@ S = Shift
 | Tab           | Seleciona files up to down                                                              |
 | Shift + Tab   | Seleciona files down to up                                                              |
 | Alt + m       | Navegue até o diretório e clique em `Alt + m` para mover o arquivo para outro diretório |
+
+## Multi select edit
+
+| Shortcut                              | Description                             |
+| ------------------------------------- | --------------------------------------- |
+| Ctrl + Down, Up                       | Selecionar em coluna                    |
+| Shift + Left, Right                   | Selecionar em linha                     |
+| ctrl + Up, Down + Shift + Left, Right | seleciona um bloco e as linhas do bloco |
+
+### Multi select edit em {v-l}-block
+
+Primeiro, entre no modo v-block (ctrl + v) ou l-block (shift + v)
+
+| Shortcut                | Description                                              |
+| ----------------------- | -------------------------------------------------------- |
+| Ctrl + Down, Up         | Selecionar em coluna                                     |
+| Shift + Left, Right     | Selecionar em linha                                      |
+| Ctrl + Up, Down + c     | seleciona, apaga a seleção e manter o cursor para edição |
+| Shift + Left, Right + c | seleciona, apaga a seleção e manter o cursor para edição |
