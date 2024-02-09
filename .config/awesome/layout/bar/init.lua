@@ -30,13 +30,13 @@ awful.screen.connect_for_each_screen(
 		-- launcher
 		-- Icons: 
 		local launcher =
-			wibox.widget {
-			widget = wibox.widget.textbox,
-			markup = helpers.colorize_text("", beautiful.fg_color),
-			font = beautiful.icon_var .. "18",
-			align = "center",
-			valign = "center"
-		}
+				wibox.widget {
+					widget = wibox.widget.textbox,
+					markup = helpers.colorize_text("", beautiful.fg_color),
+					font = beautiful.icon_var .. "18",
+					align = "center",
+					valign = "center"
+				}
 
 		launcher:buttons(
 			gears.table.join(
@@ -55,13 +55,13 @@ awful.screen.connect_for_each_screen(
 		-- statistic
 		-- icons:  "⌘"
 		local panel_system =
-			wibox.widget {
-			widget = wibox.widget.textbox,
-			markup = helpers.colorize_text("", beautiful.fg_color),
-			font = beautiful.icon_var .. "15",
-			align = "center",
-			valign = "center"
-		}
+				wibox.widget {
+					widget = wibox.widget.textbox,
+					markup = helpers.colorize_text("", beautiful.fg_color),
+					font = beautiful.icon_var .. "15",
+					align = "center",
+					valign = "center"
+				}
 
 		panel_system:buttons {
 			gears.table.join(
@@ -92,23 +92,23 @@ awful.screen.connect_for_each_screen(
 
 		-- wifi
 		local wifi =
-			wibox.widget {
-			markup = "",
-			font = beautiful.icon_var .. "15",
-			valign = "center",
-			align = "center",
-			widget = wibox.widget.textbox
-		}
+				wibox.widget {
+					markup = "",
+					font = beautiful.icon_var .. "15",
+					valign = "center",
+					align = "center",
+					widget = wibox.widget.textbox
+				}
 
 		-- cc
 		local cc_ic =
-			wibox.widget {
-			markup = "",
-			font = beautiful.icon_var .. "17",
-			valign = "center",
-			align = "center",
-			widget = wibox.widget.textbox
-		}
+				wibox.widget {
+					markup = "",
+					font = beautiful.icon_var .. "17",
+					valign = "center",
+					align = "center",
+					widget = wibox.widget.textbox
+				}
 
 		cc_ic:buttons {
 			gears.table.join(
@@ -125,91 +125,91 @@ awful.screen.connect_for_each_screen(
 		--------------------
 		-- battery widget
 		local bat_icon =
-			wibox.widget {
-			markup = "<span foreground='" .. beautiful.black_color .. "'></span>",
-			font = beautiful.icon_var .. "10",
-			align = "center",
-			valign = "center",
-			widget = wibox.widget.textbox
-		}
+				wibox.widget {
+					markup = "<span foreground='" .. beautiful.black_color .. "'></span>",
+					font = beautiful.icon_var .. "10",
+					align = "center",
+					valign = "center",
+					widget = wibox.widget.textbox
+				}
 
 		local battery_progress =
-			wibox.widget {
-			color = beautiful.green_color,
-			background_color = beautiful.fg_color .. "00",
-			forced_width = dpi(25),
-			border_width = dpi(0.5),
-			border_color = beautiful.fg_color .. "A6",
-			paddings = dpi(1),
-			bar_shape = helpers.rrect(dpi(1)),
-			shape = helpers.rrect(dpi(4)),
-			value = 70,
-			max_value = 100,
-			widget = wibox.widget.progressbar
-		}
+				wibox.widget {
+					color = beautiful.green_color,
+					background_color = beautiful.fg_color .. "00",
+					forced_width = dpi(25),
+					border_width = dpi(0.5),
+					border_color = beautiful.fg_color .. "A6",
+					paddings = dpi(1),
+					bar_shape = helpers.rrect(dpi(1)),
+					shape = helpers.rrect(dpi(4)),
+					value = 70,
+					max_value = 100,
+					widget = wibox.widget.progressbar
+				}
 
 		local battery_border_thing =
-			wibox.widget {
-			wibox.widget.textbox,
-			widget = wibox.container.background,
-			border_width = dpi(0),
-			bg = beautiful.fg_color .. "A6",
-			forced_width = dpi(9.4),
-			forced_height = dpi(9.4),
-			shape = function(cr, width, height)
-				gears.shape.pie(cr, width, height, 0, math.pi)
-			end
-		}
+				wibox.widget {
+					wibox.widget.textbox,
+					widget = wibox.container.background,
+					border_width = dpi(0),
+					bg = beautiful.fg_color .. "A6",
+					forced_width = dpi(9.4),
+					forced_height = dpi(9.4),
+					shape = function(cr, width, height)
+						gears.shape.pie(cr, width, height, 0, math.pi)
+					end
+				}
 
 		local battery =
-			wibox.widget {
-			{
-				{
+				wibox.widget {
 					{
-						battery_border_thing,
-						direction = "south",
-						widget = wibox.container.rotate
+						{
+							{
+								battery_border_thing,
+								direction = "south",
+								widget = wibox.container.rotate
+							},
+							{
+								battery_progress,
+								direction = "east",
+								widget = wibox.container.rotate()
+							},
+							layout = wibox.layout.fixed.vertical,
+							spacing = dpi(-4)
+						},
+						{
+							bat_icon,
+							margins = { top = dpi(3) },
+							widget = wibox.container.margin
+						},
+						layout = wibox.layout.stack
 					},
-					{
-						battery_progress,
-						direction = "east",
-						widget = wibox.container.rotate()
-					},
-					layout = wibox.layout.fixed.vertical,
-					spacing = dpi(-4)
-				},
-				{
-					bat_icon,
-					margins = {top = dpi(3)},
-					widget = wibox.container.margin
-				},
-				layout = wibox.layout.stack
-			},
-			widget = wibox.container.margin,
-			margins = {left = dpi(7.47), right = dpi(7.47)}
-		}
+					widget = wibox.container.margin,
+					margins = { left = dpi(7.47), right = dpi(7.47) }
+				}
 
 		-- clock
 		---------------------------
 		local clock =
-			wibox.widget {
-			{
-				widget = wibox.widget.textclock,
-				format = "%I",
-				font = beautiful.font_var .. "Bold 12",
-				valign = "center",
-				align = "center"
-			},
-			{
-				widget = wibox.widget.textclock,
-				format = "%M",
-				font = beautiful.font_var .. "Medium 12",
-				valign = "center",
-				align = "center"
-			},
-			layout = wibox.layout.fixed.vertical,
-			spacing = dpi(3)
-		}
+				wibox.widget {
+					{
+						widget = wibox.widget.textclock,
+						format = "%I",
+						font = beautiful.font_var .. "Bold 12",
+						valign = "center",
+						align = "center"
+					},
+					{
+						widget = wibox.widget.textclock,
+						format = "%M",
+						font = beautiful.font_var .. "Medium 12",
+						valign = "center",
+						align = "center"
+					},
+					layout = wibox.layout.fixed.vertical,
+					spacing = dpi(3)
+				}
 
 		clock:buttons(
 			gears.table.join(
@@ -256,22 +256,22 @@ awful.screen.connect_for_each_screen(
 
 		-- wibar
 		s.wibar_wid =
-			awful.wibar(
-			{
-				screen = s,
-				visible = true,
-				ontop = false,
-				type = "dock",
-				width = dpi(theme.bar_size),
-				shape = helpers.rrect(beautiful.rounded - 4),
-				bg = beautiful.bg_color,
-				height = screen_height - beautiful.useless_gap * 4
-			}
-		)
+				awful.wibar(
+					{
+						screen = s,
+						visible = true,
+						ontop = false,
+						type = "dock",
+						width = dpi(theme.bar_size),
+						shape = helpers.rrect(beautiful.rounded - 4),
+						bg = beautiful.bg_color,
+						height = screen_height - beautiful.useless_gap * 4
+					}
+				)
 
 		-- wibar placement
-		awful.placement.left(s.wibar_wid, {margins = beautiful.useless_gap * 2})
-		s.wibar_wid:struts {left = s.wibar_wid.width + beautiful.useless_gap * 2}
+		awful.placement.left(s.wibar_wid, { margins = beautiful.useless_gap * 2 })
+		s.wibar_wid:struts { left = s.wibar_wid.width + beautiful.useless_gap * 2 }
 
 		-- bar setup
 		s.wibar_wid:setup {
@@ -279,13 +279,13 @@ awful.screen.connect_for_each_screen(
 				launcher,
 				{
 					taglist,
-					margins = {left = dpi(8), right = dpi(8)},
+					margins = { left = dpi(8), right = dpi(8) },
 					widget = wibox.container.margin
 				},
 				{
 					{
 						panel_system,
-						margins = {top = dpi(0), bottom = dpi(0)},
+						margins = { top = dpi(0), bottom = dpi(0) },
 						layout = wibox.layout.fixed.vertical
 					},
 					{
@@ -295,7 +295,7 @@ awful.screen.connect_for_each_screen(
 					},
 					{
 						battery,
-						margins = {left = dpi(8), right = dpi(8)},
+						margins = { left = dpi(8), right = dpi(8) },
 						widget = wibox.container.margin
 					},
 					{
@@ -311,7 +311,7 @@ awful.screen.connect_for_each_screen(
 				expand = "none"
 			},
 			layout = wibox.container.margin,
-			margins = {top = dpi(10), bottom = dpi(10)}
+			margins = { top = dpi(10), bottom = dpi(10) }
 		}
 	end
 )

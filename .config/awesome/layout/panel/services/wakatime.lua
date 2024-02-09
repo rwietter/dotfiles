@@ -29,14 +29,14 @@ local icon = wibox.widget {
 
 -- ram
 local wakatime = watch('bash ' .. home_var .. '/.config/awesome/scripts/wakatime.sh'
-	, 3600, function(widget, stdout)
-		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color)
-	end, wibox.widget {
-		font = beautiful.font_var .. "13",
-		widget = wibox.widget.textbox,
-		valign = "center",
-		align = "center"
-	})
+, 3600, function(widget, stdout)
+	widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color)
+end, wibox.widget {
+	font = beautiful.font_var .. "13",
+	widget = wibox.widget.textbox,
+	valign = "center",
+	align = "center"
+})
 
 
 -- mix those

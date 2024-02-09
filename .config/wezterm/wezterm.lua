@@ -14,7 +14,7 @@ local fonts = {
 	berkeley = "Berkeley Mono",
 }
 
-local font_name = fonts.berkeley
+local font_name = fonts.geist
 
 local themes = {
 	rose_pine_dark = "rose-pine",
@@ -165,7 +165,7 @@ return {
 
 	colors = {
 		foreground = "#EFECF4",
-		background = "#0F0F11", -- #1E1D2D #0F0F11 #1A2026 #0F0F11 #1E1E28
+		background = "#0F0F11", -- #1E1D2D #0F0F11 #1A2026 #1E1E28
 		cursor_bg = "#EFECF4",
 		cursor_fg = "#EFECF4",
 		cursor_border = "#EFECF4",
@@ -229,7 +229,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 1,
+	window_background_opacity = 0.8,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

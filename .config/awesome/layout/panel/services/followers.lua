@@ -28,14 +28,14 @@ local icon = wibox.widget {
 
 -- ram
 local followers = watch('bash ' .. home_var .. '/.config/awesome/scripts/github.sh followers'
-	, 21600, function(widget, stdout)
-		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color)
-	end, wibox.widget {
-		font = beautiful.font_var .. "13",
-		widget = wibox.widget.textbox,
-		valign = "center",
-		align = "center"
-	})
+, 21600, function(widget, stdout)
+	widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", ""), beautiful.fg_color)
+end, wibox.widget {
+	font = beautiful.font_var .. "13",
+	widget = wibox.widget.textbox,
+	valign = "center",
+	align = "center"
+})
 
 
 -- mix those

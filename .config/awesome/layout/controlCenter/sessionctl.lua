@@ -64,8 +64,8 @@ return wibox.widget {
 	nil,
 	{
 		{
-			button_creator(lock_button, beautiful.bg_3 .. "B3", beautiful.fg_color .. "33", dpi(13), 0, beautiful.fg_color .. "33"),
-			button_creator(power_button, beautiful.bg_3 .. "B3", beautiful.fg_color .. "33", dpi(13), 0,
+			button_creator(lock_button, beautiful.bg_color .. "22", beautiful.fg_color .. "33", dpi(13), 0, beautiful.fg_color .. "33"),
+			button_creator(power_button, beautiful.bg_color .. "22", beautiful.fg_color .. "33", dpi(13), 0,
 				beautiful.fg_color .. "33"),
 			layout = wibox.layout.fixed.horizontal,
 			spacing = dpi(10)

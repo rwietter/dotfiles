@@ -15,9 +15,9 @@ colors.emphasis   = "#EFECF4"
 
 -- Super dark theme colors
 colors.bg_color   = "#0F0F11"
-colors.bg_2       = "#1B1B1E"
-colors.bg_3       = "#29292E"
-colors.bg_4       = "#212931"
+colors.bg_2       = "#151518"
+colors.bg_3       = "#16161A"
+colors.bg_4       = "#18181C"
 
 -- Medium dark theme colors
 -- colors.bg_color   = "#1E1E28"

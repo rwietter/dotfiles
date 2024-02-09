@@ -28,14 +28,14 @@ local icon = wibox.widget {
 
 -- coretemps
 local coretemps = watch('bash -c ' .. home_var .. '/.config/awesome/scripts/coretemps.sh'
-	, 5, function(widget, stdout)
-		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", " "), beautiful.fg_color)
-	end, wibox.widget {
-		font = beautiful.font_var .. "13",
-		widget = wibox.widget.textbox,
-		valign = "center",
-		align = "center"
-	})
+, 5, function(widget, stdout)
+	widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", " "), beautiful.fg_color)
+end, wibox.widget {
+	font = beautiful.font_var .. "13",
+	widget = wibox.widget.textbox,
+	valign = "center",
+	align = "center"
+})
 
 
 -- mix those

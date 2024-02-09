@@ -11,6 +11,7 @@ local options = {
 		typescriptreact = { "biome" },
 		css = { "prettier" },
 		html = { "prettier" },
+		markdown = { "prettier" },
 
 		sh = { "shfmt" },
 	},
