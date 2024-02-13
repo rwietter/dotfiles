@@ -46,6 +46,7 @@ local plugins = {
     end,
   },
 
+  -- OxoCarbon theme
   {
     "nyoom-engineering/oxocarbon.nvim",
     config = function()
@@ -77,30 +78,110 @@ local plugins = {
     "nvim-telescope/telescope-file-browser.nvim",
     keys = {
       {
-        "<leader>sB",
+        "<leader>sb",
         ":Telescope file_browser path=%:p:h=%:p:h<cr>",
         desc = "Browse Files",
       },
     },
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-    -- cmd = "Telescope",
     config = function()
       require("telescope").load_extension "file_browser"
     end,
+    lazy = false,
   },
 
+  -- wakatime plugin for tracking time
   {
     "wakatime/vim-wakatime",
     lazy = false,
   },
 
-  -- All NvChad plugins are lazy-loaded by default
-  -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
-  -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
+  -- Comment jsx and tsx
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    config = function()
+      require("ts_context_commentstring").setup {
+        enable_autocmd = false,
+      }
+    end,
+  },
+  {
+    "echasnovski/mini.comment",
+    event = "VeryLazy",
+    opts = {
+      options = {
+        custom_commentstring = function()
+          return require("ts_context_commentstring.internal").calculate_commentstring() or vim.bo.commentstring
+        end,
+      },
+    },
+  },
+
+  {
+    "windwp/nvim-ts-autotag",
+    event = "BufRead",
+    config = function()
+      require "plugins.configs.treesitter"
+    end,
+  },
+
+  -- Noirbuddy colorscheme
+  {
+    "jesseleite/nvim-noirbuddy",
+    dependencies = {
+      { "tjdevries/colorbuddy.nvim", branch = "dev" },
+    },
+  },
+
+  -- Select blocks of text
   {
     "mg979/vim-visual-multi",
     lazy = false,
     branch = "master",
+  },
+
+  -- Problem viewer like vscode
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+
+  -- Highlights references under cursor
+  {
+    "RRethy/vim-illuminate",
+    event = "VeryLazy",
+    opts = {
+      delay = 200,
+      large_file_cutoff = 2000,
+      large_file_overrides = {
+        providers = { "lsp" },
+      },
+    },
+    config = function(_, opts)
+      require("illuminate").configure(opts)
+
+      local function map(key, dir, buffer)
+        vim.keymap.set("n", key, function()
+          require("illuminate")["goto_" .. dir .. "_reference"](false)
+        end, { desc = dir:sub(1, 1):upper() .. dir:sub(2) .. " Reference", buffer = buffer })
+      end
+
+      map("]]", "next")
+      map("[[", "prev")
+
+      -- also set it after loading ftplugins, since a lot overwrite [[ and ]]
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function()
+          local buffer = vim.api.nvim_get_current_buf()
+          map("]]", "next", buffer)
+          map("[[", "prev", buffer)
+        end,
+      })
+    end,
+    keys = {
+      { "]]", desc = "Next Reference" },
+      { "[[", desc = "Prev Reference" },
+    },
   },
 }
 

@@ -30,7 +30,7 @@ local themes = {
 
 return {
 
-	color_scheme = themes.night_owlish_light,
+	color_scheme = themes.rose_pine_light,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -73,7 +73,7 @@ return {
 			}),
 		},
 		{
-			key = [[\]],
+			key = [[/]],
 			mods = "CTRL",
 			action = wezterm.action({
 				SplitVertical = { domain = "CurrentPaneDomain" },
@@ -130,7 +130,7 @@ return {
 			action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
 		},
 		{
-			key = "w",
+			key = "F2",
 			mods = "CTRL",
 			action = wezterm.action({ CloseCurrentTab = { confirm = false } }),
 		},
@@ -229,7 +229,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.9,
+	window_background_opacity = 1,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-FG='#FFFFFF'
-BG='#1A1A27'
-fg_title="#CD7CFF"
+FG='#cdd6f4'
+BG='#11111b'
+fg_title="#cba6f7"
 
 font1="Fantasque Sans Mono:size=12"
 font_title="Noto Sans:bold:size=11"

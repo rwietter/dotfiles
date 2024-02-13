@@ -62,6 +62,42 @@ set -gx LANG pt_BR.UTF-8                # Set language to pt_BR.UTF-8
 set -gx LC_ALL pt_BR.UTF-8              # Set locale to pt_BR.UTF-8
 set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2;189;153;255;4;1m{{ .cmd }}\e[0m"
 
+set -x foreground   #EFECF4
+set -x background   #1A2026
+set -x cursorColor  #EFECF4
+
+# black
+set -x color0       #242D35
+set -x color8       #56687E
+
+# red
+set -x color1       #F48FB1
+set -x color9       #EE4F84
+
+# green
+set -x color2       #A1EFD3
+set -x color10      #53E2AE
+
+# yellow
+set -x color3       #F1FA8C
+set -x color11      #F1FF52
+
+# blue
+set -x color4       #92B6F4
+set -x color12      #6498EF
+
+# magenta
+set -x color5       #BD99FF
+set -x color13      #985EFF
+
+# cyan
+set -x color6       #87DFEB
+set -x color14      #24D1E7
+
+# white
+set -x color7       #FFFFFF
+set -x color15      #F4F5F2
+
 # ----------------- Functions ------------------
 # ----------------------------------------------
 # function fish_mode_prompt; end # Disable fish mode prompt (vi mode)

@@ -965,3 +965,4 @@ Feb 07 13:27 : player: played "Robin Schulz - Sun Goes Down feat. Jasmine Thomps
 Feb 07 13:31 : player: played "Robin schulz & hugel - i believe i'm fine.mp3"
 Feb 07 13:35 : player: played "Robin Schulz & Marc Scibilia - unforgettable.mp3"
 Feb 07 13:39 : player: played "Robin schulz & richard judge – show me love.mp3"
+Feb 12 13:38 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists

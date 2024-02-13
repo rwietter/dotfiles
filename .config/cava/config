@@ -59,15 +59,15 @@ xaxis = none
 
 gradient = 1
 gradient_count = 5
-gradient_color_1 = '#BD99FF'
-gradient_color_2 = '#C3A3FF
-gradient_color_3 = '#C2A1FF'
-gradient_color_4 = '#C5A5FF'
-gradient_color_5 = '#C7A9FF'
+gradient_color_1 = '#cba6f7'
+gradient_color_2 = '#cba6f7
+gradient_color_3 = '#cba6f7'
+gradient_color_4 = '#cba6f7'
+gradient_color_5 = '#cba6f7'
 
 
 [smoothing]
-gravity = 100
+gravity = 300
 
 [eq]
 ; 1 = 1 # bass
