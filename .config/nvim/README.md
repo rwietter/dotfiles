@@ -2,7 +2,7 @@
 
 ## Escape Sequences
 
-Leader = Space
+- Leader = Space
 - A = Alt
 - C = Ctrl
 - S = Shift
