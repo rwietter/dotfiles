@@ -6,7 +6,6 @@ local colors = {
   green = "#83a598",
   orange = "#fe8019",
   violet = "#AF82FF",
-  redshift = "#F1A1C2",
   blue = "#83ACFF",
 }
 
@@ -15,6 +14,7 @@ local theme = {
     a = { fg = colors.black, bg = colors.violet, gui = "bold" },
     b = { fg = colors.violet, bg = colors.black },
     c = { fg = colors.black, bg = colors.black },
+    x = { fg = colors.violet, bg = colors.black },
     z = { fg = colors.black, bg = colors.violet, gui = "bold" },
   },
   insert = {
@@ -95,13 +95,27 @@ local function setup()
   require("lualine").setup {
     options = {
       theme = theme,
+      icons_enabled = true,
+      refresh = {
+        statusline = 600,
+        tabline = 600,
+        winbar = 600,
+      },
       component_separators = "",
       section_separators = { left = "", right = "" },
     },
     sections = process_sections {
-      lualine_a = { "mode" },
+      lualine_a = {
+        "mode",
+      },
       lualine_b = {
-        { "branch", icon = "" },
+        {
+          "branch",
+          icon = "",
+          on_click = function()
+            require("telescope.builtin").git_branches()
+          end,
+        },
         {
           "diff",
           colored = true,
@@ -128,7 +142,7 @@ local function setup()
           sections = { "warn" },
           diagnostics_color = { warn = { bg = colors.orange, fg = colors.white } },
         },
-        { "filename", file_status = false, path = 1 },
+        { "filename", file_status = false, path = 0 },
         { modified, color = { bg = colors.grey, fg = colors.white, gui = "bold" } },
         {
           "%w",
@@ -151,7 +165,7 @@ local function setup()
       },
       lualine_c = {},
       lualine_x = {},
-      lualine_y = { search_result, "filetype" },
+      lualine_y = { search_result, "filetype", { "datetime", style = "%H:%M" } },
       lualine_z = { "%l:%c", "%p%%/%L" },
     },
     inactive_sections = {
