@@ -3,18 +3,18 @@
 ## Escape Sequences
 
 Leader = Space
-A = Alt
-C = Ctrl
-S = Shift
-R = Replace
+- A = Alt
+- C = Ctrl
+- S = Shift
+- R = Replace
 
 ## Keymap Modes
 
-Insert = i
-Normal = Esc
-Visual = v
-V-block = Ctrl + v
-V-line = Shift + v
+- Insert = i
+- Normal = Esc
+- Visual = v
+- V-block = Ctrl + v
+- V-line = Shift + v
 
 ## Favorite Shortcuts
 
