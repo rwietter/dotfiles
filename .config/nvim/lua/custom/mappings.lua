@@ -15,6 +15,14 @@ M.general = {
       "formatting",
     },
 
+    ["<C-s"] = {
+      function()
+        require "notify"("Saving...", "INFO")
+      end,
+      "Save file",
+    },
+
+    -- Trouble
     ["<S-t>"] = {
       function()
         require("trouble").toggle()
@@ -29,6 +37,9 @@ M.general = {
 
     -- tab switch buffer
     ["<C-t>"] = { "<cmd> tabnew <cr>", " ", opts = { nowait = true } },
+
+    -- Howdoi AI
+    ["<leader>ah"] = { ":Telescope howdoi<CR>", "Open howdoi" },
   },
   v = {
     [">"] = { ">gv", "indent" },

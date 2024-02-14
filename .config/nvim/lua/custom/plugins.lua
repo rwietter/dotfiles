@@ -11,6 +11,14 @@ local plugins = {
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end, -- Override to setup mason-lspconfig
+    opts = {
+      diagnostics = {
+        update_in_insert = true,
+      },
+      inlay_hints = {
+        enabled = true,
+      },
+    },
   },
 
   -- override plugin configs
@@ -60,13 +68,19 @@ local plugins = {
     cmd = "Copilot",
     build = ":Copilot auth",
     opts = {
-      suggestion = { enabled = true },
-      panel = { enabled = true },
+      suggestion = { enabled = false },
+      panel = { enabled = false },
       filetypes = {
         markdown = true,
         help = true,
       },
     },
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    config = function()
+      require("copilot_cmp").setup()
+    end,
   },
 
   -- zen mode
@@ -149,6 +163,9 @@ local plugins = {
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      use_diagnostic_signs = true,
+    },
   },
 
   -- Highlights references under cursor
@@ -213,6 +230,37 @@ local plugins = {
     config = function()
       return require("custom.configs.lualine").setup()
     end,
+  },
+
+  -- Howdoi AI
+  {
+    "zane-/howdoi.nvim",
+    lazy = false,
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    config = function()
+      return require("telescope").load_extension "howdoi"
+    end,
+  },
+
+  -- Error lens like vscode
+  {
+    "chikko80/error-lens.nvim",
+    event = { "BufRead", "InsertEnter", "BufReadPre", "WinEnter" },
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+    },
+  },
+
+  -- !TODO: Not work
+  {
+    "rcarriga/nvim-notify",
+    config = function()
+      require("telescope").load_extension "notify"
+      require("notify").setup()
+    end,
+    opts = {
+      timeout = 5000,
+    },
   },
 }
 

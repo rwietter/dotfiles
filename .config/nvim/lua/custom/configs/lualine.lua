@@ -128,7 +128,7 @@ local function setup()
           diff_color = {
             added = { fg = colors.green },
             modified = { fg = colors.orange },
-            removed = { fg = colors.red },
+            removed = { fg = colors.redshift },
           },
           symbols = {
             added = " ",

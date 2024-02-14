@@ -21,3 +21,4 @@
 | Space + s + b | Opens the Telescope Browser.               |
 | Space + f + f | Opens file search.                         |
 | Space + f + w | Opens word search.                         |
+| Space + gd    | LSP Type Definition                        |
