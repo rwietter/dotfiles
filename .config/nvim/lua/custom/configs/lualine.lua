@@ -31,11 +31,7 @@ local theme = {
     z = { fg = colors.white, bg = colors.orange, gui = "bold" },
   },
   replace = {
-    a = {
-      a = colors.black,
-      bg = colors.redshift,
-      gui = "bold",
-    },
+    a = { fg = colors.black, bg = colors.redshift, gui = "bold" },
     b = { fg = colors.redshift, bg = colors.black },
     c = { fg = colors.black, bg = colors.black },
     x = { fg = colors.redshift, bg = colors.black },
