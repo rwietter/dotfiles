@@ -4,6 +4,7 @@ Leader = Space
 A = Alt
 C = Ctrl
 S = Shift
+R = Replace
 
 ## Keymap Modes
 

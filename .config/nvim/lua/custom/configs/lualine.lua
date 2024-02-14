@@ -1,5 +1,6 @@
 local colors = {
-  red = "#F38BA8",
+  red = "#C13B58",
+  redshift = "#F48097",
   grey = "#A0A8C1",
   black = "#141417",
   white = "#f3f3f3",
@@ -13,7 +14,7 @@ local theme = {
   normal = {
     a = { fg = colors.black, bg = colors.violet, gui = "bold" },
     b = { fg = colors.violet, bg = colors.black },
-    c = { fg = colors.black, bg = colors.black },
+    c = { fg = colors.white, bg = colors.black },
     x = { fg = colors.violet, bg = colors.black },
     z = { fg = colors.black, bg = colors.violet, gui = "bold" },
   },
@@ -29,13 +30,22 @@ local theme = {
     c = { fg = colors.white, bg = colors.black },
     z = { fg = colors.white, bg = colors.orange, gui = "bold" },
   },
-  replace = { a = { fg = colors.black, bg = colors.green } },
-  inactive = { a = { fg = colors.white, bg = colors.red } },
+  replace = {
+    a = {
+      a = colors.black,
+      bg = colors.redshift,
+      gui = "bold",
+    },
+    b = { fg = colors.redshift, bg = colors.black },
+    c = { fg = colors.black, bg = colors.black },
+    x = { fg = colors.redshift, bg = colors.black },
+    z = { fg = colors.black, bg = colors.redshift, gui = "bold" },
+  },
   command = {
-    a = { fg = colors.black, bg = colors.red, gui = "bold" },
+    a = { fg = colors.white, bg = colors.red, gui = "bold" },
     b = { fg = colors.red, bg = colors.black },
     c = { fg = colors.white, bg = colors.black },
-    z = { fg = colors.black, bg = colors.red, gui = "bold" },
+    z = { fg = colors.white, bg = colors.red, gui = "bold" },
   },
 }
 
