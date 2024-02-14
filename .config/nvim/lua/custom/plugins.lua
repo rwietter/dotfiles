@@ -58,10 +58,15 @@ local plugins = {
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
-    event = "InsertEnter",
-    config = function()
-      require("copilot").setup()
-    end,
+    build = ":Copilot auth",
+    opts = {
+      suggestion = { enabled = true },
+      panel = { enabled = true },
+      filetypes = {
+        markdown = true,
+        help = true,
+      },
+    },
   },
 
   -- zen mode
@@ -133,7 +138,7 @@ local plugins = {
     },
   },
 
-  -- Select blocks of text
+  -- Select text
   {
     "mg979/vim-visual-multi",
     lazy = false,
@@ -198,6 +203,16 @@ local plugins = {
         desc = "Replace in files (Spectre)",
       },
     },
+  },
+
+  -- Custom statusbar for nvim
+  {
+    "nvim-lualine/lualine.nvim",
+    lazy = false,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      return require("custom.configs.lualine").setup()
+    end,
   },
 }
 

@@ -1,11 +1,11 @@
-## Escape sequences
+## Escape Sequences
 
-leader = Space
+Leader = Space
 A = Alt
 C = Ctrl
 S = Shift
 
-## Keymap modes
+## Keymap Modes
 
 Insert = i
 Normal = Esc
@@ -15,81 +15,81 @@ V-line = Shift + v
 
 ## Favorite Shortcuts
 
-| Shortcut      | Description                                  |
-| ------------- | -------------------------------------------- |
-| Alt + h       | Abre o terminal na horizontal                |
-| Ctrl + f      | Abre/fecha a árvore de arquivos e diretórios |
-| Shift + Tab   | Alterna entre as abas                        |
-| Space + f     | Abre a pesquisa por arquivo                  |
-| Ctrl + t      | Abre um workspace novo                       |
-| Space + ch    | Mostra o cheat sheet                         |
-| dd            | deleta a linha                               |
-| d             | (editor) deleta a seleção de texto           |
-| yy            | copia a linha ou a seleção                   |
-| p             | cola a linha                                 |
-| u             | Desfaz a última ação                         |
-| Ctrl + r      | Refaz a última ação                          |
-| r             | (nvim-tree) renomeia o arquivo ou diretório  |
-| d             | (nvim-tree) deleta o arquivo ou diretório    |
-| a             | (nvim-tree) cria um arquivo ou diretório     |
-| Space + s + b | Abre o Telescope Browser                     |
-| Space + f + f | Abre a pesquisa por files                    |
-| Space + f + w | Abre a pesquisa por words                    |
+| Shortcut      | Description                               |
+| ------------- | ----------------------------------------- |
+| Alt + h       | Opens the terminal horizontally           |
+| Ctrl + f      | Opens/closes the file and directory tree  |
+| Shift + Tab   | Toggles between tabs                      |
+| Space + f     | Opens file search                         |
+| Ctrl + t      | Opens a new workspace                     |
+| Space + ch    | Displays the cheat sheet                  |
+| dd            | Deletes the line                          |
+| d             | (editor) Deletes the selected text        |
+| yy            | Copies the line or selection              |
+| p             | Pastes the line                           |
+| u             | Undoes the last action                    |
+| Ctrl + r      | Redoes the last action                    |
+| r             | (nvim-tree) Renames the file or directory |
+| d             | (nvim-tree) Deletes the file or directory |
+| a             | (nvim-tree) Creates a file or directory   |
+| Space + s + b | Opens the Telescope Browser               |
+| Space + f + f | Opens file search                         |
+| Space + f + w | Opens word search                         |
 
 ## Shortcuts
 
-| Shortcut                  | Description                                                    |
-| ------------------------- | -------------------------------------------------------------- |
-| CTRL + f                  | Abre/fecha a árvore de arquivos e diretórios                   |
-| CTRL + h                  | Vai para a árvore de arquivos e diretórios                     |
-| CTRL + l                  | Vai para o editor                                              |
-| Shift + Tab               | Alterna entre as abas                                          |
-| u                         | Desfaz a última ação                                           |
-| CTRL + r                  | Refaz a última ação                                            |
-| CTRL + s                  | Salva o arquivo em modo normal                                 |
-| CTRL + q                  | Fecha o arquivo                                                |
-| CTRL + w                  | Fecha o arquivo                                                |
-| CTRL + p                  | Navega para cima no arquivo                                    |
-| CTRL + i                  | Abre o arquivo quando o cursor está em cima do nome do arquivo |
-| CTRL + v                  | Cria um bloco                                                  |
-| Space + th                | Abre o theme switcher                                          |
-| Alt + h                   | Abre o terminal na horizontal                                  |
-| Alt + v                   | Abre o terminal na vertical                                    |
-| Space + f + g             | Abre a pesquisa por grep                                       |
-| Space + S                 | pesquisa por palavra no nvim-tree (nvim-tree focus)            |
-| v                         | muda para o modo visual                                        |
-| v + up, down, left, right | move o cursor no modo visual                                   |
-| dd                        | deleta a linha no modo visual                                  |
-| yy                        | copia a linha ou a seleção no modo visual                      |
-| G                         | Vai para o final do arquivo                                    |
-| gg                        | Vai para o início do arquivo                                   |
-| p                         | cola a linha no modo visual                                    |
-| $                         | Go to end of line                                              |
-| 0                         | Start of line                                                  |
-| {                         | Go to previews empty line                                      |
-| }                         | Go to next empty line                                          |
-| b                         | Go to previews start word                                      |
-| e                         | Go to next end word                                            |
-| w                         | Go to next word                                                |
+| Shortcut                  | Description                                          |
+| ------------------------- | ---------------------------------------------------- |
+| CTRL + f                  | Opens/closes the file and directory tree             |
+| CTRL + h                  | Goes to the file and directory tree                  |
+| CTRL + l                  | Goes to the editor                                   |
+| Shift + Tab               | Toggles between tabs                                 |
+| u                         | Undoes the last action                               |
+| CTRL + r                  | Redoes the last action                               |
+| CTRL + s                  | Saves the file in normal mode                        |
+| CTRL + q                  | Closes the file                                      |
+| CTRL + w                  | Closes the file                                      |
+| CTRL + p                  | Navigates up in the file                             |
+| CTRL + i                  | Opens the file when the cursor is over the file name |
+| CTRL + v                  | Creates a block                                      |
+| Space + th                | Opens the theme switcher                             |
+| Alt + h                   | Opens the terminal horizontally                      |
+| Alt + v                   | Opens the terminal vertically                        |
+| Space + f + g             | Opens grep search                                    |
+| Space + S                 | Searches for a word in nvim-tree (nvim-tree focus)   |
+| v                         | Switches to visual mode                              |
+| v + up, down, left, right | Moves the cursor in visual mode                      |
+| dd                        | Deletes the line in visual mode                      |
+| yy                        | Copies the line or selection in visual mode          |
+| G                         | Goes to the end of the file                          |
+| gg                        | Goes to the beginning of the file                    |
+| p                         | Pastes the line in visual mode                       |
+| $                         | Goes to end of line                                  |
+| 0                         | Goes to start of line                                |
+| {                         | Goes to previous empty line                          |
+| }                         | Goes to next empty line                              |
+| b                         | Goes to previous start word                          |
+| e                         | Goes to next end word                                |
+| w                         | Goes to next word                                    |
 
 ## Commands
 
-| Command | Description                          |
-| ------- | ------------------------------------ |
-| :q      | Fecha o arquivo                      |
-| :w      | Salva o arquivo                      |
-| :wq     | Salva e fecha o arquivo              |
-| :q!     | Fecha o arquivo sem salvar           |
-| :e      | Abre um arquivo                      |
-| :sp     | Abre um novo arquivo                 |
-| :vsp    | Abre um novo arquivo na vertical     |
-| :tabnew | Abre um novo arquivo em uma nova aba |
+| Command | Description                        |
+| ------- | ---------------------------------- |
+| :q      | Closes the file                    |
+| :w      | Saves the file                     |
+| :wq     | Saves and closes the file          |
+| :q!     | Closes the file without saving     |
+| :e      | Opens a file                       |
+| :sp     | Opens a new file                   |
+| :vsp    | Opens a new file in vertical split |
+| :tabnew | Opens a new file in a new tab      |
 
 ## Leader (Space)
 
-| Shortcut  | Description                 |
-| --------- | --------------------------- |
-| Space + b | Abre um novo arquivo        |
-| Space + f | Abre a pesquisa por arquivo |
-| Space + p | Abre a pesquisa por texto   |
-| Space x   | Fecha o arquivo atual       |
+| Shortcut  | Description             |
+| --------- | ----------------------- |
+| Space + b | Opens a new file        |
+| Space + f | Opens file search       |
+| Space + p | Opens word search       |
+| Space x   | Closes the current file |

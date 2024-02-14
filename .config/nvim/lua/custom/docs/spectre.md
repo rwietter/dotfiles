@@ -1,6 +1,6 @@
 ## Spectre
 
-| Binding                   | Description   |
-| ------------------------- | ------------- |
-| Space + sr                | Open spectre  |
-| (Space+c) - both together | Apply replace |
+| Binding    | Description   |
+| ---------- | ------------- |
+| Space + sr | Open spectre  |
+| (Space+c)  | Apply replace |

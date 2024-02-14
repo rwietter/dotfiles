@@ -213,7 +213,7 @@ return {
 		left = 20,
 		right = 20,
 		top = 20,
-		bottom = 20,
+		bottom = 0,
 	},
 
 	-- Tab Bar
@@ -229,7 +229,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 1,
+	window_background_opacity = 0.97,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
