@@ -2,6 +2,8 @@
 
 <img src="https://0x0.st/HDbF.png" alt="screenshots" align="center" width="100%" />
 
+<img src="https://0x0.st/Hdld.png" alt="screenshots" align="center" width="100%" />
+
 <div>
     <img src="https://0x0.st/HGH0.png" alt="screenshots" align="right" width="65%" />
     <h3>Description</h3>
@@ -70,7 +72,6 @@
 | Character Map        | gucharmap                                     |
 | LS_COLORS            | vivid                                         |
 
-
 ## Colors
 
 Ephemeral based
@@ -94,7 +95,7 @@ AUR Packages
 
 ```bash
 paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin cutefish-cursor-themes-git cutefish-icons thorium-browser-bin cava
-``````
+```
 
 Snap Packages
 
@@ -143,3 +144,4 @@ This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file f
 ---
 
 **<samp>Dotfiles [rwietter](https://rwietterc.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>
+
