@@ -6,7 +6,7 @@
 dir="${HOME}/Imagens/Wallpapers/"
 unsplash_dir="${XDG_PICTURES_DIR:-${HOME}/img}/unsplash"
 default="$dir/8579cdf9-c136-45e6-8a7e-dc61bced0d35.jpg"
-ultima="/home/rwietter/Imagens/Wallpapers/fog_forest_2.png"
+ultima="/home/rwietter/Imagens/Wallpapers/wallhaven-we31gx_1320x768.png"
 modo="--bg-fill"
 indice=0
 i=0

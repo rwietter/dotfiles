@@ -13,14 +13,14 @@ local colors = {
 local theme = {
   normal = {
     a = { fg = colors.black, bg = colors.violet, gui = "bold" },
-    b = { fg = colors.violet, bg = colors.black, gui = "bold" },
+    b = { fg = colors.violet, bg = colors.black },
     c = { fg = colors.white, bg = colors.black },
     x = { fg = colors.violet, bg = colors.black },
     z = { fg = colors.black, bg = colors.violet, gui = "bold" },
   },
   insert = {
     a = { fg = colors.black, bg = colors.blue, gui = "bold" },
-    b = { fg = colors.blue, bg = colors.black, gui = "bold" },
+    b = { fg = colors.blue, bg = colors.black },
     c = { fg = colors.white, bg = colors.black },
     z = { fg = colors.black, bg = colors.blue, gui = "bold" },
   },

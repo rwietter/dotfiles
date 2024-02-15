@@ -1,5 +1,10 @@
 <img src="https://0x0.st/Hdld.png" alt="screenshots" align="center" width="100%" />
 
+## Requirements
+
+- Nerd fonts
+- [Termicons fonts](https://mskelton.github.io/termicons/)
+
 ## Escape Sequences
 
 - Leader = Space

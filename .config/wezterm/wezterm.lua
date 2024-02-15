@@ -12,9 +12,10 @@ local fonts = {
 	aesthetic = "AestheticIosevka Nerd Font Mono",
 	geist = "Geist Mono",
 	berkeley = "Berkeley Mono",
+	nerd = "JetBrainsMono Nerd Font",
 }
 
-local font_name = fonts.geist
+local font_name = fonts.nerd
 
 local themes = {
 	rose_pine_dark = "rose-pine",
@@ -213,7 +214,7 @@ return {
 		left = 20,
 		right = 20,
 		top = 20,
-		bottom = 0,
+		bottom = 20,
 	},
 
 	-- Tab Bar

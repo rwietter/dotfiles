@@ -13,7 +13,19 @@ local plugins = {
     end, -- Override to setup mason-lspconfig
     opts = {
       diagnostics = {
+        underline = true,
+        virtual_text = true,
+        float = {
+          border = "rounded",
+        },
+      },
+      publish_diagnostics = {
         update_in_insert = true,
+        virtual_text = {
+          prefix = "",
+          spacing = 4,
+        },
+        severity_sort = true,
       },
       inlay_hints = {
         enabled = true,
@@ -66,6 +78,7 @@ local plugins = {
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
+    event = "BufRead",
     build = ":Copilot auth",
     opts = {
       suggestion = { enabled = false },
@@ -245,21 +258,69 @@ local plugins = {
   -- Error lens like vscode
   {
     "chikko80/error-lens.nvim",
-    event = { "BufRead", "InsertEnter", "BufReadPre", "WinEnter" },
+    event = "BufRead",
     dependencies = {
       "nvim-telescope/telescope.nvim",
     },
+    opts = {
+      -- your options go here
+    },
   },
 
-  -- !TODO: Not work
+  -- Notification and popups API
   {
-    "rcarriga/nvim-notify",
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
     config = function()
-      require("telescope").load_extension "notify"
-      require("notify").setup()
+      require("noice").setup {
+        lsp = {
+          override = {
+            ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+            ["vim.lsp.util.stylize_markdown"] = true,
+            ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
+          },
+        },
+        -- you can enable a preset for easier configuration
+        presets = {
+          bottom_search = true, -- use a classic bottom cmdline for search
+          command_palette = true, -- position the cmdline and popupmenu together
+          long_message_to_split = true, -- long messages will be sent to a split
+          inc_rename = false, -- enables an input dialog for inc-rename.nvim
+          lsp_doc_border = true, -- add a border to hover docs and signature help
+        },
+      }
     end,
+  },
+
+  {
+    "mskelton/termicons.nvim",
+    requires = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("termicons").setup()
+    end,
+  },
+
+  --[[
+   + Override nvim-web-devicons
+   + Needs termicons font to work. <mskelton.github.io/termicons>
+  ]]
+  {
+    "nvim-tree/nvim-web-devicons",
+    config = function(_, opts)
+      require("termicons").setup(opts)
+    end,
+  },
+
+  {
+    "zeioth/garbage-day.nvim",
+    dependencies = "neovim/nvim-lspconfig",
+    event = "VeryLazy",
     opts = {
-      timeout = 5000,
+      -- your options here
     },
   },
 }
