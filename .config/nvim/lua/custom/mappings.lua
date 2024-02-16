@@ -15,11 +15,11 @@ M.general = {
       "formatting",
     },
 
-    ["<C-s"] = {
+    ["<leader>sd"] = {
       function()
-        require "notify"("Saving...", "INFO")
+        require("notify").dismiss { silent = true, pending = true }
       end,
-      "Save file",
+      "Dimmiss notification",
     },
 
     -- Trouble

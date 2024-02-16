@@ -239,7 +239,18 @@ local plugins = {
     event = "VeryLazy",
     dependencies = {
       "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
+      {
+        "rcarriga/nvim-notify",
+        opts = {
+          timeout = 1500,
+          max_height = function()
+            return math.floor(vim.o.lines * 0.75)
+          end,
+          max_width = function()
+            return math.floor(vim.o.columns * 0.75)
+          end,
+        },
+      },
     },
     config = function()
       require("noice").setup {
@@ -259,6 +270,7 @@ local plugins = {
           lsp_doc_border = true, -- add a border to hover docs and signature help
         },
       }
+      require("telescope").load_extension "noice"
     end,
   },
 
