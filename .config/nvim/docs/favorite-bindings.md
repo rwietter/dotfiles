@@ -1,6 +1,6 @@
-## Favorite Shortcuts
+## Favorite Bindings
 
-| Shortcut      | Description                                |
+| Binding      | Description                                |
 | ------------- | ------------------------------------------ |
 | Alt + h       | Opens the terminal horizontally.           |
 | Ctrl + f      | Opens/closes the file and directory tree.  |

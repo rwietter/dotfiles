@@ -4,36 +4,14 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
 
   -- Override plugin definition options
-
   {
     "neovim/nvim-lspconfig",
+    event = "User FilePost",
     config = function()
-      require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
-    end, -- Override to setup mason-lspconfig
-    opts = {
-      diagnostics = {
-        underline = true,
-        virtual_text = true,
-        float = {
-          border = "rounded",
-        },
-      },
-      publish_diagnostics = {
-        update_in_insert = true,
-        virtual_text = {
-          prefix = "",
-          spacing = 4,
-        },
-        severity_sort = true,
-      },
-      inlay_hints = {
-        enabled = true,
-      },
-    },
+    end,
   },
 
-  -- override plugin configs
   {
     "williamboman/mason.nvim",
     opts = overrides.mason,
@@ -49,7 +27,6 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  -- Install a plugin
   {
     "max397574/better-escape.nvim",
     event = "InsertEnter",
@@ -93,15 +70,6 @@ local plugins = {
     "zbirenbaum/copilot-cmp",
     config = function()
       require("copilot_cmp").setup()
-    end,
-  },
-
-  -- zen mode
-  {
-    "Pocco81/true-zen.nvim",
-    event = "VeryLazy",
-    config = function(_, opts)
-      require("true-zen").setup(opts)
     end,
   },
 
@@ -149,20 +117,13 @@ local plugins = {
     },
   },
 
+  -- Autotag for jsx and tsx
   {
     "windwp/nvim-ts-autotag",
     event = "BufRead",
     config = function()
       require "plugins.configs.treesitter"
     end,
-  },
-
-  -- Noirbuddy colorscheme
-  {
-    "jesseleite/nvim-noirbuddy",
-    dependencies = {
-      { "tjdevries/colorbuddy.nvim", branch = "dev" },
-    },
   },
 
   -- Select text
@@ -172,10 +133,15 @@ local plugins = {
     branch = "master",
   },
 
-  -- Problem viewer like vscode
+  -- Problem viewer
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    cmd = "Trouble",
+    config = function()
+      dofile(vim.g.base46_cache .. "trouble")
+      require("trouble").setup()
+    end,
     opts = {
       use_diagnostic_signs = true,
     },
@@ -255,7 +221,7 @@ local plugins = {
     end,
   },
 
-  -- Error lens like vscode
+  -- Error lens
   {
     "chikko80/error-lens.nvim",
     event = "BufRead",
@@ -296,6 +262,10 @@ local plugins = {
     end,
   },
 
+  --[[
+   + Override nvim-web-devicons
+   + Needs termicons font to work. <mskelton.github.io/termicons>
+  ]]
   {
     "mskelton/termicons.nvim",
     requires = { "nvim-tree/nvim-web-devicons" },
@@ -303,11 +273,6 @@ local plugins = {
       require("termicons").setup()
     end,
   },
-
-  --[[
-   + Override nvim-web-devicons
-   + Needs termicons font to work. <mskelton.github.io/termicons>
-  ]]
   {
     "nvim-tree/nvim-web-devicons",
     config = function(_, opts)
@@ -315,6 +280,7 @@ local plugins = {
     end,
   },
 
+  -- Garbage collector for lsp
   {
     "zeioth/garbage-day.nvim",
     dependencies = "neovim/nvim-lspconfig",
@@ -322,6 +288,16 @@ local plugins = {
     opts = {
       -- your options here
     },
+  },
+
+  -- Markdown preview
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
   },
 }
 

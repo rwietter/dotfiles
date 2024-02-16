@@ -2,7 +2,7 @@
 
 <img src="https://0x0.st/HDbF.png" alt="screenshots" align="center" width="100%" />
 
-<img src="https://0x0.st/Hdld.png" alt="screenshots" align="center" width="100%" />
+<img src="https://0x0.st/Hn8B.png" alt="screenshots" align="center" width="100%" />
 
 <div>
     <img src="https://0x0.st/HGH0.png" alt="screenshots" align="right" width="65%" />
@@ -11,7 +11,7 @@
     <h3>Setup</h3>
     <ul>
       <li><strong>WM</strong>: Awesome</li>
-      <li><strong>Browser</strong>: Thorium</li>
+      <li><strong>Browser</strong>: Brave</li>
       <li><strong>Text Editor</strong>: Code</li>
       <li><strong>Music</strong>: MPD</li>
       <li><strong>Music Visualizer</strong>: NCMPCPP</li>
@@ -28,7 +28,7 @@
 | -------------------- | --------------------------------------------- |
 | Window Manager       | awesome-git                                   |
 | GUI File Manager     | nautilus                                      |
-| Browser              | thorium-browser                               |
+| Browser              | brave-nightly                                 |
 | Text Editor          | code                                          |
 | Music                | mpd - ncmpcpp - spotify (spicetify)           |
 | Menu Launcher        | rofi                                          |
@@ -144,4 +144,3 @@ This project is licensed under the Unlicense - see the [LICENSE](LICENSE) file f
 ---
 
 **<samp>Dotfiles [rwietter](https://rwietterc.xyz)</samp>** | Released under the [Unlicense](LICENSE)<br>
-
