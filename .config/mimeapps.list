@@ -1,0 +1,33 @@
+[Default Applications]
+x-scheme-handler/http=brave-browser-nightly.desktop
+x-scheme-handler/https=brave-browser-nightly.desktop
+text/html=brave-browser-nightly.desktop
+x-scheme-handler/about=brave-browser-nightly.desktop
+x-scheme-handler/unknown=brave-browser-nightly.desktop
+x-scheme-handler/eclipse+installer=_home_rwietter_Downloads_eclipse-inst-jre-linux64_eclipse-installer_.desktop
+x-scheme-handler/webcal=brave-browser-nightly.desktop
+application/x-shellscript=code.desktop
+text/vnd.trolltech.linguist=code.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+x-scheme-handler/runjs=runjs.desktop
+x-scheme-handler/postman=Postman.desktop
+image/png=viewnior.desktop
+x-scheme-handler/eclipse+command x-scheme-handler/eclipse+mpc=_home_rwietter_Downloads_trash_spring-tool-suite-4-4.19.1.RELEASE-e4.28.0-linux.gtk.x86_64_sts-4.19.1.RELEASE_.desktop
+image/jpeg=feh.desktop
+application/x-zerosize=userapp-code-C8C2H2.desktop
+
+[Added Associations]
+x-scheme-handler/http=xfce4-web-browser.desktop;
+x-scheme-handler/https=xfce4-web-browser.desktop;
+image/png=brave-browser-nightly.desktop;feh.desktop;brave-browser-dev.desktop;viewnior.desktop;
+application/x-shellscript=code.desktop;
+text/vnd.trolltech.linguist=code.desktop;
+application/pdf=calibre-gui.desktop;zotero.desktop;brave-browser-nightly.desktop;brave-browser-nightly.desktop;org.pwmt.zathura-pdf-mupdf.desktop;brave-browser-dev.desktop;google-chrome-unstable.desktop;firefoxdeveloperedition.desktop;
+text/html=org.pwmt.zathura.desktop;
+text/x-java=code.desktop;
+image/jpeg=brave-browser-nightly.desktop;feh.desktop;
+image/gif=brave-browser-nightly.desktop;brave-browser-nightly.desktop;feh.desktop;
+application/zip=userapp-unzip-OBGFD2.desktop;
+video/x-matroska=brave-browser-nightly.desktop;
+video/mp4=vlc.desktop;mpv.desktop;chrome-kefjledonklijopmnomlcbpllchaibag-Default.desktop;smartcode-stremio.desktop;
+application/x-zerosize=userapp-code-C8C2H2.desktop;
