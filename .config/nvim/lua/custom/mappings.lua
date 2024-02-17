@@ -1,4 +1,5 @@
 ---@type MappingsTable
+
 local M = {}
 
 M.general = {
@@ -15,12 +16,59 @@ M.general = {
       "formatting",
     },
 
+    -- Notificatios
     ["<leader>sd"] = {
       function()
         require("notify").dismiss { silent = true, pending = true }
       end,
       "Dimmiss notification",
     },
+
+    -- Copilot
+    -- ["<Tab>"] = {
+    --   function()
+    --     local cmp = require "cmp"
+    --     cmp.mapping(function(fallback)
+    --       local copilot = require "copilot.suggestion"
+    --       if copilot.is_visible() then
+    --         copilot.accept()
+    --       elseif cmp.visible() then
+    --         local entry = cmp.get_selected_entry()
+    --         if not entry then
+    --           cmp.select_next_item { behavior = cmp.SelectBehavior.Select }
+    --         else
+    --           cmp.confirm()
+    --         end
+    --       elseif luasnip.expand_or_jumpable() then
+    --         luasnip.expand_or_jump()
+    --       else
+    --         fallback()
+    --       end
+    --     end, { "i", "s" })
+    --   end,
+    --   "Test",
+    -- },
+    --
+    -- ["<C-.>"] = {
+    --   function()
+    --     local cmp = require "cmp"
+    --     cmp.mapping(function()
+    --       if copilot.is_visible() then
+    --         copilot.next()
+    --       end
+    --     end)
+    --   end,
+    -- },
+    -- ["<C-,>"] = {
+    --   function()
+    --     local cmp = require "cmp"
+    --     cmp.mapping(function()
+    --       if copilot.is_visible() then
+    --         copilot.prev()
+    --       end
+    --     end)
+    --   end,
+    -- },
 
     -- Trouble
     ["<S-t>"] = {

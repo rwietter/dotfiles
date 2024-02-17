@@ -4,7 +4,7 @@
 	# email = mauricio.witter@acad.ufsm.br
 	# name = rwietters
 	defaultBranch = main
-	signingkey = 2F4A8C59535F3EDA
+	signingkey = /home/rwietter/.ssh/id_ed25519.pub
 [init]
 	defaultBranch = main
 [editor]
@@ -21,7 +21,7 @@
 [merge]
   log = true # Include summaries of merged commits in newly created merge commit messages
 [delta]
-    side-by-side = true
+  side-by-side = true
 	line-numbers = true
 [alias]
 	# ----------------------------------------------------------------------------------------------------------------- #
@@ -144,3 +144,10 @@
 	gpgSign = true
 [pull]
 	rebase = true
+[rerere]
+	enabled = true # Reuse Recored Resolution (remember fixed conflicts and fix next)
+	autoUpdate = true
+[column]
+	ui = auto
+[gpg]
+	format = ssh

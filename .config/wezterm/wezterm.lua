@@ -11,6 +11,7 @@ local fonts = {
 	fantasque = "Fantasque Sans Mono",
 	aesthetic = "AestheticIosevka Nerd Font Mono",
 	geist = "Geist Mono",
+	danknerd = "DankMono Nerd Font Mono",
 	berkeley = "Berkeley Mono",
 	nerd = "JetBrainsMono Nerd Font",
 }
@@ -55,6 +56,7 @@ return {
 	},
 	warn_about_missing_glyphs = true,
 	font_size = 12.5,
+	font_weight = "Bold",
 	line_height = 1.4,
 
 	-- Cursor style

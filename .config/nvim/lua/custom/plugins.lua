@@ -55,23 +55,32 @@ local plugins = {
   {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
-    event = "BufRead",
+    event = { "InsertEnter", "BufRead" },
     build = ":Copilot auth",
-    opts = {
-      suggestion = { enabled = false },
-      panel = { enabled = false },
-      filetypes = {
-        markdown = true,
-        help = true,
-      },
-    },
-  },
-  {
-    "zbirenbaum/copilot-cmp",
     config = function()
-      require("copilot_cmp").setup()
+      require("copilot").setup {
+        panel = {
+          auto_refresh = true,
+          enabled = true,
+          suggestion = { enabled = true },
+          panel = { enabled = true },
+          filetypes = {
+            markdown = true,
+            help = true,
+            ["."] = true,
+          },
+        },
+      }
     end,
   },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   event = { "InsertEnter", "LspAttach" },
+  --   fix_pairs = true,
+  --   config = function()
+  --     require("copilot_cmp").setup()
+  --   end,
+  -- },
 
   -- telescope file browser
   {
@@ -290,16 +299,6 @@ local plugins = {
     config = function(_, opts)
       require("termicons").setup(opts)
     end,
-  },
-
-  -- Garbage collector for lsp
-  {
-    "zeioth/garbage-day.nvim",
-    dependencies = "neovim/nvim-lspconfig",
-    event = "VeryLazy",
-    opts = {
-      -- your options here
-    },
   },
 
   -- Markdown preview

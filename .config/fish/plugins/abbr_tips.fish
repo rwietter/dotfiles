@@ -61,3 +61,6 @@ abbr ggc 'git gc'                                                 # git garbage 
 : ' ---------- GIT PATCH ------------ '
 abbr gpf 'git format-patch'                                       # git format patch e.g (git format-patch HEAD~1..HEAD)
 abbr gap 'git am'                                                 # git apply patch e.g (git am < patch.patch)
+
+: ' ---------- NEOVIM ---------------- '
+abbr v 'nvim'                                                     # open neovim

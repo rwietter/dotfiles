@@ -1,10 +1,26 @@
+--[[
+   Servers: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+]]
+
 local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "rust_analyzer", "pyright", "marksman", "ltex" }
+local servers = {
+  "html",
+  "cssls",
+  "tsserver",
+  "clangd",
+  "rust_analyzer",
+  "pyright",
+  "marksman",
+  "ltex",
+  "awk_ls",
+  "vuels",
+  "jsonls",
+}
 
 -- trigger upon LSP attachment
 vim.api.nvim_create_autocmd("User", {
@@ -96,6 +112,8 @@ lspconfig.rust_analyzer.setup {
   },
   on_attach = on_attach,
   capabilities = capabilities,
+  cmd = { "rust-analyzer" },
+  filetypes = { "rust" },
   diagnostics = {
     signs = true,
     underline = true,
@@ -106,5 +124,16 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+
+lspconfig.awk_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "awk-language-server" },
+  filetypes = { "awk" },
+  root_dir = lspconfig.util.root_pattern ".git",
+}
+
+lspconfig.vuels.setup {}
+lspconfig.jsonls.setup {}
 
 -- vim.lsp.codelens.refresh { bufnr = 0 }
