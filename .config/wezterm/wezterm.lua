@@ -13,10 +13,12 @@ local fonts = {
 	geist = "Geist Mono",
 	danknerd = "DankMono Nerd Font Mono",
 	berkeley = "Berkeley Mono",
-	nerd = "JetBrainsMono Nerd Font",
+	jetnerd = "JetBrainsMono Nerd Font",
+	commitnerd = "CommitMono Nerd Font Mono",
+	cascadia = "Cascadia Mono",
 }
 
-local font_name = fonts.nerd
+local font_name = fonts.jetnerd
 
 local themes = {
 	rose_pine_dark = "rose-pine",
@@ -56,7 +58,6 @@ return {
 	},
 	warn_about_missing_glyphs = true,
 	font_size = 12.5,
-	font_weight = "Bold",
 	line_height = 1.4,
 
 	-- Cursor style

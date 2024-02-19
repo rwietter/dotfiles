@@ -12,6 +12,8 @@
 [core]
 	excludesfile = /home/rwietter/.gitignore_global
 	editor = code --wait
+	untrackedCache = true
+	fsmonitor = true
 [diff]
 	noprefix = true
 [apply]
@@ -151,3 +153,10 @@
 	ui = auto
 [gpg]
 	format = ssh
+[maintenance]
+	repo = /home/rwietter/Documentos/dotfiles
+	auto = true
+	strategy = incremental
+[fetch]
+	writeCommitGraph = true
+	parallel = 4
