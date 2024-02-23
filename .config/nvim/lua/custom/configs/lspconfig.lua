@@ -20,6 +20,8 @@ local servers = {
   "awk_ls",
   "vuels",
   "jsonls",
+  -- "efm",
+  -- "eslint",
 }
 
 -- trigger upon LSP attachment
@@ -34,10 +36,12 @@ for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = function(_, bufnr)
       -- refresh codelens on TextChanged and InsertLeave as well
-      vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave" }, {
+      vim.api.nvim_create_autocmd({ "TextChanged", "InsertLeave", "BufWritePre" }, {
         buffer = bufnr,
         callback = vim.lsp.codelens.refresh,
+        command = "EslintFixAll",
       })
+
       -- trigger codelens refresh
       vim.api.nvim_exec_autocmds("User", { pattern = "LspAttached" })
     end,
@@ -70,9 +74,31 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
   update_in_insert = true,
 })
 
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  enabled = true,
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  enabled = true,
+})
+
 -- ...................... --
 -- ... Set up LSP servers ...
 -- ...................... --
+
+-- ... efm ...
+lspconfig.efm.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = { documentFormatting = true },
+  filetypes = { "lua", "python", "javascript", "typescript", "typescriptreact", "sh", "awk" },
+}
+
+lspconfig.eslint.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "vscode-eslint-language-server", "--stdio" },
+}
 
 -- ... Configure ts server ...
 lspconfig.tsserver.setup {

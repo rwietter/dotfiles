@@ -160,3 +160,5 @@
 [fetch]
 	writeCommitGraph = true
 	parallel = 4
+[credential]
+	helper = store

@@ -1024,3 +1024,9 @@ Feb 14 16:53 : player: played "Robin Schulz & Marc Scibilia - unforgettable.mp3"
 Feb 14 16:58 : player: played "Robin schulz & richard judge – show me love.mp3"
 Feb 15 10:29 : player: played "Mr. kitty - after dark.mp3"
 Feb 15 10:30 : player: played "Rassevich - red space.mp3"
+Feb 21 14:55 : exception: Failed to decode /home/rwietter/Músicas/Rassevich - red space.mp3; Failed to open '/home/rwietter/Músicas/Rassevich - red space.mp3': No such file or directory
+Feb 21 14:55 : player: played "Rassevich - red space.mp3"
+Feb 21 14:55 : config: option 'path' on line 13 was not recognized
+Feb 21 14:55 : exception: Failed to decode /home/rwietter/Músicas/Rassevich - red space.mp3; Failed to open '/home/rwietter/Músicas/Rassevich - red space.mp3': No such file or directory
+Feb 21 14:55 : player: played "Rassevich - red space.mp3"
+Feb 21 14:55 : config: option 'path' on line 13 was not recognized

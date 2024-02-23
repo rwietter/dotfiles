@@ -8,7 +8,7 @@ local options = {
 
     javascript = { "biome" },
     javascriptreact = { "biome" },
-    typescript = { "biome" },
+    typescript = { "eslint" },
     typescriptreact = { "biome" },
     css = { "prettier" },
     html = { "prettier" },

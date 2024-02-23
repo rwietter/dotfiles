@@ -9,7 +9,7 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<C-\\>"] = { "<cmd>execute 'normal! yy' <bar> put<CR>", "Duplicate line" },
-    ["<C-y>"] = { "gcc", "Comment or uncomment current line" },
+    ["<S-q>"] = { "<cmd>bd<CR>", "Close buffer" },
 
     --  format with conform
     ["<leader>fm"] = {
