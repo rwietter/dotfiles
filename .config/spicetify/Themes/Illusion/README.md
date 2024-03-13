@@ -4,6 +4,14 @@
 
 ![Home](https://0x0.st/HDBq.png)
 
+## Installation and usage
+
+```bash
+spicetify config current_theme Illusion color_scheme Base
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
+spicetify apply
+```
+
 <!-- ## Auto-install
 
 Make sure you are using spicetify >= v2.30.0 and Spotify >= v1.2.26.
