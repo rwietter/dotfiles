@@ -8,7 +8,7 @@ return {
 	font = "Iosevka NFP Thin",
 	titlebar_position = "bottom",
 	gaps = 4,
-	border_width = 0, -- adds border around the window
+	border_width = 0,  -- adds border around the window
 	round_corners = 12, -- adds round corners to the window
 	bar_size = 50,
 	scheme = "dark",

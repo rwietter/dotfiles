@@ -30,11 +30,13 @@ local themes = {
 	rouge = "Rouge 2",
 	palenight = "Palenight (Gogh)",
 	catppuccin_macchiato = "Catppuccin Macchiato",
+	sagelight = 'Sagelight (base16)',
+	nord_light = 'Nord Light (Gogh)',
 }
 
 return {
 
-	color_scheme = themes.rose_pine_light,
+	color_scheme = themes.nord_light,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -167,6 +169,14 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
+	-- light
+	-- colors = {
+	-- 	background = "#F8F8FC",
+	-- 	selection_fg = "#1E1D2D",
+	-- 	selection_bg = "#EFECF4",
+	-- },
+
+	-- dark
 	colors = {
 		foreground = "#EFECF4",
 		background = "#0F0F11", -- #1E1D2D #0F0F11 #1A2026 #1E1E28
@@ -233,7 +243,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.97,
+	window_background_opacity = 0.85,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

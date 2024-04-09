@@ -1,4 +1,4 @@
-local colors = {
+local dark = {
   red = "#C13B58",
   redshift = "#F48097",
   grey = "#A0A8C1",
@@ -9,6 +9,20 @@ local colors = {
   violet = "#AF82FF",
   blue = "#83ACFF",
 }
+
+local light = {
+  red = "#C13B58",
+  redshift = "#F48097",
+  grey = "#A0A8C1",
+  black = "#F8F8FC",
+  white = "#FFFFFF",
+  green = "#83a598",
+  orange = "#fe8019",
+  violet = "#AF82FF",
+  blue = "#83ACFF",
+}
+
+local colors = dark
 
 local theme = {
   normal = {
@@ -54,6 +68,7 @@ local function empty_component()
     self:apply_section_separators()
     return self.status
   end
+
   return component
 end
 
@@ -148,8 +163,8 @@ local function setup()
           sections = { "warn" },
           diagnostics_color = { warn = { bg = colors.orange, fg = colors.white } },
         },
-        { "filename", file_status = false, path = 0 },
-        { modified, color = { bg = colors.white, fg = colors.black, gui = "bold" } },
+        { "filename", file_status = false,                                           path = 0 },
+        { modified,   color = { bg = colors.white, fg = colors.black, gui = "bold" } },
         {
           "%w",
           cond = function()

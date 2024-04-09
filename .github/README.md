@@ -95,7 +95,7 @@ sudo pacman -S docker acpid acpi inxi jq fpp lazydocker podman eza earlyoom bc c
 AUR Packages
 
 ```bash
-paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin cutefish-cursor-themes-git cutefish-icons thorium-browser-bin cava
+paru -S visual-studio-code-bin awesome-git insomnia-bin megasync-bin picom-git spicetify-cli spotify stremio ttf-hasklig ttf-icomoon-feather ttf-material-design-icons zotero-bin zsh-autocomplete-git yt-dlp yarr-bin firefox-developer-edition keepassxc nitch gotop beekeeper-studio-bin cutefish-cursor-themes-git cutefish-icons thorium-browser-bin cava sortty
 ```
 
 Snap Packages
