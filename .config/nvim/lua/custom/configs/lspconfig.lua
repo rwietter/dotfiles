@@ -20,6 +20,7 @@ local servers = {
   "awk_ls",
   "vuels",
   "jsonls",
+  "tailwindcss",
   -- "efm",
   -- "eslint",
 }
@@ -161,5 +162,7 @@ lspconfig.awk_ls.setup {
 
 lspconfig.vuels.setup {}
 lspconfig.jsonls.setup {}
+
+lspconfig.tailwindcss.setup {}
 
 -- vim.lsp.codelens.refresh { bufnr = 0 }

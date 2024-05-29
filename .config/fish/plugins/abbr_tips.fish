@@ -6,6 +6,15 @@ abbr gds 'git diff --stat'                                       # show changes 
 abbr gdb 'git diff --base'                                       # show changes from base i.e. common ancestor
 abbr gdt 'git diff --theirs'                                     # show changes from theirs i.e. remote
 abbr gdo 'git diff --ours'                                       # show changes from ours i.e. local
+abbr gde 'git diff -- ":!package-lock.json"'                     # show changes excluding package-lock.json
+abbr gdc 'git diff --cached'                                     # show changes in cache
+abbr gdm 'git diff main'                                         # show changes from master
+abbr gdw 'git diff --word-diff'                                  # show changes in words
+abbr gdp 'git diff --patch'                                      # show changes in patch
+abbr gdr 'git diff --raw'                                        # show changes in raw
+abbr gdx 'git diff --exit-code'                                  # show changes in exit code -
+abbr gdn 'git diff --name-status'                                # show changes in name status
+abbr gds 'git diff --stat'                                       # show changes as statistics
 
 : ' ------------- GIT ADD ----------- '
 abbr ga 'git add .'                                              # add all changes in current directory and subdirectories

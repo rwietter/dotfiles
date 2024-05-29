@@ -50,6 +50,7 @@ set -ag fish_user_paths "$HOME"/.cargo/blink
 set -ag fish_user_paths "$HOME"/.spicetify
 set -ag fish_user_paths "$HOME"/Downloads/roc_nightly-linux_x86_64-2024-01-20-ebfcd71
 set -ag fish_user_paths "$HOME"/.local/bin
+set -ag fish_user_paths "$HOME"/go/bin
 # set -ag fish_user_paths "$HOME"/.local/bin/busybox
 
 # --------------- Environments -----------------
@@ -124,3 +125,7 @@ bind -M insert \cd fbd                           # Delete a branch.
 # - [Fish Language](https://fishshell.com/docs/current/language.html)
 # - [Commands](https://fishshell.com/docs/current/commands.html)
 # - [Set](https://fishshell.com/docs/current/cmds/set.html)
+
+# >>> coursier install directory >>>
+set -gx PATH "$PATH:/home/rwietter/.local/share/coursier/bin"
+# <<< coursier install directory <<<

@@ -252,6 +252,7 @@ local plugins = {
   },
 
   -- Notification and popups API
+  --[[
   {
     "folke/noice.nvim",
     event = "VeryLazy",
@@ -291,6 +292,7 @@ local plugins = {
       require("telescope").load_extension "noice"
     end,
   },
+  ]]
 
   --[[
    + Override nvim-web-devicons
