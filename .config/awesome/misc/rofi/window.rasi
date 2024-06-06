@@ -1,0 +1,113 @@
+configuration {
+	font:						      "Roboto 10";
+  show-icons:            true;
+	icon-theme: 					 "Crule";
+  display-window: 				"";
+  window-display-format: "{name}";
+  disable-history:       false;
+	sidebar-mode: 				 false;
+}
+
+* {
+    background:       #101012BF;
+    background-alt:   #00000000;
+    background-bar:   #f2f2f215;
+    foreground:       #f2f2f2EE;
+    accent:			      #3DAEE966;
+}
+
+window {
+	transparency:       "real";
+	background-color:   @background;
+	text-color:         @foreground;
+	border:							0px;
+	border-radius:      2px 2px 0px 0px;
+	width:							50%;
+	height:							50%;
+	location:           center;
+}
+
+prompt {
+  enabled: 						false;
+	padding: 						0;
+	background-color: 	@background-alt;
+	text-color: 				@foreground;
+	font:							  "FantasqueSansMono Nerd Font 18";
+}
+
+entry {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    placeholder-color:              @foreground;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    " ";
+    padding:                        1% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+	background-color:     @background-bar;
+	text-color:           @foreground;
+	expand:               false;
+	border:						  	0% 0% 0% 0%;
+	border-radius:        100%;
+	border-color:					@accent;
+	margin:               0% 5% 0% 5%;
+	padding:              1%;
+}
+
+listview {
+    background-color:               @background-alt;
+    columns:                        1;
+    lines:                          14;
+    spacing:                        2%;
+    cycle:                          false;
+    dynamic:                        false;
+    layout:                         vertical;
+}
+
+mainbox {
+	background-color:     @background-alt;
+	border:							  0% 0% 0% 0%;
+	border-radius:        0% 0% 0% 0%;
+	border-color:					@accent;
+	children:             [ inputbar, listview ];
+	spacing:             	4%;
+	padding:              2% 2% 2% 2%;
+}
+
+element {
+    background-color:               @background-alt;
+    text-color:                     @foreground;
+    orientation:                    horizontal;
+    border-radius:                  0%;
+    padding:                        2.5% 1% 2.5% 1%;
+}
+
+element-icon {
+    background-color: 				#00000000;
+    text-color:       				inherit;
+    horizontal-align:         0;
+    vertical-align:           0;
+    size:                     20px;
+    border:                   0px;
+}
+
+element-text {
+    background-color: 				#00000000;
+    text-color:       				inherit;
+    expand:                   true;
+    horizontal-align:         0;
+    vertical-align:           0;
+    margin:                   0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+	background-color:   @background-bar;
+	text-color:         @foreground;
+	border:							0% 0% 0% 0%;
+	border-radius:      15px;
+	border-color:       @accent;
+}

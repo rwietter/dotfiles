@@ -61,6 +61,12 @@ awful.keyboard.append_global_keybindings({
 		description = "open rofi",
 		group = "launcher",
 	}),
+	awful.key({ modkey }, "z", function()
+		awful.spawn(misc.rofiWindow)
+	end, {
+		description = "open rofi window",
+		group = "launcher",
+	}),
 	awful.key({ modkey }, "p", function()
 		awful.spawn(home_var .. "/.config/awesome/scripts/picker", false)
 	end, {

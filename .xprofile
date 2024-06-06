@@ -4,7 +4,7 @@
 ## Update configs
 ## ----------------------------------------------------------------------------##
 [[ -f ~/.Xresources ]] && xrdb -merge "${HOME}/.Xresources"
-[ !  -s ~/.mpd/pid ] && mpd
+[ ! -s ~/.mpd/pid ] && mpd
 setxkbmap -model abnt2 -layout br -variant abnt2
 localectl set-locale LANG=pt_BR.UTF-8
 
@@ -14,4 +14,4 @@ localectl set-locale LANG=pt_BR.UTF-8
 nitrogen --restore &
 # (sleep 2s && dunst) &
 #exec --no-startup-id dunst
-picom --config ~/.config/picom.conf -b &> /tmp/picom.log --respect-prop-shadow
+picom --config ~/.config/picom.conf &

@@ -35,6 +35,7 @@ local themes = {
 }
 
 return {
+	color_scheme = themes.atelier_cave_light,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -167,58 +168,51 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
-	-- light
-	-- colors = {
-	-- 	background = "#F8F8FC",
-	-- 	selection_fg = "#1E1D2D",
-	-- 	selection_bg = "#EFECF4",
-	-- },
-
 	-- dark
-	colors = {
-		foreground = "#EFECF4",
-		background = "#0F0F11", -- #1E1D2D #0F0F11 #1A2026 #1E1E28
-		cursor_bg = "#EFECF4",
-		cursor_fg = "#EFECF4",
-		cursor_border = "#EFECF4",
-		selection_fg = "#EFECF4",
-		selection_bg = "#56687E",
-		scrollbar_thumb = "#edeff0",
-		split = "#EFECF4",
-		ansi = {
-			"#6E6C7E",
-			"#F48FB1",
-			"#A1EFD3",
-			"#EBDDAA",
-			"#A4B9EF",
-			"#BD99FF",
-			"#87DFEB",
-			"#DADAE8",
-		},
-		brights = {
-			"#6E6C7E",
-			"#F48FB1",
-			"#A1EFD3",
-			"#EBDDAA",
-			"#A4B9EF",
-			"#BD99FF",
-			"#87DFEB",
-			"#DADAE8",
-		},
-		indexed = { [136] = "#edeff0" },
-		tab_bar = {
-			active_tab = {
-				bg_color = "#1A2026",
-				fg_color = "#F692B2",
-				italic = false,
-			},
-			background = "#1A2026",
-			inactive_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
-			inactive_tab_hover = { bg_color = "#1A2026", fg_color = "#EFECF4" },
-			new_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
-			-- new_tab_hover = { bg_color = "#A1D391", fg_color = "#090909" },
-		},
-	},
+	-- colors = {
+	-- 	foreground = "#EFECF4",
+	-- 	background = "#0F0F11", -- #1E1D2D #0F0F11 #1A2026 #1E1E28
+	-- 	cursor_bg = "#EFECF4",
+	-- 	cursor_fg = "#EFECF4",
+	-- 	cursor_border = "#EFECF4",
+	-- 	selection_fg = "#EFECF4",
+	-- 	selection_bg = "#56687E",
+	-- 	scrollbar_thumb = "#edeff0",
+	-- 	split = "#EFECF4",
+	-- 	ansi = {
+	-- 		"#6E6C7E",
+	-- 		"#F48FB1",
+	-- 		"#A1EFD3",
+	-- 		"#EBDDAA",
+	-- 		"#A4B9EF",
+	-- 		"#BD99FF",
+	-- 		"#87DFEB",
+	-- 		"#DADAE8",
+	-- 	},
+	-- 	brights = {
+	-- 		"#6E6C7E",
+	-- 		"#F48FB1",
+	-- 		"#A1EFD3",
+	-- 		"#EBDDAA",
+	-- 		"#A4B9EF",
+	-- 		"#BD99FF",
+	-- 		"#87DFEB",
+	-- 		"#DADAE8",
+	-- 	},
+	-- 	indexed = { [136] = "#edeff0" },
+	-- 	tab_bar = {
+	-- 		active_tab = {
+	-- 			bg_color = "#1A2026",
+	-- 			fg_color = "#F692B2",
+	-- 			italic = false,
+	-- 		},
+	-- 		background = "#1A2026",
+	-- 		inactive_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
+	-- 		inactive_tab_hover = { bg_color = "#1A2026", fg_color = "#EFECF4" },
+	-- 		new_tab = { bg_color = "#1A2026", fg_color = "#EFECF4" },
+	-- 		-- new_tab_hover = { bg_color = "#A1D391", fg_color = "#090909" },
+	-- 	},
+	-- },
 
 	-- Padding
 	window_padding = {
@@ -241,7 +235,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 1,
+	window_background_opacity = 0.8,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
