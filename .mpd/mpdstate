@@ -1,6 +1,8 @@
 sw_volume: 96
 audio_device_state:1:ncmpcpp
-state: stop
+state: pause
+current: 2
+time: 66.835000
 random: 0
 repeat: 1
 single: 0
@@ -9,4 +11,7 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Bassjackers & Joe Ghost ft. MOTi - On The Floor Like (Official Music Video) [0jISGYEDfNs].flac
+1:David Guetta & Bebe Rexha - I'm Good (Blue) [Official Music Video] [90RLzVUuXe4].flac
+2:Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac
 playlist_end

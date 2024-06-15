@@ -23,7 +23,6 @@ local font_name = fonts.jetnerd
 local themes = {
 	rose_pine_dark = "rose-pine",
 	rose_pine_light = "rose-pine-dawn",
-	atelier_cave_light = "Atelier Cave Light (base16)",
 	night_owlish_light = "Night Owlish Light",
 	catppuccin_mocha = "Catppuccin Mocha",
 	nebula_16 = "Nebula (base16)",
@@ -32,10 +31,12 @@ local themes = {
 	catppuccin_macchiato = "Catppuccin Macchiato",
 	sagelight = "Sagelight (base16)",
 	nord_light = "Nord Light (Gogh)",
+	sequoia_monochrome = "Sequoia Monochrome",
+	atelier_cave_light = 'Atelier Cave Light (base16)'
 }
 
 return {
-	color_scheme = themes.atelier_cave_light,
+	color_scheme = themes.sequoia_monochrome,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -235,7 +236,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.85,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

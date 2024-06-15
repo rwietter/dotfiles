@@ -14,22 +14,23 @@ package.loaded["naughty.dbus"] = {}
 pcall(require, "luarocks.loader")
 
 -- home variable 🏠
-home_var        = os.getenv("HOME")
+home_var   = os.getenv("HOME")
 
 -- user preferences ⚙️
-user_likes      = {
+user_likes = {
 
-    -- aplications
-    term        = "wezterm",
-    editor      = "wezterm -e " .. "nvim",
-    code        = "code",
-    web         = "chromium",
-    files       = "thunar",
-    ss          = "maim -s -m 10 -f png -b 0 -u -o ~/Imagens/Prints/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -i ~/.local/share/icons/customer-service.png -u normal -t 9000 'Screenshot taken and saved to ~/Imagens/Prints'",
+	-- aplications
+	term     = "wezterm",
+	editor   = "wezterm -e " .. "nvim",
+	code     = "code",
+	web      = "chromium",
+	files    = "nautilus",
+	ss       =
+	"maim -s -m 10 -f png -b 0 -u -o ~/Imagens/Prints/$(date +%d-%m-%y_%H:%M:%S).png | notify-send -i ~/.local/share/icons/customer-service.png -u normal -t 9000 'Screenshot taken and saved to ~/Imagens/Prints'",
 
-    -- your profile
-    username = os.getenv("USER"),
-    userdesc = "@rwietter"
+	-- your profile
+	username = os.getenv("USER"),
+	userdesc = "@rwietter"
 }
 
 

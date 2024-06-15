@@ -22,7 +22,6 @@ local readwrite = require("misc.scripts.read_writer")
 ]]
 
 awful.screen.connect_for_each_screen(function(s)
-
 	-- Mainbox
 	-- ~~~~~~~~~~~~~~~~~
 	control_c = wibox({
@@ -67,16 +66,14 @@ awful.screen.connect_for_each_screen(function(s)
 	local screen_backup = 1
 
 	cc_toggle = function(screen)
-
 		-- set screen to default, if none were found
 		if not screen then screen = s end
 
 		-- control center x position
-		control_c.x = screen.geometry.x + (dpi(48) + beautiful.useless_gap * 4)
+		control_c.x = screen.geometry.x + dpi(5) -- (dpi(20) + beautiful.useless_gap * 4) -- left / right position
 
 		-- toggle visibility
 		if control_c.visible then
-
 			-- check if screen is different or the same
 			if screen_backup ~= screen.index then
 				control_c.visible = true
@@ -84,14 +81,11 @@ awful.screen.connect_for_each_screen(function(s)
 				slide_end:again()
 				slide_right.target = s.geometry.height
 			end
-
 		elseif not control_c.visible then
-
 			slide_right.target = s.geometry.height -
 					(control_c.height + beautiful.useless_gap *
-							2)
+						2)
 			control_c.visible = true
-
 		end
 
 		-- set screen_backup to new screen
@@ -150,5 +144,4 @@ awful.screen.connect_for_each_screen(function(s)
 		control_c.height = dpi(580)
 	end
 	--------------------------------------------------------
-
 end)

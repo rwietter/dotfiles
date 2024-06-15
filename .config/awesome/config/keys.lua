@@ -234,7 +234,7 @@ awful.keyboard.append_global_keybindings({
 		description = "focus the previous screen",
 		group = "screen",
 	}),
-	awful.key({ modkey, ctrl }, "n", function()
+	awful.key({ modkey, shift }, "m", function()
 		local c = awful.client.restore()
 		if c then
 			c:activate({
@@ -459,7 +459,7 @@ client.connect_signal("request::default_keybindings", function()
 			description = "toggle keep on top",
 			group = "client",
 		}),
-		awful.key({ modkey, alt }, "m", function(c)
+		awful.key({ modkey }, "m", function(c)
 			c.minimized = true
 		end, {
 			description = "minimize",

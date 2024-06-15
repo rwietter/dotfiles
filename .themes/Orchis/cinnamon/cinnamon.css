@@ -217,19 +217,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .check-box StBin {
   width: 24px;
   height: 24px;
-  background-image: url("assets/checkbox-unchecked.svg");
 }
 
-.check-box:focus StBin {
-  background-image: url("assets/checkbox-unchecked-focused.svg");
+.check-box StBin, .check-box:focus StBin {
+  background-image: url("assets/checkbox-off.svg");
 }
 
-.check-box:checked StBin {
-  background-image: url("assets/checkbox-checked.svg");
-}
-
-.check-box:focus:checked StBin {
-  background-image: url("assets/checkbox-checked-focused.svg");
+.check-box:checked StBin, .check-box:focus:checked StBin {
+  background-image: url("assets/checkbox.svg");
 }
 
 .radiobutton CinnamonGenericContainer {
@@ -247,19 +242,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .radiobutton StBin {
   width: 24px;
   height: 24px;
-  background-image: url("assets/checkbox-unchecked.svg");
 }
 
-.radiobutton:focus StBin {
-  background-image: url("assets/checkbox-unchecked-focused.svg");
+.radiobutton StBin, .radiobutton:focus StBin {
+  background-image: url("assets/radiobutton-off.svg");
 }
 
-.radiobutton:checked StBin {
-  background-image: url("assets/checkbox-checked.svg");
-}
-
-.radiobutton:focus:checked StBin {
-  background-image: url("assets/checkbox-checked-focused.svg");
+.radiobutton:checked StBin, .radiobutton:focus:checked StBin {
+  background-image: url("assets/radiobutton.svg");
 }
 
 .toggle-switch {
@@ -270,14 +260,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .toggle-switch:checked {
-  background-image: url("assets/toggle-on.svg");
-}
-
-.popup-menu-item:active .toggle-switch {
-  background-image: url("assets/toggle-off.svg");
-}
-
-.popup-menu-item:active .toggle-switch:checked {
   background-image: url("assets/toggle-on.svg");
 }
 
@@ -320,36 +302,42 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .menu .popup-sub-menu,
 .popup-menu .popup-sub-menu,
 .popup-combo-menu .popup-sub-menu {
-  border-radius: 12px;
+  border-radius: 14px;
   background-gradient-direction: none;
   box-shadow: none;
-  background-color: #e6e6e6;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.menu .popup-sub-menu .popup-menu-item,
+.popup-menu .popup-sub-menu .popup-menu-item,
+.popup-combo-menu .popup-sub-menu .popup-menu-item {
+  color: rgba(0, 0, 0, 0.75) !important;
 }
 
 .menu .popup-sub-menu .popup-menu-item:active,
 .popup-menu .popup-sub-menu .popup-menu-item:active,
 .popup-combo-menu .popup-sub-menu .popup-menu-item:active {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.85) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .menu .popup-sub-menu .popup-menu-item:active .popup-inactive-menu-item,
 .popup-menu .popup-sub-menu .popup-menu-item:active .popup-inactive-menu-item,
 .popup-combo-menu .popup-sub-menu .popup-menu-item:active .popup-inactive-menu-item {
-  color: rgba(0, 0, 0, 0.38);
+  color: rgba(0, 0, 0, 0.45) !important;
 }
 
 .menu .popup-sub-menu .popup-menu-item:insensitive,
 .popup-menu .popup-sub-menu .popup-menu-item:insensitive,
 .popup-combo-menu .popup-sub-menu .popup-menu-item:insensitive {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 0.35) !important;
 }
 
 .menu .popup-sub-menu .popup-inactive-menu-item,
 .popup-menu .popup-sub-menu .popup-inactive-menu-item,
 .popup-combo-menu .popup-sub-menu .popup-inactive-menu-item {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 0.35) !important;
 }
 
 .menu .popup-sub-menu StScrollBar,
@@ -372,7 +360,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: rgba(0, 0, 0, 0.87);
   padding: 6px;
   background-color: rgba(255, 255, 255, 0.97);
-  border-radius: 18px;
+  border-radius: 20px;
   margin: 6px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
 }
@@ -382,7 +370,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-item {
   padding: 6px 12px;
   spacing: 12px;
-  border-radius: 12px;
+  border-radius: 9999px;
 }
 
 .menu .popup-menu-item:hover, .menu .popup-menu-item:active,
@@ -621,7 +609,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -cinnamon-caption-spacing: 4px;
 }
 
-#selected.window-caption {
+.window-caption#selected {
   background-color: #1A73E8;
   color: white;
   border: 1px solid #1A73E8;
@@ -629,7 +617,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .expo-workspaces-name-entry,
-#selected.expo-workspaces-name-entry {
+.expo-workspaces-name-entry#selected {
   height: 15px;
   border-radius: 12px;
   font-size: 9pt;
@@ -641,7 +629,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .expo-workspaces-name-entry:focus,
-#selected.expo-workspaces-name-entry:focus {
+.expo-workspaces-name-entry#selected:focus {
   border: 1px solid #1A73E8;
   background-color: #1A73E8;
   color: white;
@@ -657,7 +645,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 12px;
 }
 
-#active.expo-workspace-thumbnail-frame {
+.expo-workspace-thumbnail-frame#active {
   border: 4px solid #1A73E8;
   background-color: black;
   border-radius: 12px;
@@ -1546,9 +1534,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .menu StScrollView.menu-application-button {
   padding: 3px 0;
-  border-radius: 12px;
-  background-color: #e6e6e6;
-  color: rgba(0, 0, 0, 0.87);
+  border-radius: 14px;
+  color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .menu StScrollView.menu-application-button .popup-menu-item {
@@ -1556,7 +1544,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   spacing: 0;
   margin: 0 3px;
   border-radius: 12px;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.75) !important;
 }
 
 .menu StScrollView.menu-application-button .popup-menu-item:ltr {
@@ -1569,8 +1557,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .menu StScrollView.menu-application-button .popup-menu-item:active {
   border-image: none;
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.12) !important;
 }
 
 .menu StScrollView.menu-application-button .popup-menu-item StIcon {
@@ -2040,11 +2028,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .sound-player {
-  padding: 0 0;
+  padding: 0;
   margin-top: 6px;
-  border-radius: 12px;
-  background-color: #e6e6e6;
-  color: rgba(0, 0, 0, 0.87);
+  border-radius: 14px;
+  color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .sound-player > StBoxLayout:first-child {
@@ -2059,11 +2047,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .sound-player > StBoxLayout:first-child StButton:small:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.12) !important;
 }
 
 .sound-player > StBoxLayout:first-child StButton:small:active {
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.26) !important;
 }
 
 .sound-player > StBoxLayout:first-child StButton:small StIcon {
@@ -2296,14 +2284,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .applet-cornerbar {
-  width: 8px;
+  width: 10px;
   background: transparent;
 }
 
 .applet-cornerbar-box {
   padding: 0;
-  background: transparent;
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  box-shadow: inset 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .applet-cornerbar-box:hover > .applet-cornerbar {
@@ -2311,7 +2300,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .applet-cornerbar.vertical {
-  height: 8px;
+  height: 10px;
 }
 
 .user-icon {

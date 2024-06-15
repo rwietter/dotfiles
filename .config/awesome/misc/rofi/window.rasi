@@ -9,10 +9,10 @@ configuration {
 }
 
 * {
-    background:       #101012BF;
+    background:       #f2f2f2;
     background-alt:   #00000000;
-    background-bar:   #f2f2f215;
-    foreground:       #f2f2f2EE;
+    background-bar:   #fbfbfb;
+    foreground:       #101012BF;
     accent:			      #3DAEE966;
 }
 
@@ -30,7 +30,7 @@ window {
 prompt {
   enabled: 						false;
 	padding: 						0;
-	background-color: 	@background-alt;
+	background-color: 	@background-bar;
 	text-color: 				@foreground;
 	font:							  "FantasqueSansMono Nerd Font 18";
 }

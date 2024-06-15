@@ -1265,3 +1265,31 @@ Jun 05 09:58 : config: option 'path' on line 13 was not recognized
 Jun 05 21:10 : config: option 'path' on line 13 was not recognized
 Jun 05 21:30 : config: option 'path' on line 13 was not recognized
 Jun 05 21:30 : config: option 'path' on line 13 was not recognized
+Jun 06 11:26 : config: option 'path' on line 13 was not recognized
+Jun 11 11:24 : config: option 'path' on line 13 was not recognized
+Jun 11 11:24 : config: option 'path' on line 13 was not recognized
+Jun 12 11:16 : config: option 'path' on line 13 was not recognized
+Jun 12 12:35 : config: option 'path' on line 13 was not recognized
+Jun 12 12:44 : config: option 'path' on line 13 was not recognized
+Jun 12 13:13 : config: option 'path' on line 13 was not recognized
+Jun 12 18:41 : config: option 'path' on line 13 was not recognized
+Jun 12 18:42 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Jun 12 18:42 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Jun 12 18:42 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 12 19:59 : config: option 'path' on line 13 was not recognized
+Jun 12 19:59 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 13 10:20 : config: option 'path' on line 13 was not recognized
+Jun 13 10:20 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 13 10:20 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 13 10:20 : player: problems opening audio device while playing "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 13 10:20 : config: option 'path' on line 13 was not recognized
+Jun 13 10:21 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 13 10:21 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 14 11:00 : config: option 'path' on line 13 was not recognized
+Jun 14 11:00 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 14 11:00 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 14 11:00 : player: problems opening audio device while playing "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 14 11:00 : config: option 'path' on line 13 was not recognized
+Jun 14 11:00 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 14 11:00 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
+Jun 14 11:00 : player: problems opening audio device while playing "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"

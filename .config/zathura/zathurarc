@@ -1,37 +1,39 @@
 # -----------------------------------------------------------------------------
 # Zathura settings
 # -----------------------------------------------------------------------------
+-- ansi = ["#131317", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
+-- brights = ["#575861", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 
 # Catppuccin Mocha
-set default-bg                  "#1A2026"
-set default-fg                  "#EFECF4"
+set default-bg                  "#131317"
+set default-fg                  "#626983"
 
-set statusbar-fg                "#EFECF4"
-set statusbar-bg                "#555169"
+set statusbar-bg                "#626983"
+set statusbar-fg                "#D3D5DE"
 
-set inputbar-bg                 "#6e6a86"
-set inputbar-fg                 "#ebbcba"
+set inputbar-bg                 "#626983"
+set inputbar-fg                 "#D3D5DE"
 
-set notification-bg             "#EFECF4"
-set notification-fg             "#555169"
+set notification-bg             "#626983"
+set notification-fg             "#D3D5DE"
 
 set notification-error-bg       "#f6c177"
-set notification-error-fg       "#555169"
+set notification-error-fg       "#999EB2"
 
 set notification-warning-bg     "#ebbcba"
-set notification-warning-fg     "#555169"
+set notification-warning-fg     "#999EB2"
 
 set highlight-color             "#ebbcba"
 set highlight-active-color      "#eb6f92"
 
-set completion-bg               "#6e6a86"
+set completion-bg               "#999EB2"
 set completion-fg               "#ebbcba"
 
-set completion-highlight-fg     "#26233a"
+set completion-highlight-fg     "#131317"
 set completion-highlight-bg     "#ebbcba"
 
-set recolor-lightcolor          "#1A2026"
-set recolor-darkcolor           "#EFECF4"
+set recolor-lightcolor          "#131317"
+set recolor-darkcolor           "#999EB2"
 
 set recolor                     "true"
 set recolor-keephue             "true"

@@ -163,8 +163,8 @@ local function setup()
           sections = { "warn" },
           diagnostics_color = { warn = { bg = colors.orange, fg = colors.white } },
         },
-        { "filename", file_status = false, path = 0 },
-        { modified, color = { bg = colors.white, fg = colors.black, gui = "bold" } },
+        { "filename", file_status = false,                                           path = 0 },
+        { modified,   color = { bg = colors.white, fg = colors.black, gui = "bold" } },
         {
           "%w",
           cond = function()
