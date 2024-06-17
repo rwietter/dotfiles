@@ -22,7 +22,19 @@ local light = {
   blue = "#83ACFF",
 }
 
-local colors = dark
+local sequoia_monochrome = {
+  red = "#C13B58",
+  redshift = "#F48097",
+  grey = "#A0A8C1",
+  black = "#0D0E11",
+  white = "#D3D5DE",
+  green = "#999EB2",
+  orange = "#626983",
+  violet = "#7C829D",
+  blue = "#626983",
+}
+
+local colors = sequoia_monochrome
 
 local theme = {
   normal = {

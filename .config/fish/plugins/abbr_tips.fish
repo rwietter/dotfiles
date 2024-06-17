@@ -14,7 +14,6 @@ abbr gdp 'git diff --patch'                                      # show changes 
 abbr gdr 'git diff --raw'                                        # show changes in raw
 abbr gdx 'git diff --exit-code'                                  # show changes in exit code -
 abbr gdn 'git diff --name-status'                                # show changes in name status
-abbr gds 'git diff --stat'                                       # show changes as statistics
 
 : ' ------------- GIT ADD ----------- '
 abbr ga 'git add .'                                              # add all changes in current directory and subdirectories

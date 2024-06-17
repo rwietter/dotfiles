@@ -247,3 +247,5 @@ export PATH="$PNPM_HOME:$PATH"
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
+eval "$(atuin init zsh)"

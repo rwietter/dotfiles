@@ -18,6 +18,11 @@ set -g hydro_fetch true                        # Enable git background fetch
 set -g hydro_multiline false                   # Disable multiline git status
 set -g hydro_symbol_git_dirty " "             # Set git dirty symbol
 
+# ----------------- Zellij ---------------------
+# ----------------------------------------------
+# if status is-interactive
+#     eval (zellij setup --generate-auto-start fish | string collect)
+# end
 
 # -------------- Theme Colors ------------------
 # ----------------------------------------------
@@ -41,7 +46,7 @@ source ~/.asdf/asdf.fish # Source asdf (version manager)
 
 # ----------------- Aliases --------------------
 # ----------------------------------------------
-alias ls "exa --icons --group-directories-first --color=always" # ls with icons
+alias ls "exa --icons -l -o --group-directories-first --color=always" # ls with icons
 
 # ------------------ Paths ---------------------
 # ----------------------------------------------
@@ -76,14 +81,14 @@ zoxide init fish | source    # like cd with superpowers
 # -- patrickf1/fzf.fish
 set -gx fzf_preview_dir_cmd eza --all --color=always --icons # preview directories with exa
 
+# --------------- Abbreviations ----------------
 # -- gazorby/fish-abbreviation-tips
 source "$HOME"/.config/fish/plugins/abbr_tips.fish
 
-function abbr_update_keys_and_values
-    __abbr_tips_init
-end
-
-abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
+# function abbr_update_keys_and_values
+#     __abbr_tips_init
+# end
+# abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
 # -- Forgit plugin (interactive git commands)
 set -U forgit_log flo              # git log
@@ -115,6 +120,9 @@ bind -M insert \cs state                         # Show the working tree status 
 bind -M insert \ca fad                           # Add file contents to the index.
 bind -M insert \cd fbd                           # Delete a branch.
 
+# -- zellij
+bind -M insert \ea zellij toggle                 # Toggle zellij
+
 # \c -> ctrl (case sensitive)
 # \e -> esc | alt (case insensitive)
 
@@ -125,7 +133,3 @@ bind -M insert \cd fbd                           # Delete a branch.
 # - [Fish Language](https://fishshell.com/docs/current/language.html)
 # - [Commands](https://fishshell.com/docs/current/commands.html)
 # - [Set](https://fishshell.com/docs/current/cmds/set.html)
-
-# >>> coursier install directory >>>
-set -gx PATH "$PATH:/home/rwietter/.local/share/coursier/bin"
-# <<< coursier install directory <<<

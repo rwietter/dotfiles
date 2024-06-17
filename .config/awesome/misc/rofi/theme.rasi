@@ -5,11 +5,11 @@
 
 configuration {
 	font:							"Roboto Bold 11";
-    show-icons:                     true;
+	show-icons:         true;
 	icon-theme: 					"Crule";
-    display-drun: 					"";
-    drun-display-format:            "{name}";
-    disable-history:                false;
+	display-drun: 					"";
+	drun-display-format:            "{name}";
+	disable-history:                false;
 	sidebar-mode: 					false;
 }
 

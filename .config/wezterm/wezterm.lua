@@ -130,11 +130,11 @@ return {
 			mods = "CTRL|SHIFT|ALT",
 			action = wezterm.action({ AdjustPaneSize = { "Down", 1 } }),
 		},
-		{
-			key = "n",
-			mods = "CTRL",
-			action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
-		},
+		-- {
+		-- 	key = "n",
+		-- 	mods = "CTRL",
+		-- 	action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
+		-- },
 		{
 			key = "F2",
 			mods = "CTRL",

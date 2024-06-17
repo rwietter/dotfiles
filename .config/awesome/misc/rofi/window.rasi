@@ -1,19 +1,23 @@
 configuration {
-	font:						      "Roboto 10";
+	font:						      "DankMono Nerd Font Mono 12";
+	modes: 								"window";
+	sort: 								true;
+	hover-select: 				true;
+	auto-select: 					true;
+	window-format: 				"{c}";
+	threads: 							4;
   show-icons:            true;
 	icon-theme: 					 "Crule";
-  display-window: 				"";
-  window-display-format: "{name}";
   disable-history:       false;
 	sidebar-mode: 				 false;
 }
 
 * {
-    background:       #f2f2f2;
-    background-alt:   #00000000;
-    background-bar:   #fbfbfb;
-    foreground:       #101012BF;
-    accent:			      #3DAEE966;
+	background:       #0F1014;
+	background-alt:   #00000000;
+	background-bar:   #181C20;
+	foreground:       #F2F2F2;
+	accent:			      #3DAEE966;
 }
 
 window {
@@ -21,7 +25,7 @@ window {
 	background-color:   @background;
 	text-color:         @foreground;
 	border:							0px;
-	border-radius:      2px 2px 0px 0px;
+	border-radius:      0;
 	width:							50%;
 	height:							50%;
 	location:           center;
@@ -36,78 +40,82 @@ prompt {
 }
 
 entry {
-    background-color:               @background-alt;
-    text-color:                     @foreground;
-    placeholder-color:              @foreground;
-    expand:                         true;
-    horizontal-align:               0;
-    placeholder:                    " ";
-    padding:                        1% 0% 0% 0%;
-    blink:                          true;
+	enabled: 												false;
+	background-color:               @background-alt;
+	text-color:                     @foreground;
+	placeholder-color:              @foreground;
+	expand:                         true;
+	horizontal-align:               0;
+	placeholder:                    " ";
+	padding:                        0% 0% 0% 0%;
+	blink:                          true;
 }
 
 inputbar {
+	enabled: 							false;
 	children: 						[ prompt, entry ];
 	background-color:     @background-bar;
 	text-color:           @foreground;
 	expand:               false;
 	border:						  	0% 0% 0% 0%;
-	border-radius:        100%;
+	border-radius:        0;
 	border-color:					@accent;
 	margin:               0% 5% 0% 5%;
 	padding:              1%;
 }
 
 listview {
-    background-color:               @background-alt;
-    columns:                        1;
-    lines:                          14;
-    spacing:                        2%;
-    cycle:                          false;
-    dynamic:                        false;
-    layout:                         vertical;
+	background-color:               @background-alt;
+	columns:                        1;
+	lines:                          14;
+	spacing:                        0;
+	cycle:                          true;
+	dynamic:                        true;
+	layout:                         vertical;
 }
 
 mainbox {
 	background-color:     @background-alt;
-	border:							  0% 0% 0% 0%;
-	border-radius:        0% 0% 0% 0%;
+	border:							  0%;
+	border-radius:        0;
 	border-color:					@accent;
 	children:             [ inputbar, listview ];
-	spacing:             	4%;
-	padding:              2% 2% 2% 2%;
+	spacing:             	0%;
+	padding:              0;
 }
 
 element {
-    background-color:               @background-alt;
-    text-color:                     @foreground;
-    orientation:                    horizontal;
-    border-radius:                  0%;
-    padding:                        2.5% 1% 2.5% 1%;
+	background-color:               @background-alt;
+	text-color:                     @foreground;
+	orientation:                    horizontal;
+	border-radius:                  0;
+	padding:                        2% 1% 2% 1%;
 }
 
 element-icon {
-    background-color: 				#00000000;
-    text-color:       				inherit;
-    horizontal-align:         0;
-    vertical-align:           0;
-    size:                     20px;
-    border:                   0px;
+	background-color: 				#00000000;
+	text-color:       				inherit;
+	horizontal-align:         0;
+	vertical-align:           0;
+	size:                     20px;
+	padding: 									0 10px 0 0;
+	border:                   0px;
 }
 
 element-text {
-    background-color: 				#00000000;
-    text-color:       				inherit;
-    expand:                   true;
-    horizontal-align:         0;
-    vertical-align:           0;
-    margin:                   0.5% 0.5% -0.5% 0.5%;
+	background-color: 				#00000000;
+	text-color:       				inherit;
+	expand:                   true;
+	horizontal-align:         0;
+	vertical-align:           1;
+	margin:                   0;
 }
 
 element selected {
 	background-color:   @background-bar;
 	text-color:         @foreground;
-	border:							0% 0% 0% 0%;
-	border-radius:      15px;
-	border-color:       @accent;
+	border:							0;
+	border-radius:      0;
+	border-color:       #00000000;
 }
+

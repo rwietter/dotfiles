@@ -47,11 +47,7 @@ function c --wraps="clear" --description 'clean terminal'
   clear
 end
 
-function cat --wraps='bat' --wraps=bat --description 'display file content'
-  bat $argv
-end
-
-function catp --wraps='bat --color always --plain' --wraps=bat --description 'display file content in plain format'
+function cat --wraps='bat --color always --plain' --wraps=bat --description 'display file content in plain format'
   bat --color always --plain $argv
 end
 

@@ -1,0 +1,43 @@
+themes {
+   dracula {
+        fg 248 248 242
+        bg 40 42 54
+        black 0 0 0
+        red 255 85 85
+        green 80 250 123
+        yellow 241 250 140
+        blue 98 114 164
+        magenta 255 121 198
+        cyan 139 233 253
+        white 255 255 255
+        orange 255 184 108
+    }
+
+    nord {
+        fg "#D8DEE9"
+        bg "#2E3440"
+        black "#3B4252"
+        red "#BF616A"
+        green "#A3BE8C"
+        yellow "#EBCB8B"
+        blue "#81A1C1"
+        magenta "#B48EAD"
+        cyan "#88C0D0"
+        white "#E5E9F0"
+        orange "#D08770"
+    }
+
+    sequoia_monochrome {
+        fg "#626983"
+        bg "#626983"
+        black "#0D0E11"
+        red "#0D0E11"
+        green "#626983"
+        yellow "#7C829D"
+        blue "#999EB2"
+        magenta "#999EB2"
+        cyan "#7C829D"
+        white "#999EB2"
+        orange "#7C829D"
+    }
+}

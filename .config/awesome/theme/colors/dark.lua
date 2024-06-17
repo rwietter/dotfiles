@@ -71,7 +71,7 @@ local colors        = {}
 -- ansi = ["#131317", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 -- brights = ["#575861", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 
-colors.bg_color     = "#0F1014"
+colors.bg_color     = "#0D0E11"
 colors.bg_2         = "#131317"
 colors.bg_3         = "#1A2026"
 colors.bg_4         = "#1E1E28"
