@@ -71,36 +71,36 @@ local colors        = {}
 -- ansi = ["#131317", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 -- brights = ["#575861", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 
-colors.bg_color     = "#0D0E11"
-colors.bg_2         = "#131317"
-colors.bg_3         = "#1A2026"
-colors.bg_4         = "#1E1E28"
+colors.bg_color     = "#0F1014"
+colors.bg_2         = "#121318"
+colors.bg_3         = "#14161B"
+colors.bg_4         = "#7C829D"
 
-colors.black        = "#131317"
+colors.black        = "#0F1014"
 colors.ext_white_bg = "#EBF0FF"
 
-colors.foreground   = "#999EB2"
-colors.emphasis     = "#999EB2"
+colors.foreground   = "#7C829D"
+colors.emphasis     = "#7C829D"
 
 colors.green        = "#B6BAC8"
-colors.green_2      = "#868690"
-colors.green_3      = colors.green .. "66"
-colors.green_4      = colors.green .. "33"
+colors.green_2      = "#BDC1CD"
+colors.green_3      = "#C4C7D2"
+colors.green_4      = "#CBCED8"
 
-colors.red          = "#999EB2"
-colors.red_2        = "#626983"
-colors.red_3        = "#999EB2"
-colors.red_4        = "#7C829D"
-colors.red_5        = "#999EB2"
+colors.red          = "#626983"
+colors.red_2        = "#686F88"
+colors.red_3        = "#6E748E"
+colors.red_4        = "#747A93"
+colors.red_5        = "#798098"
 
 -- accents
 colors.accent       = "#7C829D"
-colors.accent_2     = "#999EB2"
-colors.accent_3     = "#626983"
-colors.accent_4     = "#999EB2"
+colors.accent_2     = "#8086A0"
+colors.accent_3     = "#858AA3"
+colors.accent_4     = "#898FA7"
 
 -- purple
-colors.purple       = "#999EB2"
+colors.purple       = "#7C829D"
 
 
 return colors

@@ -117,7 +117,7 @@ bind -M insert \cz undo                          # Undo changes
 
 # -- git
 bind -M insert \cs state                         # Show the working tree status in compact way.
-bind -M insert \ca fad                           # Add file contents to the index.
+# bind -M insert \ca fad                           # Add file contents to the index.
 bind -M insert \cd fbd                           # Delete a branch.
 
 # -- zellij
@@ -133,3 +133,9 @@ bind -M insert \ea zellij toggle                 # Toggle zellij
 # - [Fish Language](https://fishshell.com/docs/current/language.html)
 # - [Commands](https://fishshell.com/docs/current/commands.html)
 # - [Set](https://fishshell.com/docs/current/cmds/set.html)
+
+# ------------------- Scala --------------------
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /home/rwietter/.ghcup/bin $PATH # ghcup-env
+# >>> coursier install directory >>>
+set -gx PATH "$PATH:/home/rwietter/.local/share/coursier/bin"
+# <<< coursier install directory <<<

@@ -98,7 +98,6 @@ local animation_button_opacity = rubato.timed {
 
 
 local readwrite = require("misc.scripts.read_writer")
-
 local output = readwrite.readall("blue_light_state")
 
 if output:match("true") then
@@ -113,19 +112,7 @@ end
 
 -- buttons
 alright:buttons(gears.table.join(awful.button({}, 1, nil, function()
-	awful.spawn.easy_async_with_shell(
-		[[
-		if [ ! -z $(pgrep redshift) ];
-		then
-			redshift -x && pkill redshift && killall redshift
-            echo "false" > $HOME/.config/awesome/misc/.information/blue_light_state
-			echo 'OFF'
-		else
-			redshift -l 0:0 -t 4500:4500 -r &>/dev/null &
-            echo "true" > $HOME/.config/awesome/misc/.information/blue_light_state
-			echo 'ON'
-		fi
-		]],
+	awful.spawn.easy_async_with_shell("bash $HOME/.config/awesome/scripts/red.sh",
 		function(stdout)
 			if stdout:match("ON") then
 				icon.markup = helpers.colorize_text(service_icon, beautiful.bg_color)

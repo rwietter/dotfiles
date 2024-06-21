@@ -1293,3 +1293,22 @@ Jun 14 11:00 : config: option 'path' on line 13 was not recognized
 Jun 14 11:00 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
 Jun 14 11:00 : exception: Failed to open "ncmpcpp" (alsa); Error opening ALSA device "default"; snd_pcm_hw_params() failed: Input/output error
 Jun 14 11:00 : player: problems opening audio device while playing "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 19 12:40 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 19 12:40 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 19 12:51 : config: option 'path' on line 13 was not recognized
+Jun 19 12:51 : config: option 'path' on line 13 was not recognized
+Jun 19 13:54 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 19 13:54 : player: played "Dimitri Vegas & Like Mike Vs Tujamo & Felguk - Nova (Official Music Video) [o7Oibcmr81Y].flac"
+Jun 19 14:27 : config: option 'path' on line 13 was not recognized
+Jun 19 14:27 : config: option 'path' on line 13 was not recognized
+Jun 19 18:33 : config: option 'path' on line 13 was not recognized
+Jun 19 18:33 : config: option 'path' on line 13 was not recognized
+Jun 19 19:40 : config: option 'path' on line 13 was not recognized
+Jun 19 19:40 : config: option 'path' on line 13 was not recognized
+Jun 20 09:21 : config: option 'path' on line 13 was not recognized
+Jun 20 09:21 : config: option 'path' on line 13 was not recognized
+Jun 20 19:45 : config: option 'path' on line 13 was not recognized
+Jun 20 19:45 : config: option 'path' on line 13 was not recognized
+Jun 20 20:40 : config: option 'path' on line 13 was not recognized
+Jun 20 20:49 : config: option 'path' on line 13 was not recognized
+Jun 20 20:54 : config: option 'path' on line 13 was not recognized

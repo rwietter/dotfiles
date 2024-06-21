@@ -32,6 +32,7 @@ local themes = {
 	sagelight = "Sagelight (base16)",
 	nord_light = "Nord Light (Gogh)",
 	sequoia_monochrome = "Sequoia Monochrome",
+	sequoia_moonlight = "Sequoia Moonlight",
 	atelier_cave_light = 'Atelier Cave Light (base16)'
 }
 

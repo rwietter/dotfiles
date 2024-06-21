@@ -53,8 +53,6 @@ local browser_widget = wibox.widget {
 	bg = beautiful.bg_color .. "11"
 }
 
-
-
 browser_widget:buttons(gears.table.join({
 	awful.button({}, 1, function()
 		awful.spawn("nohup " .. user_likes.web .. " --new-window", false)

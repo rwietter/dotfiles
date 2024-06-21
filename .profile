@@ -10,3 +10,5 @@ export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:/usr/lib/dart/bin"
+
+[ -f "/home/rwietter/.ghcup/env" ] && . "/home/rwietter/.ghcup/env" # ghcup-env

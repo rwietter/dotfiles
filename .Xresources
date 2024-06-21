@@ -26,49 +26,51 @@ Xft.hintstyle:          hintsfull
 !-----------------------------------------------------------------------
 !                        URxvt settings
 !-----------------------------------------------------------------------
+!!ansi = ["#131317", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
+!!brights = ["#575861", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 
-*.foreground:   #EFECF4
-*.background:   #1A2026
-*.cursorColor:  #EFECF4
+*.foreground:   #7C829D
+*.background:   #131317
+*.cursorColor:  #7C829D
 
 ! black
-*.color0:       #242D35
-*.color8:       #56687E
+*.color0:       #131317
+*.color8:       #575861
 
 ! red
-*.color1:       #F48FB1
-*.color9:       #EE4F84
+*.color1:       #999EB2
+*.color9:       #999EB2
 
 ! green
-*.color2:       #A1EFD3
-*.color10:      #53E2AE
+*.color2:       #626983
+*.color10:      #626983
 
 ! yellow
-*.color3:       #F1FA8C
-*.color11:      #F1FF52
+*.color3:       #D3D5DE
+*.color11:      #D3D5DE
 
 ! blue
-*.color4:       #92B6F4
-*.color12:      #6498EF
+*.color4:       #7C829D
+*.color12:      #7C829D
 
 ! magenta
-*.color5:       #BD99FF
-*.color13:      #985EFF
+*.color5:       #E2E4ED
+*.color13:      #E2E4ED
 
 ! cyan
-*.color6:       #87DFEB
-*.color14:      #24D1E7
+*.color6:       #B6BAC8
+*.color14:      #B6BAC8
 
 ! white
-*.color7:       #FFFFFF
-*.color15:      #F4F5F2
+*.color7:       #868690
+*.color15:      #868690
 
 URxvt.colorIT:                        #DEDEDE
 URxvt.colorBD:                        #B1ACAC
-!URxvt.colorUL:                       #1A8A74
+!URxvt.colorUL:                       #7C829D
 URxvt.highlightTextColor:             #ffffff
-URxvt.highlightColor:                 #1A8A74
-!URxvt.underlineColor:                #1D1F21
+URxvt.highlightColor:                 #7C829D
+!URxvt.underlineColor:                #575861
 
 
 ! +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
@@ -93,7 +95,7 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 ! fonts
-urxvt.font:xft:Iosevka Slab:size=12,xft:meguri:pixelsize=11,xft:PowerlineSymbols:size=9,xft:Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=9,xft:FontAwesome:size=10
+urxvt.font:              xft:Berkeley Mono:size=12,xft:DankMono Nerd Font Mono:pixelsize=11,xft:PowerlineSymbols:size=9,xft:Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=9,xft:FontAwesome:size=10
 
 URxvt.letterSpace:       true
 
@@ -103,8 +105,6 @@ URxvt.keysym.C-Down:     perl:font-size:decrease
 URxvt.keysym.C-S-Up:     perl:font-size:incglobal
 URxvt.keysym.C-S-Down:   perl:font-size:decglobal
 !Home and End keys to jump to the beginning and end of lines
-URxvt*keysym.Home:       \033[1~
-URxvt*keysym.End:        \033[4~
 
 !! Tabs
 URxvt.tabbed.tabbar-bg:  -1
