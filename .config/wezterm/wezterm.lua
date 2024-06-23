@@ -237,7 +237,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.4,
+	window_background_opacity = 0.8,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
