@@ -10,6 +10,7 @@
 ]]
 -- Disable notification module instead of dunst
 package.loaded["naughty.dbus"] = {}
+package.loaded["json"] = {}
 
 pcall(require, "luarocks.loader")
 

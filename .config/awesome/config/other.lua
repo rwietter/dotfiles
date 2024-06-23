@@ -13,8 +13,6 @@ local bling = require("mods.bling")
 local naughty = require("naughty")
 local dpi = beautiful.xresources.apply_dpi
 
-
-
 -- bling
 -- ~~~~~
 local bar_size = beautiful.bar_size
@@ -26,23 +24,21 @@ local bar_size = beautiful.bar_size
 bling.widget.tag_preview.enable {
 	show_client_content = false,
 	placement_fn        = function(c)
-		awful.placement.right(c, {
+		-- https://awesomewm.org/doc/api/libraries/awful.placement.html
+		awful.placement.top_left(c, {
 			margins = {
-				right = bar_size + beautiful.useless_gap * 4
+				top = bar_size + beautiful.useless_gap * 4,
 			}
 		})
 	end,
 	scale               = 0.16,
-	honor_padding       = false,
-	honor_workarea      = false,
+	honor_padding       = true,
+	honor_workarea      = true,
 	background_widget   = wibox.widget {
 		widget = wibox.container.background,
 		bg = beautiful.wallpaper
 	}
 }
-
-
-
 
 -- Error ding
 -- ~~~~~~~~~~
@@ -54,8 +50,6 @@ naughty.connect_signal("request::display_error", function(message, startup)
 		message  = message
 	}
 end)
-
-
 
 -- wallpaper
 -- ~~~~~~~~~

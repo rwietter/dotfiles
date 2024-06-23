@@ -10,7 +10,7 @@ if pgrep redshift >/dev/null 2>&1; then
 	echo "false" >"$state_file"
 	echo 'OFF'
 else
-	redshift -l 0:0 -t 4500:4500 -r &>/dev/null &
+	redshift -l 0:0 -t 5000:5000 -r &>/dev/null &
 	echo "true" >"$state_file"
 	echo 'ON'
 fi

@@ -16,14 +16,16 @@ local deck = bling.layout.deck
 
 -- layout machi  
 lmachi.editor.nested_layouts = {
-	[""] = deck,
-	[""] = awful.layout.suit.spiral,
-	[""] = awful.layout.suit.fair,
-	[""] = awful.layout.suit.fair.horizontal,
+	[""] = awful.layout.suit.floating,
+	["󰉠"] = awful.layout.suit.spiral,
+	["𐲕"] = deck,
+	["𐲍"] = awful.layout.suit.fair,
+	["𐲈"] = awful.layout.suit.fair.horizontal,
+	["𐲦"] = awful.layout.suit.fair.vertical,
 }
 
 -- names/numbers of layouts
-local names = {"", "", "", ""}
+local names = { "", "󰉠", "𐲕", "𐲍", "𐲈", "𐲦" }
 local l = awful.layout.suit
 
 -- Configurations
@@ -33,7 +35,7 @@ local l = awful.layout.suit
 tag.connect_signal(
 	"request::default_layouts",
 	function()
-		awful.layout.append_default_layouts({l.tile, l.floating, lmachi.default_layout, equal, mstab, deck})
+		awful.layout.append_default_layouts({ l.tile, l.floating, lmachi.default_layout, equal, mstab, deck })
 	end
 )
 

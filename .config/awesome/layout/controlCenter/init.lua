@@ -32,7 +32,7 @@ awful.screen.connect_for_each_screen(function(s)
 		bg = beautiful.bg_color,
 		margins = 20,
 		ontop = true,
-		visible = false
+		visible = true
 	})
 	-- ~~~~~~~~~~~~~~~
 

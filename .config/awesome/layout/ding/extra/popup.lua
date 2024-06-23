@@ -3,12 +3,12 @@
 
 -- requirements
 -- ~~~~~~~~~~~~
-local awful         = require("awful")
-local gears         = require("gears")
-local wibox         = require("wibox")
-local beautiful     = require("beautiful")
-local helpers       = require("helpers")
-local dpi           = beautiful.xresources.apply_dpi
+local awful     = require("awful")
+local gears     = require("gears")
+local wibox     = require("wibox")
+local beautiful = require("beautiful")
+local helpers   = require("helpers")
+local dpi       = beautiful.xresources.apply_dpi
 
 
 -- widgets themselves
@@ -16,24 +16,24 @@ local dpi           = beautiful.xresources.apply_dpi
 
 -- icon
 local icon = wibox.widget({
-	font 	= beautiful.icon_var .. "16",
-	align 	= "center",
-	valign 	= "center",
-	widget 	= wibox.widget.textbox,
+	font   = beautiful.icon_var .. "16",
+	align  = "center",
+	valign = "center",
+	widget = wibox.widget.textbox,
 })
 
 -- progress bar
-local bar = wibox.widget{
-    bar_color           = beautiful.fg_color .. "33",
-    handle_color        = beautiful.blue_color,
-    handle_shape        = gears.shape.circle,
-	bar_active_color    = beautiful.blue_color,
-	bar_height			= dpi(4),
-	bar_width			= dpi(10),
-    value               = 25,
-	minimum				= 0,
-	maximum 			= 100,
-    widget              = wibox.widget.slider,
+local bar = wibox.widget {
+	bar_color        = beautiful.fg_color .. "33",
+	handle_color     = beautiful.blue_color,
+	handle_shape     = gears.shape.circle,
+	bar_active_color = beautiful.blue_color,
+	bar_height       = dpi(4),
+	bar_width        = dpi(10),
+	value            = 25,
+	minimum          = 0,
+	maximum          = 100,
+	widget           = wibox.widget.slider,
 }
 
 
@@ -53,7 +53,7 @@ local pop = wibox({
 })
 
 -- placement
-awful.placement.right(pop, {margins = {right = beautiful.useless_gap * 2}})
+awful.placement.right(pop, { margins = { right = beautiful.useless_gap * 2 } })
 
 -- tuemout
 local timeout = gears.timer({
@@ -61,7 +61,7 @@ local timeout = gears.timer({
 	timeout     = 2.4,
 	single_shot = true,
 	callback    = function()
-		        pop.visible = false
+		pop.visible = false
 	end,
 })
 
@@ -75,24 +75,24 @@ local function toggle_pop()
 end
 
 pop:setup({
+	{
 		{
-			{
-				bar,
-  	      		forced_height = dpi(100),
-  		      	forced_width  = dpi(5),
-  		      	direction     = 'east',
-  	      		widget        = wibox.container.rotate,
-			},
-			margins = dpi(15),
-			layout = wibox.container.margin
+			bar,
+			forced_height = dpi(100),
+			forced_width  = dpi(5),
+			direction     = 'east',
+			widget        = wibox.container.rotate,
 		},
-		{
-			icon,
-			margins = {bottom = dpi(10)},
-			widget = wibox.container.margin
-		},
-		spacing = dpi(10),
-		layout = wibox.layout.fixed.vertical
+		margins = dpi(15),
+		layout = wibox.container.margin
+	},
+	{
+		icon,
+		margins = { bottom = dpi(10) },
+		widget = wibox.container.margin
+	},
+	spacing = dpi(10),
+	layout = wibox.layout.fixed.vertical
 })
 
 
@@ -111,7 +111,7 @@ awesome.connect_signal("signal::volume", function(value, muted)
 		icon.markup = "<span foreground='" .. beautiful.accent .. "'></span>"
 		bar.value = value
 
-		if muted or value == 0  then
+		if muted or value == 0 then
 			bar.handle_color = beautiful.red_color
 			bar.bar_active_color = beautiful.red_color
 			icon.markup = "<span foreground='" .. beautiful.red_color .. "'></span>"
