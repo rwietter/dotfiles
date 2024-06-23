@@ -76,6 +76,9 @@ colors.bg_2         = "#121318"
 colors.bg_3         = "#14161B"
 colors.bg_4         = "#131317"
 
+colors.fg_color     = "#D3D5DE"
+colors.foreground   = "#D3D5DE"
+
 colors.black        = "#0F1014"
 colors.ext_white_bg = "#EBF0FF"
 

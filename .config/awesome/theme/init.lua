@@ -249,7 +249,7 @@ theme.playerctl_position_update_interval = 1
 -- ~~~~~~~~~~~~
 theme.awesome_dock_size = 80
 theme.awesome_dock_pinned = {
-	{ user_likes.term }, { user_likes.music, "gnome-music" }, { "galculator" },
+	{ user_likes.term }, { user_likes.music, "gnome-music" }, { "brave-browser-nightly" },
 	{ "thunar" }
 }
 theme.awesome_dock_color_active = theme.accent

@@ -31,8 +31,8 @@ awful.screen.connect_for_each_screen(function(s)
 		width = dpi(420),
 		bg = beautiful.bg_color,
 		margins = 20,
-		ontop = false,
-		visible = false
+		ontop = true,
+		visible = true
 	})
 	-- ~~~~~~~~~~~~~~~
 

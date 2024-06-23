@@ -6,7 +6,7 @@
 dir="${HOME}/Imagens/Wallpapers/"
 unsplash_dir="${XDG_PICTURES_DIR:-${HOME}/img}/unsplash"
 default="$dir/8579cdf9-c136-45e6-8a7e-dc61bced0d35.jpg"
-ultima="/home/rwietter/Imagens/Wallpapers/wallhaven-vqv3p8_1366x765.png"
+ultima="/home/rwietter/Imagens/Wallpapers/screensht_23-11-11_09:42:09.png"
 modo="--bg-fill"
 indice=0
 i=0

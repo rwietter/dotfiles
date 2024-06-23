@@ -205,9 +205,9 @@ awful.screen.connect_for_each_screen(function(s)
 
 	awesome.connect_signal("signal::wifi", function(value)
 		if value then
-			wifi.markup = helpers.colorize_text("", beautiful.fg_color .. "CC")
+			wifi.markup = helpers.colorize_text("", beautiful.fg_normal .. "CC")
 		else
-			wifi.markup = helpers.colorize_text("", beautiful.fg_color .. "99")
+			wifi.markup = helpers.colorize_text("", beautiful.fg_normal .. "99")
 		end
 	end)
 
