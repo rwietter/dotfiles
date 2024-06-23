@@ -74,7 +74,7 @@ local colors        = {}
 colors.bg_color     = "#0F1014"
 colors.bg_2         = "#121318"
 colors.bg_3         = "#14161B"
-colors.bg_4         = "#7C829D"
+colors.bg_4         = "#131317"
 
 colors.black        = "#0F1014"
 colors.ext_white_bg = "#EBF0FF"
