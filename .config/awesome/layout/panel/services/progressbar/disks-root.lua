@@ -27,8 +27,8 @@ local disks_root_bar = awful.widget.watch('bash /home/rwietter/.config/awesome/s
 		},
 		shape            = gears.shape.rounded_bar,
 		border_width     = 0,
-		color            = beautiful.red_5,
-		background_color = beautiful.red_5 .. '55',
+		color            = beautiful.red_5 .. '90',
+		background_color = beautiful.red_5 .. '20',
 		paddings         = 0,
 		widget           = wibox.widget.progressbar,
 	})
@@ -60,6 +60,8 @@ local disks_root_widget = wibox.widget {
 	spacing = dpi(8),
 	forced_height = dpi(35),
 	layout = wibox.layout.fixed.horizontal,
+	widget = wibox.container.background,
+	bg = beautiful.bg_3 .. '40'
 }
 
 return disks_root_widget

@@ -59,7 +59,7 @@ local temp_widget = wibox.widget {
 	widget = wibox.container.background,
 	forced_width = dpi(400),
 	forced_height = dpi(110),
-	bg = beautiful.bg_2 .. "BF"
+	bg = beautiful.bg_3 .. '40' -- beautiful.bg_2 .. "BF"
 }
 
 return temp_widget

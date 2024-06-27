@@ -21,7 +21,7 @@ local ram_bar = awful.widget.watch('bash ' .. home_var .. '/.config/awesome/scri
 		min_value     = 1,
 		border_color  = beautiful.accent_4 .. '22',
 		border_width  = dpi(12),
-		color         = beautiful.accent_4,
+		color         = beautiful.red_5 .. '80', -- beautiful.accent_4,
 		widget        = wibox.container.radialprogressbar
 	})
 
@@ -93,7 +93,7 @@ local ram_widget_container = wibox.widget {
 	widget = wibox.container.background,
 	forced_width = dpi(175),
 	forced_height = dpi(105),
-	bg = beautiful.bg_2 .. "BF"
+	bg = beautiful.bg_3 .. '40' -- beautiful.bg_2 .. "BF"
 }
 
 return ram_widget_container

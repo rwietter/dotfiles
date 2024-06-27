@@ -56,6 +56,7 @@ set -ag fish_user_paths "$HOME"/.spicetify
 set -ag fish_user_paths "$HOME"/Downloads/roc_nightly-linux_x86_64-2024-01-20-ebfcd71
 set -ag fish_user_paths "$HOME"/.local/bin
 set -ag fish_user_paths "$HOME"/go/bin
+set -ag fish_user_paths "$HOME"/.local/bin/rwietter
 # set -ag fish_user_paths "$HOME"/.local/bin/busybox
 
 # --------------- Environments -----------------
@@ -72,6 +73,26 @@ set -Ux ABBR_TIPS_PROMPT "❱ \e[38;2;243;134;48;4;1m{{ .abbr }}\e[0m => \e[38;2
 # ----------------------------------------------
 # function fish_mode_prompt; end # Disable fish mode prompt (vi mode)
 
+function fish_mode_prompt
+  switch $fish_bind_mode
+    case default
+      set_color --bold red
+      echo ' '
+    case insert
+      set_color --bold red
+      echo '󰘧 '
+    case replace_one
+      set_color --bold green
+      echo '󰿈 '
+    case visual
+      set_color --bold brmagenta
+      echo '󱄛 '
+    case '*'
+      set_color red
+      echo '? '
+  end
+  set_color normal
+end
 
 # ------------------ Plugins -------------------
 # ----------------------------------------------
@@ -139,3 +160,8 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 # >>> coursier install directory >>>
 set -gx PATH "$PATH:/home/rwietter/.local/share/coursier/bin"
 # <<< coursier install directory <<<
+
+# pnpm
+# set -gx PNPM_HOME "/home/rwietter/.local/share/pnpm"
+# set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end

@@ -27,8 +27,8 @@ local disks_home_bar = awful.widget.watch('bash /home/rwietter/.config/awesome/s
 		},
 		shape            = gears.shape.rounded_bar,
 		border_width     = 0,
-		color            = beautiful.purple,
-		background_color = beautiful.purple .. '55',
+		color            = beautiful.red_5 .. '90',
+		background_color = beautiful.red_5 .. '20',
 		paddings         = 0,
 		widget           = wibox.widget.progressbar,
 	})

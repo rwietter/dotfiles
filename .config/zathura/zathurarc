@@ -1,20 +1,17 @@
 # -----------------------------------------------------------------------------
 # Zathura settings
 # -----------------------------------------------------------------------------
--- ansi = ["#131317", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
--- brights = ["#575861", "#999EB2", "#626983", "#D3D5DE", "#7C829D", "#E2E4ED", "#B6BAC8", "#868690"]
 
-# Catppuccin Mocha
-set default-bg                  "#131317"
-set default-fg                  "#626983"
+set default-bg                  "#0F1014"
+set default-fg                  "#7C829D"
 
-set statusbar-bg                "#626983"
+set statusbar-bg                "#14161B"
 set statusbar-fg                "#D3D5DE"
 
-set inputbar-bg                 "#626983"
+set inputbar-bg                 "#14161B"
 set inputbar-fg                 "#D3D5DE"
 
-set notification-bg             "#626983"
+set notification-bg             "#14161B"
 set notification-fg             "#D3D5DE"
 
 set notification-error-bg       "#f6c177"
@@ -26,7 +23,7 @@ set notification-warning-fg     "#999EB2"
 set highlight-color             "#ebbcba"
 set highlight-active-color      "#eb6f92"
 
-set completion-bg               "#999EB2"
+set completion-bg               "#2B2C2F"
 set completion-fg               "#ebbcba"
 
 set completion-highlight-fg     "#131317"

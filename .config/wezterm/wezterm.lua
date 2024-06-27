@@ -18,7 +18,7 @@ local fonts = {
 	cascadia = "Cascadia Mono",
 }
 
-local font_name = fonts.jetnerd
+local font_name = fonts.pragmata
 
 local themes = {
 	rose_pine_dark = "rose-pine",
@@ -170,6 +170,10 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
+	colors = {
+		foreground = "#EFECF4",
+	},
+
 	-- dark
 	-- colors = {
 	-- 	foreground = "#EFECF4",
@@ -237,7 +241,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.8,
+	window_background_opacity = 0.70,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

@@ -60,99 +60,68 @@ local get_taglist = function(s)
 
 	local the_taglist =
 			awful.widget.taglist {
-				screen = s,
-				filter = awful.widget.taglist.filter.all,
-				{
-					style = {
-						shape = gears.shape.rectangle,
-						spacing = dpi(10),
-						border_width = dpi(0),
-						border_color = beautiful.bg_3,
-						widget = wibox.container.background,
-						bg_occupied = beautiful.bg_2,
-						bg_empty = beautiful.bg_3,
-						bg = beautiful.bg_3,
-						fg = beautiful.fg_normal,
-						bg_focus = beautiful.bg_4,
-						-- font = beautiful.font_var .. "10",
-						font = beautiful.icon_var .. "18",
-						align = "center",
-						valign = "center",
-					},
+				screen          = s,
+				filter          = awful.widget.taglist.filter.all,
+				style           = {
+					shape = gears.shape.powerline,
+					bg_occupied = beautiful.bg_color .. '99',
+					bg_empty = beautiful.bg_4 .. '60',
+					bg_urgent = beautiful.bg_color,
+					fg_occupied = beautiful.green_color,
+					fg_empty = beautiful.emphasis,
+					fg_focus = beautiful.ext_white_bg,
 				},
-				forced_height = dpi(30),
-				widget = wibox.container.constraint,
-				layout = {
-					spacing = dpi(10),
-					layout = wibox.layout.fixed.horizontal
+				layout          = {
+					spacing        = -12,
+					spacing_widget = {
+						color        = beautiful.bg_color,
+						shape        = gears.shape.powerline,
+						widget       = wibox.widget.separator,
+						thickness    = dpi(10),
+						border_width = dpi(15),
+					},
+					layout         = wibox.layout.fixed.horizontal
 				},
 				widget_template = {
 					{
 						{
 							{
-								id = "text_role",
+								{
+									id     = 'icon_role',
+									widget = wibox.widget.imagebox,
+								},
+								margins = dpi(2),
+								widget  = wibox.container.margin,
+							},
+							{
+								id     = 'text_role',
 								widget = wibox.widget.textbox,
-								font = beautiful.font_var .. "10",
-								align = "center",
-								markup = "DD",
-								valign = "center"
 							},
-							margins = {
-								top = dpi(5),
-								bottom = dpi(5),
-								left = dpi(0),
-								right = dpi(0)
-							},
-							forced_height = dpi(1),
-							forced_width = dpi(30),
-							widget = wibox.container.constraint
+							layout = wibox.layout.fixed.horizontal,
 						},
-						widget = wibox.container.background
+						left   = dpi(30),
+						right  = dpi(30),
+						widget = wibox.container.margin
 					},
-					id = "background_role",
-					bg = beautiful.bg_color,
-					widget = wibox.container.background,
-					create_callback = function(self, c3, _)
-						self:connect_signal(
-							"mouse::enter",
-							function()
-								if #c3:clients() > 0 then
-									awesome.emit_signal("bling::tag_preview::update", c3)
-									awesome.emit_signal("bling::tag_preview::visibility", s, true)
-
-									awesome.emit_signal("bling::task_preview::visibility", s, true, c3)
-								end
+					id              = 'background_role',
+					widget          = wibox.container.background,
+					-- Add support for hover colors and an index label
+					create_callback = function(self, c3, index, objects) --luacheck: no unused args
+						self:connect_signal('mouse::enter', function()
+							if self.bg ~= beautiful.bg_4 then
+								self.backup     = self.bg
+								self.has_backup = true
 							end
-						)
-						self:connect_signal(
-							"mouse::leave",
-							function()
-								awesome.emit_signal("bling::tag_preview::visibility", s, false)
-
-								awesome.emit_signal("bling::task_preview::visibility", s, false, c3)
-							end
-						)
-
-						if c3.selected then
-							self:get_children_by_id("background_role")[1].bg = beautiful.bg_3
-						elseif #c3:clients() == 0 then
-							self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
-						else
-							self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
-						end
+							self.bg = beautiful.bg_4
+						end)
+						self:connect_signal('mouse::leave', function()
+							if self.has_backup then self.bg = self.backup end
+						end)
 					end,
-					update_callback = function(self, c3, _)
-						if c3.selected then
-							self:get_children_by_id("background_role")[1].bg = beautiful.bg_3
-						elseif #c3:clients() == 0 then
-							self.bg = beautiful.fg_color
-							self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
-						else
-							self:get_children_by_id("background_role")[1].bg = beautiful.fg_color
-						end
-					end
+					update_callback = function(self, c3, index, objects) --luacheck: no unused args
+					end,
 				},
-				buttons = taglist_buttons
+				buttons         = taglist_buttons
 			}
 
 	return the_taglist

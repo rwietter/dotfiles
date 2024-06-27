@@ -16,16 +16,16 @@ local deck = bling.layout.deck
 
 -- layout machi  
 lmachi.editor.nested_layouts = {
-	[""] = awful.layout.suit.floating,
-	["󰉠"] = awful.layout.suit.spiral,
-	["𐲕"] = deck,
-	["𐲍"] = awful.layout.suit.fair,
-	["𐲈"] = awful.layout.suit.fair.horizontal,
-	["𐲦"] = awful.layout.suit.fair.vertical,
+	[""] = awful.layout.suit.floating,
+	[""] = awful.layout.suit.spiral,
+	[""] = deck,
+	[""] = awful.layout.suit.fair,
+	[""] = awful.layout.suit.fair.horizontal,
+	[""] = awful.layout.suit.fair.vertical,
 }
 
 -- names/numbers of layouts
-local names = { "", "󰉠", "𐲕", "𐲍", "𐲈", "𐲦" }
+local names = { "", "", "", "", "", "" }
 local l = awful.layout.suit
 
 -- Configurations

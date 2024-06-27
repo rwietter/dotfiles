@@ -11,7 +11,7 @@ local disks_root = require("layout.panel.services.progressbar.disks-root")
 local linear_bars = wibox.widget {
 	widget = wibox.container.background,
 	forced_height = dpi(100),
-	bg = beautiful.bg_2 .. "BF",
+	bg = beautiful.bg_3 .. '40', -- beautiful.bg_2 .. "BF",
 	shape = helpers.rrect(beautiful.rounded),
 	{
 		{

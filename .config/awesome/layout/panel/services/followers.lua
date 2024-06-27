@@ -60,7 +60,7 @@ local followers_widget = wibox.widget {
 	border_color = beautiful.fg_color .. "33",
 	forced_width = dpi(105),
 	forced_height = dpi(105),
-	bg = beautiful.bg_2 .. "BF"
+	bg = beautiful.bg_3 .. '40' -- beautiful.bg_3 .. '40' -- beautiful.bg_2 .. "BF"
 }
 
 return followers_widget

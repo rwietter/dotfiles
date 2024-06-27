@@ -22,7 +22,7 @@ local cpu_bar = awful.widget.watch('ruby ' .. home_var .. '/.config/awesome/scri
 		value         = 10,
 		forced_height = dpi(60),
 		forced_width  = dpi(60),
-		color         = beautiful.red_4,
+		color         = beautiful.red_5 .. '80', -- beautiful.red_4,
 		widget        = wibox.container.radialprogressbar,
 	})
 
@@ -116,7 +116,7 @@ local cpu_widget_container = wibox.widget {
 	widget = wibox.container.background,
 	forced_width = dpi(175),
 	forced_height = dpi(105),
-	bg = beautiful.bg_2 .. "BF"
+	bg = beautiful.bg_3 .. '40' -- beautiful.bg_2 .. "BF"
 }
 
 return cpu_widget_container
