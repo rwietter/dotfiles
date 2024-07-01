@@ -106,9 +106,9 @@ set -gx fzf_preview_dir_cmd eza --all --color=always --icons # preview directori
 # -- gazorby/fish-abbreviation-tips
 source "$HOME"/.config/fish/plugins/abbr_tips.fish
 
-# function abbr_update_keys_and_values
-#     __abbr_tips_init
-# end
+function abbr_update_keys_and_values
+     __abbr_tips_init
+end
 # abbr_update_keys_and_values # Update __ABBR_TIPS_KEYS and __ABBR_TIPS_VALUES
 
 # -- Forgit plugin (interactive git commands)

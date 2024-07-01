@@ -72,3 +72,6 @@ abbr gap 'git am'                                                 # git apply pa
 
 : ' ---------- NEOVIM ---------------- '
 abbr v 'nvim'                                                     # open neovim
+
+: ' ---------- LINUX ----------------- '
+abbr mk 'mkdir -p'
