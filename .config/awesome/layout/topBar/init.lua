@@ -219,7 +219,7 @@ awful.screen.connect_for_each_screen(function(s)
 		type = "dock",
 		width = s.geometry.width,    -- - beautiful.useless_gap * 4,
 		shape = gears.shape.rectangle, -- helpers.rrect(beautiful.rounded - 4),
-		bg = beautiful.bg_color .. '99',
+		bg = beautiful.bg_color,
 		height = dpi(40)
 	})
 
@@ -231,7 +231,7 @@ awful.screen.connect_for_each_screen(function(s)
 		{
 			widget = wibox.widget.systray,
 			systray_icon_spacing = dpi(5),
-			bg_systray = beautiful.bg_4 .. '99',
+			bg_systray = beautiful.bg_4,
 			base_size = 15,
 		},
 		top = dpi(10),
@@ -263,9 +263,8 @@ awful.screen.connect_for_each_screen(function(s)
 		{
 			{
 				taglist,
-				margins = { top = dpi(0), bottom = dpi(0), left = dpi(0), right = dpi(40) },
-				widget = wibox.container.margin,
-				layout = wibox.layout.fixed.horizontal,
+				layout = wibox.container.margin,
+				margins = { left = dpi(0), right = dpi(0) },
 			},
 			{
 				launcher,
@@ -314,6 +313,6 @@ awful.screen.connect_for_each_screen(function(s)
 			expand = "none",
 		},
 		layout = wibox.container.margin,
-		margins = { left = dpi(15), right = dpi(15) },
+		margins = { left = dpi(0), right = dpi(15) },
 	})
 end)

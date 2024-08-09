@@ -249,3 +249,4 @@ export PATH="$PNPM_HOME:$PATH"
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 
 eval "$(atuin init zsh)"
+if [ -f "/home/rwietter/.config/fabric/fabric-bootstrap.inc" ]; then . "/home/rwietter/.config/fabric/fabric-bootstrap.inc"; fi

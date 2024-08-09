@@ -4,13 +4,13 @@
 ## Update configs
 ## ----------------------------------------------------------------------------##
 [[ -f ~/.Xresources ]] && xrdb -merge "${HOME}/.Xresources"
-[ ! -s ~/.mpd/pid ] && mpd
+# [ ! -s ~/.mpd/pid ] && mpd
 setxkbmap -model abnt2 -layout br -variant abnt2
 localectl set-locale LANG=pt_BR.UTF-8
 
 ## ----------------------------------------------------------------------------##
 ## Settings
 ## ----------------------------------------------------------------------------##
-nitrogen --restore &
+# nitrogen --restore &
 # (sleep 2s && dunst) &
 #exec --no-startup-id dunst

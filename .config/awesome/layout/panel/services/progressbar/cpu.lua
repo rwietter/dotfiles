@@ -16,12 +16,12 @@ local cpu_bar = awful.widget.watch('ruby ' .. home_var .. '/.config/awesome/scri
 		wid.value = stdout and tonumber(stdout) or 0
 	end, wibox.widget {
 		min_value     = 1,
-		border_color  = beautiful.red_4 .. '22',
 		border_width  = dpi(12),
 		max_value     = 100,
 		value         = 10,
 		forced_height = dpi(60),
 		forced_width  = dpi(60),
+		border_color  = beautiful.accent_4 .. '22',
 		color         = beautiful.red_5 .. '80', -- beautiful.red_4,
 		widget        = wibox.container.radialprogressbar,
 	})

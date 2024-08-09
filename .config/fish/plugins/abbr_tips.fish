@@ -75,3 +75,10 @@ abbr v 'nvim'                                                     # open neovim
 
 : ' ---------- LINUX ----------------- '
 abbr mk 'mkdir -p'
+
+: '------------ CODE ------------------ '
+abbr . 'code .'
+
+abbr swp 'free -m -h'
+abbr cc 'xsel --clipboard --input'
+abbr pp 'xsel --clipboard --output'

@@ -1,9 +1,9 @@
 local dark = {
-  red = "#C13B58",
+  red = "#F79DC3",
   redshift = "#F48097",
   grey = "#A0A8C1",
-  black = "#141417",
-  white = "#f3f3f3",
+  black = "#11111B",
+  white = "#161722",
   green = "#83a598",
   orange = "#fe8019",
   violet = "#AF82FF",
@@ -34,7 +34,7 @@ local sequoia_monochrome = {
   blue = "#626983",
 }
 
-local colors = sequoia_monochrome
+local colors = dark
 
 local theme = {
   normal = {
@@ -175,8 +175,8 @@ local function setup()
           sections = { "warn" },
           diagnostics_color = { warn = { bg = colors.orange, fg = colors.white } },
         },
-        { "filename", file_status = false,                                           path = 0 },
-        { modified,   color = { bg = colors.white, fg = colors.black, gui = "bold" } },
+        { "filename", file_status = false, path = 0 },
+        { modified, color = { bg = colors.white, fg = colors.black, gui = "bold" } },
         {
           "%w",
           cond = function()

@@ -36,10 +36,6 @@ function shot() {
 		exit;
 	fi
 
-	# Copy to clipboard
-	xclip -selection clipboard -t image/png -i "${screenshot_dir}"/`ls -1 -t "${screenshot_dir}" | head -1` &
-
-
 # ./notify/notify-send.sh -i ${file_loc} -o "open:xdg-open ${file_loc}" -o "delete:gio trash ${file_loc}" "Shoted!" "${notif_message}"
 }
 

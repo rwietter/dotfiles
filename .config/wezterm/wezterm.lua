@@ -33,11 +33,11 @@ local themes = {
 	nord_light = "Nord Light (Gogh)",
 	sequoia_monochrome = "Sequoia Monochrome",
 	sequoia_moonlight = "Sequoia Moonlight",
-	atelier_cave_light = 'Atelier Cave Light (base16)'
+	atelier_cave_light = "Atelier Cave Light (base16)",
 }
 
 return {
-	color_scheme = themes.sequoia_monochrome,
+	color_scheme = themes.sequoia_moonlight,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -170,9 +170,9 @@ return {
 
 	bold_brightens_ansi_colors = true,
 
-	colors = {
-		foreground = "#EFECF4",
-	},
+	-- colors = {
+	-- 	foreground = "#EFECF4",
+	-- },
 
 	-- dark
 	-- colors = {
@@ -241,7 +241,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.70,
+	window_background_opacity = 0.9,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",

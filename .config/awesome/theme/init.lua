@@ -240,7 +240,7 @@ theme.taglist_disable_icon = true
 
 -- Bling playerctl
 -- ~~~~~~~~~~~~~~~
-theme.playerctl_ignore = { "firefox" }
+theme.playerctl_ignore = { "brave-browser-nightly" }
 theme.playerctl_player = { "mpd", "%any" }
 theme.playerctl_update_on_activity = true
 theme.playerctl_position_update_interval = 1
@@ -249,14 +249,14 @@ theme.playerctl_position_update_interval = 1
 -- ~~~~~~~~~~~~
 theme.awesome_dock_size = 80
 theme.awesome_dock_pinned = {
-	{ user_likes.term }, { user_likes.music, "gnome-music" }, { "brave-browser-nightly" },
+	{ user_likes.term }, { user_likes.music, "mpd" }, { "brave-browser-nightly" },
 	{ "thunar" }
 }
 theme.awesome_dock_color_active = theme.accent
 theme.awesome_dock_color_inactive = theme.fg_color .. "66"
 theme.awesome_dock_color_minimized = theme.accent .. "33"
 theme.awesome_dock_color_hover = theme.fg_color .. "33"
-theme.awesome_dock_color_bg = theme.bg_color
+theme.awesome_dock_color_bg = theme.bg_color .. "99"
 theme.awesome_dock_disabled = false
 theme.awesome_dock_spacing = 10
 theme.awesome_dock_timeout = 1.2

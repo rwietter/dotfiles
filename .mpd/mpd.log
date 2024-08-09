@@ -1379,3 +1379,17 @@ Jun 29 23:22 : update: removing Dimitri Vegas, Martin Garrix, Like Mike - Tremor
 Jun 29 23:22 : update: removing David Guetta & Bebe Rexha - I'm Good (Blue) [Official Music Video] [90RLzVUuXe4].flac
 Jun 29 23:22 : update: removing Dimitri Vegas & Like Mike, Steve Aoki vs Ummet Ozcan - Melody [hvynkEbRgDc].flac
 Jun 29 23:22 : update: removing Dimitri Vegas & Like Mike vs Ummet Ozcan - The Hum (Official Music Video) [exJlapzPnlc].flac
+Jul 05 22:14 : exception: Failed to create Avahi client: Daemon not running
+Jul 05 22:14 : exception: Failed to create Avahi client: Daemon not running
+Jul 05 22:15 : config: option 'path' on line 13 was not recognized
+Jul 05 22:15 : config: option 'path' on line 13 was not recognized
+Jul 07 10:54 : config: option 'path' on line 13 was not recognized
+Jul 07 10:54 : config: option 'path' on line 13 was not recognized
+Jul 07 12:06 : config: option 'path' on line 13 was not recognized
+Jul 08 15:05 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Jul 08 15:05 : exception: Failed to commit /home/rwietter/.mpd/mpdstate: File exists
+Jul 11 22:18 : config: option 'path' on line 13 was not recognized
+Jul 19 10:33 : config: option 'path' on line 13 was not recognized
+Jul 26 15:57 : config: option 'path' on line 13 was not recognized
+Jul 30 12:39 : config: option 'path' on line 13 was not recognized
+Aug 09 09:56 : config: option 'path' on line 13 was not recognized

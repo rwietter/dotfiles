@@ -18,11 +18,11 @@
     follow = none
 
     # Position of the notification on the screen if the notification
-    width = 300
-    height = 250
-    origin = bottom-right 
-    offset = 5x15
-    progress_bar = false
+    width = 250
+    height = 70
+    origin = top-right 
+    offset = 5
+    progress_bar = true
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = no
@@ -34,7 +34,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 0
+    transparency = 50
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -42,10 +42,10 @@
     separator_height = 10
 
     # Padding between text and separator.
-    padding = 20
+    padding = 5
 
     # Horizontal padding.
-    horizontal_padding = 20
+    horizontal_padding = 5
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
@@ -169,7 +169,7 @@
 
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
-    sticky_history = yes
+    sticky_history = no
 
     # Maximum amount of notifications kept in history
     history_length = 3

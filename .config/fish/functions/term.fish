@@ -1,8 +1,3 @@
-function j
-    __zoxide_z $argv
-end
-
-
 function ymp3 --wraps="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0" --description ""
   yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 $argv
 end
@@ -51,8 +46,8 @@ function cat --wraps='bat --color always --plain' --wraps=bat --description 'dis
   bat --color always --plain $argv
 end
 
-function clean --wraps='sudo rm -rf /var/cache/pacman/pkg/*.*' --description 'Remove all cached packages from pacman cache'
-  sudo rm -rf /var/cache/pacman/pkg/*.* $argv
+function clean --wraps='sudo rm -rf /var/cache/pacman/pkg/*' --description 'Remove all cached packages from pacman cache'
+  sudo rm -rf /var/cache/pacman/pkg/*
 end
 
 function cpuperf --wraps='sudo cpupower frequency-set -g performance' --description 'alias cpuperf sudo cpupower frequency-set -g performance'
@@ -103,7 +98,7 @@ function k9 --wraps='pkill -9' --description 'alias k9 pkill -9'
   pkill -9 $argv
 end
 
-function k9t --wraps='' --description ''
+function kkk --wraps='' --description ''
   cd $HOME/github/prod/kill-tabs && yarn start && cd -- $argv
 end
 
@@ -130,10 +125,6 @@ end
 
 function m --wraps=mpd --description 'alias m mpd'
   mpd $argv
-end
-
-function mem --wraps='ps auxe --sort=-%mem | $HOME/Público/DSA/Languages/awk/mem.awk | head -n 15 | spin' --description 'alias mem ps auxe --sort=-%mem | $HOME/Público/DSA/Languages/awk/mem.awk | head -n 15 | spin'
-  ps auxe --sort=-%mem | $HOME/Público/DSA/Languages/awk/mem.awk | head -n 15 | spin $argv
 end
 
 function tebi --wraps='dmesg | nc termbin.com 9999 ' --description 'alias tebi dmesg | nc termbin.com 9999 '
