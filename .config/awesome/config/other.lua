@@ -21,13 +21,21 @@ local bar_size = beautiful.bar_size
 -- bling.module.flash_focus.enable()
 
 -- tag preview
+--[[
+-- For top left placement
+awful.placement.top_left(c, {
+	margins = {
+		top = bar_size + beautiful.useless_gap * 4,
+	}
+})
+--]]
 bling.widget.tag_preview.enable {
 	show_client_content = false,
 	placement_fn        = function(c)
 		-- https://awesomewm.org/doc/api/libraries/awful.placement.html
-		awful.placement.top_left(c, {
+		awful.placement.left(c, {
 			margins = {
-				top = bar_size + beautiful.useless_gap * 4,
+				left = bar_size + beautiful.useless_gap * 4
 			}
 		})
 	end,

@@ -37,7 +37,7 @@ local themes = {
 }
 
 return {
-	color_scheme = themes.sequoia_moonlight,
+	color_scheme = themes.nord_light,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",

@@ -223,8 +223,8 @@ awful.screen.connect_for_each_screen(function(s)
 	})
 
 	-- wibar placement
-	awful.placement.right(s.wibar_wid, { margins = beautiful.useless_gap * 2 })
-	s.wibar_wid:struts({ right = s.wibar_wid.width + beautiful.useless_gap * 2 })
+	awful.placement.left(s.wibar_wid, { margins = beautiful.useless_gap * 2 })
+	s.wibar_wid:struts({ left = s.wibar_wid.width + beautiful.useless_gap * 2 })
 
 	-- bar setup
 	s.wibar_wid:setup({

@@ -16,8 +16,8 @@ sleep_timer = 0
 ; method = pulse
 ; source = auto
 
-; method = alsa
-; source = hw:Loopback,1
+method = alsa
+source = hw:Loopback,1
 
 ; method = fifo
 ; source = /tmp/mpd.fifo
@@ -32,7 +32,7 @@ sleep_timer = 0
 
 
 [output]
-method = ncurses # Can be 'ncurses', 'noncurses', 'raw', 'noritake' or 'sdl'
+method = raw # Can be 'ncurses', 'noncurses', 'raw', 'noritake' or 'sdl'
 orientation = bottom #  Can be 'bottom', 'top', 'left' or 'right'
 mono_option = average
 reverse = 0
