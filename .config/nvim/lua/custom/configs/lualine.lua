@@ -34,7 +34,7 @@ local sequoia_monochrome = {
   blue = "#626983",
 }
 
-local colors = light
+local colors = sequoia_monochrome
 
 local theme = {
   normal = {

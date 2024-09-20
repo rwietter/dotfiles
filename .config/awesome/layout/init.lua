@@ -1,5 +1,5 @@
-require("layout.bar")
--- require("layout.topBar")
+-- require("layout.bar")
+require("layout.topBar")
 require("layout.controlCenter")
 require("layout.panel")
 require("layout.decorations")

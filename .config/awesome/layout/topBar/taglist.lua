@@ -47,11 +47,11 @@ local get_taglist = function(s)
 			bg_urgent = beautiful.bg_4,
 			bg_focus = beautiful.bg_4,
 
-			fg_occupied = beautiful.accent,
-			fg_urgent = beautiful.black,
+			fg_occupied = beautiful.fg_color,
+			fg_urgent = beautiful.red,
 			fg_normal = beautiful.red,
 			fg_empty = beautiful.red,
-			fg_focus = beautiful.emphasis,
+			fg_focus = beautiful.fg_color,
 		},
 		layout = {
 			spacing = dpi(-15),

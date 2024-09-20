@@ -70,8 +70,8 @@ awful.screen.connect_for_each_screen(function(s)
 		if not screen then screen = s end
 
 		-- control center x position
-		control_c.x = screen.geometry.x + (dpi(45) + beautiful.useless_gap * 4) -- left / right position
-		-- panel_info.x = screen.geometry.x + (dpi(1430) + beautiful.useless_gap * 4)
+		-- control_c.x = screen.geometry.x + (dpi(45) + beautiful.useless_gap * 4) -- left / right position
+		control_c.x = screen.geometry.x + dpi(beautiful.useless_gap)
 
 		-- toggle visibility
 		if control_c.visible then

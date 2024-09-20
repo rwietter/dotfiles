@@ -9,12 +9,11 @@ local wibox = require("wibox")
 -- widgets
 -- ~~~~~~~
 -- icon
-local icon = wibox.widget {
+local icon = wibox.widget({
 	{
 		{
 			image = beautiful.images.sun_icon,
 			widget = wibox.widget.imagebox,
-
 		},
 		widget = wibox.container.background,
 		forced_width = dpi(40),
@@ -24,22 +23,25 @@ local icon = wibox.widget {
 	widget = wibox.container.place,
 	valign = "center",
 	halign = "center",
-}
-
--- coretemps
-local coretemps = watch('bash -c ' .. home_var .. '/.config/awesome/scripts/coretemps.sh'
-, 5, function(widget, stdout)
-	widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", " "), beautiful.fg_color)
-end, wibox.widget {
-	font = beautiful.font_var .. "13",
-	widget = wibox.widget.textbox,
-	valign = "center",
-	align = "center"
 })
 
+-- coretemps
+local coretemps = watch(
+	"bash -c " .. home_var .. "/.config/awesome/scripts/coretemps.sh",
+	5,
+	function(widget, stdout)
+		widget.markup = helpers.colorize_text(string.gsub(stdout, "%s+", " "), beautiful.fg_color)
+	end,
+	wibox.widget({
+		font = beautiful.font_var .. "13",
+		widget = wibox.widget.textbox,
+		valign = "center",
+		align = "center",
+	})
+)
 
 -- mix those
-local temp_widget = wibox.widget {
+local temp_widget = wibox.widget({
 	{
 		nil,
 		{
@@ -51,15 +53,15 @@ local temp_widget = wibox.widget {
 				spacing = dpi(6),
 			},
 			layout = wibox.layout.align.vertical,
-			expand = "none"
+			expand = "none",
 		},
-		layout = wibox.layout.stack
+		layout = wibox.layout.stack,
 	},
 	shape = helpers.rrect(beautiful.rounded),
 	widget = wibox.container.background,
 	forced_width = dpi(400),
 	forced_height = dpi(110),
-	bg = beautiful.bg_3 .. '40' -- beautiful.bg_2 .. "BF"
-}
+	bg = beautiful.bg_3 .. "BF", -- beautiful.bg_2 .. "BF"
+})
 
 return temp_widget

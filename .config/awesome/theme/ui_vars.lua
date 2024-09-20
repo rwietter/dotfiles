@@ -11,6 +11,6 @@ return {
 	border_width = 0, -- adds border around the window
 	round_corners = 8, -- adds round corners to the window
 	bar_size = 50,
-	scheme = "light",
-	color_scheme = "light",
+	scheme = "dark",
+	color_scheme = "dark",
 }

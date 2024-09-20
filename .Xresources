@@ -98,6 +98,9 @@ URxvt*scrollTtyKeypress: true
 !urxvt.font:              xft:PragmataPro for Powerline:size=12,xft:DankMono Nerd Font Mono:pixelsize=11,xft:PowerlineSymbols:size=9,xft:Droid Sans Mono for Powerline Plus Nerd File Types Mono:pixelsize=9,xft:FontAwesome:size=10
 URxvt.font: xft:Fira Code:size=16,xft:Consolas:size=9,xft:DejaVu Sans:size=6,xft:FontAwesome:size=6
 
+xterm*faceName: DejaVuSansMono
+xterm*faceSize: 14
+
 URxvt.letterSpace:       true
 
 !! Keybinding
