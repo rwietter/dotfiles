@@ -21,6 +21,7 @@ local servers = {
   "vuels",
   "jsonls",
   "tailwindcss",
+  "golangci_lint_ls",
   -- "efm",
   -- "eslint",
 }
@@ -122,6 +123,15 @@ lspconfig.pyright.setup {
       },
     },
   },
+}
+
+-- .. Configure Golang ...
+lspconfig.golangci_lint_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "golangci-lint-langserver" },
+  filetypes = { "go" },
+  root_dir = lspconfig.util.root_pattern ".git",
 }
 
 -- ... Configure rust_analyzer ...

@@ -70,6 +70,11 @@ abbr ggc 'git gc'                                                 # git garbage 
 abbr gpf 'git format-patch'                                       # git format patch e.g (git format-patch HEAD~1..HEAD)
 abbr gap 'git am'                                                 # git apply patch e.g (git am < patch.patch)
 
+: '----------- RESET ----------------- '
+abbr guh 'git reset HEAD .'                                       # Use after 'git add'. This will back to working directory
+abbr guu 'git checkout -- .'                                      # This will discard all changes in working directory
+abbr guc 'git clean -f -d'                                        # This will remove all untracked files and directories
+
 : ' ---------- NEOVIM ---------------- '
 abbr v 'nvim'                                                     # open neovim
 

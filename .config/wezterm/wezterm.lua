@@ -18,7 +18,7 @@ local fonts = {
 	cascadia = "Cascadia Mono",
 }
 
-local font_name = fonts.pragmata
+local font_name = fonts.iosevka
 
 local themes = {
 	rose_pine_dark = "rose-pine",
@@ -38,7 +38,7 @@ local themes = {
 }
 
 return {
-	color_scheme = themes.rose_pine_dark,
+	color_scheme = themes.atelier_cave_light,
 
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
@@ -242,7 +242,7 @@ return {
 		saturation = 0,
 		brightness = 0,
 	},
-	window_background_opacity = 0.9,
+	window_background_opacity = 1,
 	window_close_confirmation = "NeverPrompt",
 	window_frame = {
 		active_titlebar_bg = "#090909",
